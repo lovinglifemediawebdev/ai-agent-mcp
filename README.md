@@ -21,6 +21,12 @@ A comprehensive system for AI agents to manage project documentation, follow dev
 - **🔧 Customization** - Extensive customization options for different workflows
 - **📈 Analytics** - Project metrics and development insights
 
+### Non-Interactive Tools
+- **🚀 Changelog Updater** - Command-line tools that bypass interactive prompts
+- **⚡ Quick Updates** - Fast documentation updates without CLI hanging issues
+- **🪟 Windows Support** - Batch files for Windows users
+- **📝 Cross-Platform** - Works on Windows, Mac, and Linux
+
 ## 📚 Available Playbooks
 
 ### Built-in Playbooks
@@ -109,6 +115,45 @@ npm run ai-update
 
 # View status
 npm run view-status
+```
+
+## 🚀 Non-Interactive Tools (Recommended)
+
+### Problem Solved
+The interactive CLI can sometimes hang at selection screens when run from command line. These tools bypass that issue completely.
+
+### Quick Changelog Updates
+```bash
+# Cross-platform (Node.js)
+node ai-agent-system/update-changelog.js "Added new feature" "Feature complete" "Add tests"
+
+# Windows users
+ai-agent-system\update-changelog.bat "Added new feature" "Feature complete" "Add tests"
+
+# Multiple changes
+node ai-agent-system/update-changelog.js "Added feature,Fixed bug,Updated docs" "All complete" "Deploy,Monitor"
+```
+
+### What These Tools Do
+- ✅ **Bypass interactive prompts** - No more hanging at selection screens
+- ✅ **Update both files** - CHANGELOG.md and AI_INSTRUCTIONS.md automatically
+- ✅ **Cross-platform support** - Works on Windows, Mac, Linux
+- ✅ **Error handling** - Clear success/error messages
+- ✅ **Validation** - Input validation before updating
+
+### Usage Examples
+```bash
+# Simple change
+node ai-agent-system/update-changelog.js "Fixed authentication bug"
+
+# With status
+node ai-agent-system/update-changelog.js "Added user dashboard" "Dashboard complete"
+
+# Full update
+node ai-agent-system/update-changelog.js "Added dashboard,Updated API" "All features working" "Add tests,Deploy"
+
+# Windows batch file
+ai-agent-system\update-changelog.bat "Added new feature" "Feature complete"
 ```
 
 ## 📋 Available Commands
@@ -258,6 +303,9 @@ your-project/
 │ ├── install.js # New project installer
 │ ├── setup-project.js # Existing project setup
 │ └── test-system.js # System testing
+├── update-changelog.js # Non-interactive changelog updater (Node.js)
+├── update-changelog.bat # Non-interactive changelog updater (Windows)
+├── CHANGELOG-UPDATER-README.md # Documentation for changelog tools
 ├── frontend-playbook-main/ # Springer Nature Frontend Playbook
 ├── Full-Stack-Web-Dev-Playbook.md # GPT-5 Full-Stack Playbook
 └── package.json # Updated with AI Agent scripts
@@ -474,6 +522,8 @@ npm run install-project
 - [ ] **Analytics Dashboard** - Project metrics and insights
 
 ### Recent Updates
+- ✅ **Non-Interactive Changelog Tools** - Bypass CLI hanging issues with direct command-line tools
+- ✅ **Cross-Platform Support** - Windows batch files and Node.js scripts for all platforms
 - ✅ **Comprehensive Playbook System** - Multiple development methodologies
 - ✅ **Springer Nature Frontend Playbook** - Production-tested frontend guidelines
 - ✅ **GPT-5 Full-Stack Playbook** - Modern web development practices

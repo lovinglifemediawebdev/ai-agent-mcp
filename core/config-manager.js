@@ -14,6 +14,7 @@ class ConfigManager {
   constructor(projectRoot = process.cwd()) {
     this.projectRoot = projectRoot
     this.configPath = path.join(projectRoot, '.ai-agent-config.json')
+    this.config = null
     this.defaultConfig = {
       projectName: 'My Project',
       projectType: 'web-app',
@@ -51,14 +52,17 @@ class ConfigManager {
           throw new ConfigurationError(`Configuration validation failed: ${errorMessages}`, this.configPath)
         }
         
+        this.config = mergedConfig
         return mergedConfig
       }
+      this.config = this.defaultConfig
       return this.defaultConfig
     } catch (error) {
       if (error instanceof ConfigurationError) {
         throw error
       }
       console.warn('⚠️  Could not load config, using defaults:', error.message)
+      this.config = this.defaultConfig
       return this.defaultConfig
     }
   }
@@ -79,6 +83,7 @@ class ConfigManager {
       await fs.ensureDir(path.dirname(this.configPath))
       
       await fs.writeJson(this.configPath, config, { spaces: 2 })
+      this.config = config
       return true
     } catch (error) {
       if (error instanceof ConfigurationError) {
@@ -100,6 +105,7 @@ class ConfigManager {
     }
     
     await this.saveConfig(config)
+    this.config = config
     return config
   }
 
@@ -108,8 +114,8 @@ class ConfigManager {
    */
   getFilePaths() {
     return {
-      aiInstructions: path.join(this.projectRoot, this.config.aiInstructionsFile),
-      changelog: path.join(this.projectRoot, this.config.changelogFile),
+      aiInstructions: path.join(this.projectRoot, (this.config || this.defaultConfig).aiInstructionsFile),
+      changelog: path.join(this.projectRoot, (this.config || this.defaultConfig).changelogFile),
       config: this.configPath
     }
   }
