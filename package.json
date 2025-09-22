@@ -1,0 +1,48 @@
+{
+  "name": "ai-agent-mcp",
+  "version": "1.1.0",
+  "description": "AI Agent MCP (Model Context Protocol) System - Comprehensive AI reference system for seamless integration across all projects",
+  "main": "update-changelog-date.js",
+  "scripts": {
+    "update-date": "node update-changelog-date.js",
+    "update-changelog": "node update-changelog-date.js",
+    "date-info": "node -e \"const { getTimezoneInfo } = require('./core/date-utils'); console.log(JSON.stringify(getTimezoneInfo(), null, 2));\"",
+    "validate-date": "node -e \"const { validateChangelogDate } = require('./core/date-utils'); const result = validateChangelogDate(); console.log(result.valid ? '✅ Valid' : '❌ Invalid: ' + result.error);\"",
+    "test-date-utils": "node -e \"const { getCurrentDateInfo, formatDateForChangelog } = require('./core/date-utils'); const info = getCurrentDateInfo(); console.log('Current Date Info:'); console.log('Formatted Date:', info.formattedDate); console.log('Timezone:', info.timezone); console.log('Local Time:', info.localString);\""
+  },
+  "keywords": [
+    "ai",
+    "agent",
+    "mcp",
+    "model-context-protocol",
+    "development",
+    "playbook",
+    "automation",
+    "changelog",
+    "documentation"
+  ],
+  "author": "AI Agent System",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lovinglifemediawebdev/ai-agent-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lovinglifemediawebdev/ai-agent-mcp/issues"
+  },
+  "homepage": "https://github.com/lovinglifemediawebdev/ai-agent-mcp#readme",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "files": [
+    "core/",
+    "scripts/",
+    "ai-team/",
+    "phases/",
+    "*.md",
+    "update-changelog-date.js"
+  ],
+  "bin": {
+    "update-changelog-date": "./update-changelog-date.js"
+  }
+}

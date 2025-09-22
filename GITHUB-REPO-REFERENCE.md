@@ -48,6 +48,95 @@ When working on a new project, AI agents should:
 1. **Reference the GitHub repository** for the latest development workflows
 2. **Access specific files** using the raw GitHub URLs below
 3. **Pull current best practices** from the main documentation
+
+### 🎯 AI Team Assignment Format (MANDATORY)
+
+**CRITICAL**: When assigning tasks to AI team members, ALWAYS use this exact format:
+
+```markdown
+## 🎯 AI Team Assignment: [Team Member Role]
+
+### Task Assignment
+**Project/Feature**: [Brief description of what needs to be done]
+**Context**: [Business requirements, constraints, and background]
+**Current Phase**: [Discovery | Setup | Design | Implementation | Testing | Review | Release | Retrospective]
+**Priority**: [High | Medium | Low]
+**Assigned To**: `ai-team/roles/[XX_Team_Member.md]`
+
+---
+
+## [Team Member Role] Implementation Plan
+
+### Atomic Task: [Specific Task Name]
+
+**Objective**: [Clear, specific objective for this task]
+**Service/Component**: [Which system/component this affects]
+**Environment**: [Development, staging, production, etc.]
+**Estimated Effort**: [Time estimate]
+
+### Implementation Steps:
+- [ ] [Step 1 with specific action]
+- [ ] [Step 2 with specific action]
+- [ ] [Step 3 with specific action]
+- [ ] [Continue with all steps]
+
+### Acceptance Criteria:
+- [ ] [Specific, measurable criterion 1]
+- [ ] [Specific, measurable criterion 2]
+- [ ] [Specific, measurable criterion 3]
+- [ ] [Continue with all criteria]
+
+### Verification Steps:
+1. [How to verify step 1]
+2. [How to verify step 2]
+3. [How to verify step 3]
+4. [Continue with verification steps]
+
+### Files to Create/Modify:
+- **`filename.ext`** - [Description of what needs to be done]
+- **`filename.ext`** - [Description of what needs to be done]
+- **`filename.ext`** - [Description of what needs to be done]
+
+---
+
+## ✅ [Team Member Role] - Task Complete
+
+### Implementation Summary
+- **Services Deployed**: [What was deployed/implemented]
+- **Environments Configured**: [Which environments were set up]
+- **CI/CD Pipeline**: [Pipeline status and configuration]
+- **Monitoring Setup**: [Monitoring and alerting configuration]
+
+### Memory Context
+- **Previous Similar Work**: [References from CHANGELOG.md]
+- **Technical Patterns**: [Established patterns and best practices]
+- **Performance Notes**: [Performance considerations or optimizations]
+
+### Next Steps
+1. **Immediate Action**: [What happens next]
+2. **Monitoring**: [Instructions for monitoring]
+3. **Maintenance**: [Ongoing maintenance needed]
+
+### Handoff Instructions
+**Primary Assignment**: Forward to `[XX_Team_Member.md]` with [specific details]
+**Monitoring**: [Instructions for monitoring the work]
+**Maintenance**: [Instructions for ongoing maintenance]
+**Memory Update**: Update CHANGELOG.md with [specific details]
+
+---
+
+**Team Member Task Status**: ✅ **COMPLETE** | ❌ **IN PROGRESS** | ⏸️ **BLOCKED**
+**Repository Status**: ✅ **UP-TO-DATE** | ❌ **NEEDS UPDATE**
+**Memory System**: ✅ **UPDATED** | ❌ **PENDING UPDATE**
+```
+
+**IMPORTANT**: This format MUST be used for ALL AI team assignments. It ensures:
+- Clear task definition and context
+- Structured implementation approach
+- Measurable acceptance criteria
+- Proper verification steps
+- Clear handoff instructions
+- Consistent memory management
 4. **Check for updates** in the changelog and recent commits
 5. **Initialize AI Team System** for efficient project management
 
