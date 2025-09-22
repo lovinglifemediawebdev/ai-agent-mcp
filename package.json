@@ -12,7 +12,9 @@
     "setup": "node install/setup-project.js",
     "test": "node install/test-system.js",
     "cli": "node core/cli.js",
-    "playbook": "node core/cli.js playbook"
+    "playbook": "node core/cli.js playbook",
+    "update-date": "node update-changelog-date.js",
+    "update-changelog": "node update-changelog.js"
   },
   "keywords": [
     "ai",

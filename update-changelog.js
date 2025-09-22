@@ -3,20 +3,34 @@
 /**
  * Simple Changelog Updater
  * Bypasses the interactive CLI to directly update documentation
+ * Now includes automatic date/time detection based on user's location
  */
 
 const { AIAgentHelper } = require('./core/ai-agent-helper.js')
+const DateUtils = require('./core/date-utils.js')
 
 async function updateChangelog(changes, status = '', next = []) {
   try {
+    // Initialize date utils for automatic date detection
+    const dateUtils = new DateUtils()
+    const timezoneInfo = dateUtils.getTimezoneInfo()
+    
+    console.log(`🕐 Detected timezone: ${timezoneInfo.timezone}`)
+    console.log(`🌍 Detected locale: ${timezoneInfo.locale}`)
+    console.log(`📅 Current date: ${timezoneInfo.currentDate}`)
+    
     const helper = new AIAgentHelper()
     await helper.initialize()
     
     const result = await helper.updateAIInstructions(changes, status, next)
     
     if (result) {
+      // Update CHANGELOG.md with current date
+      await dateUtils.updateChangelogDate()
+      
       console.log('✅ Changelog updated successfully!')
       console.log(`📝 Changes logged: ${Array.isArray(changes) ? changes.length : 1}`)
+      console.log(`📅 Date updated to: ${timezoneInfo.currentDate}`)
     } else {
       console.log('❌ Failed to update changelog')
       process.exit(1)
