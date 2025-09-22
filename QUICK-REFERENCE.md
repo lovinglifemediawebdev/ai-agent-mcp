@@ -201,10 +201,22 @@ DATABASE_URL=postgresql://prod-db:5432/production
 
 ### React + Next.js
 ```bash
+# Create Next.js app (defaults to React 18)
 npx create-next-app@latest project-name --typescript --tailwind --eslint
 cd project-name
+
+# Verify React version is 18.x
+npm list react
+# Should show: react@^18.x.x
+
+# If React 19 is installed, downgrade to React 18
+npm install react@^18.0.0 react-dom@^18.0.0
+
+# Install additional types
 npm install @types/react @types/node
 ```
+
+**⚠️ React Version Policy**: Use React 18.x only (React 19 not supported - limited ecosystem support)
 
 ### Node.js + Express
 ```bash
@@ -216,8 +228,13 @@ npm install -D @types/express @types/cors @types/morgan typescript
 
 ### Full-Stack (React + Node.js)
 ```bash
-# Frontend
+# Frontend (React 18)
 npx create-next-app@latest frontend --typescript
+cd frontend
+# Verify React version is 18.x
+npm list react
+# If React 19, downgrade: npm install react@^18.0.0 react-dom@^18.0.0
+
 # Backend
 mkdir backend && cd backend
 npm init -y

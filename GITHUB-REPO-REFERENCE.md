@@ -5,10 +5,13 @@
 ## 🚀 MCP Usage Instructions
 
 ### For New Projects:
-1. **Copy this file** to your new project root as `MCP-REFERENCE.md`
+1. **Copy this file** to your project root as `MCP-REFERENCE.md`
 2. **Reference in Cursor AI** using `@MCP-REFERENCE.md` or `@GITHUB-REPO-REFERENCE.md`
 3. **Access any resource** by referencing the GitHub URLs below
 4. **Always up-to-date** - Changes in the main repo are immediately available
+5. **Setup PowerShell Profile** - Create `Microsoft.PowerShell_profile.ps1` to prevent Cursor terminal freezing
+6. **Use React 18 Only** - React 19 not supported (limited ecosystem support)
+7. **Git Submodule Setup** - Add AI Agent MCP as submodule to avoid duplicating 500MB+ content
 
 ### For Existing Projects:
 1. **Add this file** to your project root
@@ -31,6 +34,7 @@
 - **AI Instructions**: https://raw.githubusercontent.com/lovinglifemediawebdev/AI-Agent-MCP/main/AI_INSTRUCTIONS.md
 - **Phased Workflow Master**: https://raw.githubusercontent.com/lovinglifemediawebdev/AI-Agent-MCP/main/PHASES.md
 - **Phases Folder Index**: https://raw.githubusercontent.com/lovinglifemediawebdev/AI-Agent-MCP/main/phases/README.md
+- **PowerShell Profile Template**: https://raw.githubusercontent.com/lovinglifemediawebdev/AI-Agent-MCP/main/templates/Microsoft.PowerShell_profile.ps1
 
 ### AI Team System Files
 - **Team Dispatcher**: https://raw.githubusercontent.com/lovinglifemediawebdev/AI-Agent-MCP/main/ai-team/00_Team_Dispatcher.md
@@ -38,6 +42,60 @@
 - **Team System Docs**: https://raw.githubusercontent.com/lovinglifemediawebdev/AI-Agent-MCP/main/ai-team/docs/AI_TEAM_SYSTEM_README.md
 - **Memory System**: https://raw.githubusercontent.com/lovinglifemediawebdev/AI-Agent-MCP/main/ai-team/memory/MEMORY_SYSTEM.md
 - **Date System Docs**: https://raw.githubusercontent.com/lovinglifemediawebdev/AI-Agent-MCP/main/docs/DATE_SYSTEM_README.md
+
+## 🔗 Git Submodule Integration
+
+### Why Use Git Submodules?
+- **No Duplication**: Avoid copying 500MB+ of MDN content to every project
+- **Version Control**: Pin to specific AI Agent MCP versions
+- **Easy Updates**: Pull latest changes when needed
+- **Space Efficient**: Only one copy of large documentation
+
+### Quick Setup
+```bash
+# Add AI Agent MCP as submodule to your project
+git submodule add https://github.com/lovinglifemediawebdev/AI-Agent-MCP.git ai-agent-mcp
+
+# Initialize and update
+git submodule update --init --recursive
+
+# Commit the submodule reference
+git add .gitmodules ai-agent-mcp
+git commit -m "feat: add AI Agent MCP as submodule"
+git push
+```
+
+### Clone Projects with Submodules
+```bash
+# Clone with submodules
+git clone --recurse-submodules https://github.com/yourusername/your-project.git
+
+# Or initialize submodules after cloning
+git submodule update --init --recursive
+```
+
+### Update AI Agent MCP
+```bash
+# Update to latest version
+git submodule update --remote ai-agent-mcp
+git add ai-agent-mcp
+git commit -m "feat: update AI Agent MCP to latest version"
+git push
+```
+
+### Project Structure After Setup
+```
+your-project/
+├── src/
+├── docs/
+├── ai-agent-mcp/          # ← Submodule (references original repo)
+│   ├── GITHUB-REPO-REFERENCE.md
+│   ├── AI-AGENT-REFERENCE.md
+│   ├── ai-team/
+│   └── ... (all AI Agent MCP files)
+├── .gitmodules            # ← Git submodule configuration
+└── README.md
+```
 
 ##  AI Agent Integration Instructions
 
@@ -164,6 +222,7 @@ Quick Setup: https://raw.githubusercontent.com/lovinglifemediawebdev/AI-Agent-MC
 Development Playbook: https://raw.githubusercontent.com/lovinglifemediawebdev/AI-Agent-MCP/main/core/development-playbook.js
 Changelog: https://raw.githubusercontent.com/lovinglifemediawebdev/AI-Agent-MCP/main/CHANGELOG.md
 AI Instructions: https://raw.githubusercontent.com/lovinglifemediawebdev/AI-Agent-MCP/main/AI_INSTRUCTIONS.md
+PowerShell Profile Template: https://raw.githubusercontent.com/lovinglifemediawebdev/AI-Agent-MCP/main/templates/Microsoft.PowerShell_profile.ps1
 `
 
 #### Phased Workflow
@@ -250,6 +309,39 @@ Please route this task through the AI Team System:
 - Load Team Dispatcher: https://raw.githubusercontent.com/lovinglifemediawebdev/AI-Agent-MCP/main/ai-team/00_Team_Dispatcher.md
 - Let the Development Head analyze and delegate to appropriate team members
 - Use the memory system to track decisions and patterns
+`
+
+### Example 6: PowerShell Profile Setup for Cursor IDE
+`
+AI Agent, please help me set up PowerShell profile to prevent Cursor terminal freezing:
+
+1. Access PowerShell Profile Template: https://raw.githubusercontent.com/lovinglifemediawebdev/AI-Agent-MCP/main/templates/Microsoft.PowerShell_profile.ps1
+2. Create Microsoft.PowerShell_profile.ps1 in my project root
+3. Configure minimal prompt to prevent terminal freezing
+4. Add development environment optimizations
+5. Test profile functionality in Cursor terminal
+`
+
+### Example 7: React Version Policy Enforcement
+`
+AI Agent, please help me set up a React project following the version policy:
+
+1. Use React 18.x only (React 19 not supported)
+2. Verify React version with: npm list react
+3. If React 19 is installed, downgrade: npm install react@^18.0.0 react-dom@^18.0.0
+4. Follow React 18 best practices and patterns
+5. Ensure all dependencies are compatible with React 18
+`
+
+### Example 8: Git Submodule Setup for AI Agent MCP
+`
+AI Agent, please help me set up Git submodule integration for AI Agent MCP:
+
+1. Add AI Agent MCP as submodule: git submodule add https://github.com/lovinglifemediawebdev/AI-Agent-MCP.git ai-agent-mcp
+2. Initialize submodule: git submodule update --init --recursive
+3. Commit submodule reference: git add .gitmodules ai-agent-mcp && git commit -m "feat: add AI Agent MCP as submodule"
+4. Verify submodule is accessible in ./ai-agent-mcp/ folder
+5. Test that Cursor AI can access AI Agent MCP files through submodule
 `
 
 

@@ -17,7 +17,7 @@ Define what you are building and how you will build it. This sets the foundation
 - Keep the design adaptive, prioritize maintainability and a clear separation of concerns.
 
 ### Tech Stack Decisions
-- **Frontend:** Next.js with React and TypeScript.
+- **Frontend:** Next.js with React 18 and TypeScript (React 19 not supported - limited ecosystem support).
 - **Backend:** Supabase for Postgres, Auth, Storage, Realtime, Edge Functions.
 - **IDE and AI:** Cursor as an AI pair programmer, Ask mode favored, step-by-step edits.
 - **UI and Styling:** Tailwind CSS or a component kit if preferred.
@@ -25,6 +25,12 @@ Define what you are building and how you will build it. This sets the foundation
 - **Auth:** Supabase Auth by default, consider Clerk or Auth0 for special needs.
 - **Analytics:** Vercel Analytics, Plausible or GA4 based on requirements.
 - **Error Monitoring:** Sentry for client and server error capture in Next.js.
+
+### React Version Policy
+- **Standard Version:** React 18.x (latest stable with wide ecosystem support)
+- **Not Supported:** React 19.x (too new, limited third-party library support)
+- **Rationale:** React 18 provides stable, well-tested features with comprehensive library ecosystem
+- **Migration Path:** Wait for React 19 ecosystem maturity before considering upgrade
 
 ### Data Model Design
 - Draft initial ERD. For lead-gen, start with a `leads` table: id, email, name, message, created_at.
@@ -50,8 +56,16 @@ Set up the skeleton of the app quickly, then iterate.
 
 ### Project Init
 ```bash
+# Create Next.js app with React 18 (default)
 npx create-next-app@latest my-app --ts
 cd my-app
+
+# Verify React version is 18.x
+npm list react
+# Should show: react@^18.x.x
+
+# If React 19 is installed, downgrade to React 18
+npm install react@^18.0.0 react-dom@^18.0.0
 ```
 
 ### Suggested Structure

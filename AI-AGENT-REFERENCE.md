@@ -138,6 +138,14 @@ Definition of Done:
 2. **Testing**: Minimum 80% code coverage
 3. **Code Review**: Required for all changes
 4. **Documentation**: Keep docs in sync with code
+5. **React Version**: React 18.x only (React 19 not supported)
+
+### React Version Policy
+- **Standard Version**: React 18.x (latest stable with wide ecosystem support)
+- **Not Supported**: React 19.x (too new, limited third-party library support)
+- **Rationale**: React 18 provides stable, well-tested features with comprehensive library ecosystem
+- **Verification**: Always run `npm list react` to confirm React 18.x version
+- **Migration Path**: Wait for React 19 ecosystem maturity before considering upgrade
 
 ### File Naming Conventions
 - **Components**: PascalCase (e.g., `UserProfile.tsx`)
@@ -330,6 +338,8 @@ open https://developer.mozilla.org
 - Implement proper state management (Redux, Zustand, Context)
 - Follow React best practices and hooks patterns
 - Use TypeScript for type safety
+- **CRITICAL**: Use React 18.x only (React 19 not supported - limited ecosystem support)
+- Verify React version: `npm list react` should show `react@^18.x.x`
 
 ### For Node.js/Backend Projects
 - Follow MVC or service-oriented patterns
