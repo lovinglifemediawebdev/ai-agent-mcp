@@ -97,6 +97,83 @@ your-project/
 └── README.md
 ```
 
+## 🧪 AI Agent Initialization & Testing
+
+### Initialize AI Agent MCP System
+After Git submodule installation, AI agents should run this initialization sequence:
+
+```bash
+# 1. Verify submodule is properly installed
+ls -la ai-agent-mcp/
+# Should show: GITHUB-REPO-REFERENCE.md, AI-AGENT-REFERENCE.md, ai-team/, etc.
+
+# 2. Test access to core files
+cat ai-agent-mcp/GITHUB-REPO-REFERENCE.md | head -20
+cat ai-agent-mcp/AI-AGENT-REFERENCE.md | head -20
+cat ai-agent-mcp/ai-team/00_Team_Dispatcher.md | head -20
+
+# 3. Verify PowerShell profile template access
+cat ai-agent-mcp/templates/Microsoft.PowerShell_profile.ps1 | head -10
+
+# 4. Test AI Team System access
+ls -la ai-agent-mcp/ai-team/roles/
+# Should show: 01_Development_Head.md, 02_Product_Owner.md, etc.
+```
+
+### Test AI Agent Comprehension
+Run these tests to verify AI agent can fully comprehend and access the system:
+
+```bash
+# Test 1: Core Documentation Access
+echo "Testing core documentation access..."
+find ai-agent-mcp/ -name "*.md" -type f | head -10
+
+# Test 2: AI Team System Access
+echo "Testing AI team system access..."
+find ai-agent-mcp/ai-team/ -name "*.md" -type f
+
+# Test 3: Template Access
+echo "Testing template access..."
+find ai-agent-mcp/templates/ -name "*.ps1" -type f
+
+# Test 4: Development Playbook Access
+echo "Testing development playbook access..."
+find ai-agent-mcp/ -name "*.js" -type f
+
+# Test 5: Phase System Access
+echo "Testing phase system access..."
+find ai-agent-mcp/phases/ -name "*.md" -type f
+```
+
+### AI Agent Verification Checklist
+- [ ] Can access `ai-agent-mcp/GITHUB-REPO-REFERENCE.md`
+- [ ] Can access `ai-agent-mcp/AI-AGENT-REFERENCE.md`
+- [ ] Can access `ai-agent-mcp/ai-team/00_Team_Dispatcher.md`
+- [ ] Can access `ai-agent-mcp/templates/Microsoft.PowerShell_profile.ps1`
+- [ ] Can access all AI team role files in `ai-agent-mcp/ai-team/roles/`
+- [ ] Can access phase files in `ai-agent-mcp/phases/`
+- [ ] Can access development playbook in `ai-agent-mcp/core/`
+- [ ] Can access MDN content in `ai-agent-mcp/devdocs/`
+
+### Quick Test Command
+```bash
+# One-liner to test complete system access
+echo "AI Agent MCP System Test:" && \
+echo "✅ Core Files:" && ls ai-agent-mcp/*.md && \
+echo "✅ AI Team:" && ls ai-agent-mcp/ai-team/roles/ && \
+echo "✅ Templates:" && ls ai-agent-mcp/templates/ && \
+echo "✅ Phases:" && ls ai-agent-mcp/phases/ && \
+echo "✅ Core:" && ls ai-agent-mcp/core/ && \
+echo "✅ DevDocs:" && ls ai-agent-mcp/devdocs/ | head -5
+```
+
+### Troubleshooting
+If AI agent cannot access files:
+1. **Check submodule status**: `git submodule status`
+2. **Reinitialize submodule**: `git submodule update --init --recursive`
+3. **Verify file permissions**: `ls -la ai-agent-mcp/`
+4. **Check Git configuration**: `git config --list | grep submodule`
+
 ##  AI Agent Integration Instructions
 
 ### For Cursor AI and Similar Tools
@@ -342,6 +419,17 @@ AI Agent, please help me set up Git submodule integration for AI Agent MCP:
 3. Commit submodule reference: git add .gitmodules ai-agent-mcp && git commit -m "feat: add AI Agent MCP as submodule"
 4. Verify submodule is accessible in ./ai-agent-mcp/ folder
 5. Test that Cursor AI can access AI Agent MCP files through submodule
+`
+
+### Example 9: AI Agent Initialization and Testing
+`
+AI Agent, please initialize and test the AI Agent MCP system:
+
+1. Run initialization sequence: ls -la ai-agent-mcp/ && cat ai-agent-mcp/GITHUB-REPO-REFERENCE.md | head -20
+2. Test AI team system access: ls -la ai-agent-mcp/ai-team/roles/
+3. Verify template access: cat ai-agent-mcp/templates/Microsoft.PowerShell_profile.ps1 | head -10
+4. Run comprehensive test: find ai-agent-mcp/ -name "*.md" -type f | head -10
+5. Confirm all verification checklist items are accessible
 `
 
 
