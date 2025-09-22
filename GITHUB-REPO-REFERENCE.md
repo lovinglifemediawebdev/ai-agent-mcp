@@ -1,6 +1,19 @@
-﻿# AI Agent System - GitHub Repository Reference
+﻿# Personal MCP (Model Context Protocol) System
 
-*This file provides AI agents with direct access to the AI Agent System repository for real-time information and updates.*
+*This file serves as your personal MCP entry point for AI-assisted development. Copy this file to any new project to instantly access your comprehensive AI reference system without cluttering your project with large folders.*
+
+## 🚀 MCP Usage Instructions
+
+### For New Projects:
+1. **Copy this file** to your new project root as `MCP-REFERENCE.md`
+2. **Reference in Cursor AI** using `@MCP-REFERENCE.md` or `@GITHUB-REPO-REFERENCE.md`
+3. **Access any resource** by referencing the GitHub URLs below
+4. **Always up-to-date** - Changes in the main repo are immediately available
+
+### For Existing Projects:
+1. **Add this file** to your project root
+2. **Reference specific sections** as needed
+3. **No local copying** - Everything stays in the cloud
 
 ##  Repository Information
 
@@ -159,6 +172,7 @@ Please route this task through the AI Team System:
 3. **Check latest updates**: https://raw.githubusercontent.com/lovinglifemediawebdev/ai-agent-system/main/CHANGELOG.md
 4. **Initialize AI Team System**: https://raw.githubusercontent.com/lovinglifemediawebdev/ai-agent-system/main/ai-team/00_Team_Dispatcher.md
 5. **Emoji Reference**: https://emojidb.org/ (for consistent emoji usage)
+6. **Changelog Instructions**: AI_CHANGELOG_INSTRUCTIONS.md (for AI-driven changelog updates)
 
 ##  Cursor AI Integration
 

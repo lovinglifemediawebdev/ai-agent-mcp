@@ -113,6 +113,12 @@ Route: ai-team/roles/01_Development_Head.md → ai-team/roles/09_Database_Archit
 - Avoid emoji corruption by using verified emoji references
 - Ensure cross-platform compatibility for all documentation
 
+### Changelog Management
+- Reference `AI_CHANGELOG_INSTRUCTIONS.md` for changelog update guidelines
+- Update "Last Updated" date to current date format: "Month DD, YYYY"
+- Add new entries under "Recent Changes & Updates" section
+- Use conventional commit types: feat, fix, docs, style, refactor, test, chore
+- Maintain consistent formatting and clear descriptions
 
 ### Handoff Protocol
 - Each team member MUST suggest next step

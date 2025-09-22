@@ -1,6 +1,12 @@
-# AI Agent System
+# Personal MCP (Model Context Protocol) System
 
-A comprehensive system for AI agents to manage project documentation, follow development workflows, and maintain project consistency across different project types. This system provides automated documentation updates, development playbooks, backup management, and intelligent project scaffolding.
+A comprehensive AI reference system designed for seamless integration across all your projects. This MCP provides AI agents with access to development standards, workflow patterns, specialized AI team roles, and best practices without cluttering individual projects with large reference folders.
+
+## 🎯 MCP Usage
+
+**For New Projects:** Copy `GITHUB-REPO-REFERENCE.md` to your project root and reference it in Cursor AI  
+**For Existing Projects:** Add the MCP reference file and access resources via GitHub URLs  
+**Always Up-to-Date:** Changes in this repository are immediately available to all projects
 
 ## 🚀 Features
 

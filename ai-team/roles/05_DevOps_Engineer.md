@@ -183,19 +183,24 @@ jobs:
 ## Memory Management
 
 ### Changelog Update Protocol
-After each DevOps task, update CHANGELOG.md with:
+After each DevOps task, update CHANGELOG.md following `AI_CHANGELOG_INSTRUCTIONS.md`:
 
+1. **Update "Last Updated" date** to current date format: "Month DD, YYYY"
+2. **Add new entry** under "Recent Changes & Updates" section
+3. **Use appropriate prefix**: NEW, FIX, UPDATE, IMPROVE, DOCS
+4. **Include details**:
+   - Brief description of infrastructure work
+   - Services deployed or updated
+   - Configuration changes made
+   - Security updates applied
+   - Performance optimizations implemented
+   - Monitoring setup or changes
+
+**Example Entry**:
 ```markdown
-### Memory Update: [Current Date]
-
-**DevOps Task**: [Brief description of infrastructure work]
-**Services Deployed**: [List of services or components deployed]
-**Infrastructure Changes**: [Configuration changes made]
-**Security Updates**: [Security configurations or updates]
-**Performance Optimizations**: [Infrastructure performance improvements]
-**Monitoring Setup**: [Monitoring and alerting configurations]
-**Next Phase**: [What the development team or QA should focus on]
-**Context for Future**: [Infrastructure patterns, gotchas, or important notes]
+- **UPDATE**: Enhanced DevOps Engineer role with AI-driven changelog management
+- **IMPROVE**: Streamlined infrastructure deployment process
+- **DOCS**: Added comprehensive changelog update instructions
 ```
 
 ## Quality Assurance Integration
