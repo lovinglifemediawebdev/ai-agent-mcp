@@ -4,6 +4,13 @@ A comprehensive system for AI agents to manage project documentation, follow dev
 
 ## 🚀 Features
 
+### 🤖 AI Development Team System
+- **Team Dispatcher** - Central command center for routing tasks to specialized AI team members
+- **9 Specialized Roles** - Backend Engineer, Frontend Engineer, DevOps Engineer, QA Engineer, Code Reviewer, UI/UX Designer, Database Architect, Product Owner, Development Head
+- **Memory System** - Enhanced memory retention with pattern recognition and decision tracking
+- **Atomic Task Management** - ≤50 lines of code per function with clear verification criteria
+- **Phase Integration** - Works seamlessly with existing PHASES.md and GITHUB-REPO-REFERENCE.md
+
 ### Core Functionality
 - **🤖 AI Agent Helper** - Core functionality for AI agents to update documentation
 - **📚 Development Playbooks** - Multiple playbooks for different project types and methodologies
@@ -52,6 +59,27 @@ A comprehensive system for AI agents to manage project documentation, follow dev
    - AI-assisted development workflows
    - Modern tooling and best practices
    - Comprehensive development phases
+
+## 🚀 Quick Start - AI Development Team
+
+### Load Team Dispatcher
+```
+Load: ai-team/00_Team_Dispatcher.md
+```
+
+### Provide Task Context
+```
+Project: [Client project name]
+Feature: [Specific feature or fix needed]
+Phase: [Current development phase]
+Priority: [High/Medium/Low]
+```
+
+### Let AI Team Work
+- AI routes to appropriate team members
+- Each member executes atomic tasks
+- Memory system tracks all decisions
+- Complete integration with existing workflows
 
 ## 🎯 Phased Workflow System
 

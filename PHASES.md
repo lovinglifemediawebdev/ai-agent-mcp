@@ -11,7 +11,7 @@ This master guide lists ordered phases. Each phase is an OO-styled Markdown with
 - Phase 07, Release: ./phases/PHASE-07-Release.md
 - Phase 08, Retrospective: ./phases/PHASE-08-Retrospective.md
 
-How this aligns with the Development Playbook
+How this aligns with the Development Playbook 
 - Reference the Standard Development Workflow and Agile Development Workflow produced by `core/development-playbook.js`.
 - Use PR ritual and workflow defaults described in your repo docs.
 
