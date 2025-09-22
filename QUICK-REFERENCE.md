@@ -161,6 +161,7 @@ git commit -m "fix: resolve issue description"
 - **MDN Web Docs**: https://developer.mozilla.org
 - **React Docs**: https://react.dev
 - **Next.js Docs**: https://nextjs.org/docs
+- **EmojiDB**: https://emojidb.org/ (emoji reference and search)
 
 ### Local Development
 ```bash

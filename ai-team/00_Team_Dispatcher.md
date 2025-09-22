@@ -108,6 +108,12 @@ Route: ai-team/roles/01_Development_Head.md → ai-team/roles/09_Database_Archit
 - Team members MUST reference latest conventions
 - Direct GitHub URLs MUST be used for up-to-date information
 
+### Emoji Standards
+- Use [EmojiDB](https://emojidb.org/) for consistent emoji selection
+- Avoid emoji corruption by using verified emoji references
+- Ensure cross-platform compatibility for all documentation
+
+
 ### Handoff Protocol
 - Each team member MUST suggest next step
 - Cross-team collaboration MUST be explicitly documented

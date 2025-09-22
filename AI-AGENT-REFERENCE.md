@@ -17,6 +17,12 @@ npm install chalk inquirer fs-extra
 
 ## 📚 Available Development Playbooks
 
+### Emoji Reference
+- **EmojiDB**: https://emojidb.org/ - Comprehensive emoji database and search tool
+- Use for consistent emoji usage across documentation and code
+- Search by keywords to find appropriate emojis
+- Avoid emoji corruption and ensure cross-platform compatibility
+
 ### Standard Development Workflow
 **Use for**: Most web applications and general projects
 
