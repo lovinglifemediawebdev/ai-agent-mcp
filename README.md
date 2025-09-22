@@ -17,7 +17,7 @@ A comprehensive system for AI agents to manage project documentation, follow dev
 - **🔄 Backup & Restore** - Automatic backup system for documentation with rollback capabilities
 - **⚙️ Configuration Management** - Project-specific settings and intelligent templates
 - **🖥️ CLI Interface** - Comprehensive command-line interface for easy management
-- **�� Testing Framework** - Built-in testing and validation system
+- **🛠️ Testing Framework** - Built-in testing and validation system
 - **📝 Template System** - Dynamic template generation based on project type
 - **🔍 Error Handling** - Robust error handling and validation utilities
 
