@@ -1,4 +1,4 @@
-# Personal MCP (Model Context Protocol) System
+# AI Agent MCP (Model Context Protocol) System
 
 A comprehensive AI reference system designed for seamless integration across all your projects. This MCP provides AI agents with access to development standards, workflow patterns, specialized AI team roles, and best practices without cluttering individual projects with large reference folders.
 
@@ -123,382 +123,129 @@ The AI Agent System now includes a comprehensive phased workflow system that bre
 - **Template**: `phases/_TEMPLATE.md` - For creating new phases
 - **GitHub URLs**: Available in `GITHUB-REPO-REFERENCE.md`
 
-## 📦 Installation
+## 🎯 MCP Quick Start
 
-### Quick Installation
-
+### 1. Copy MCP Reference File
 ```bash
-# Clone the repository
-git clone https://github.com/lovinglifemediawebdev/ai-agent-system.git
-
-# Navigate to the project
-cd ai-agent-system
-
-# Install dependencies
-npm install
-
-# Set up the system
-npm run install-project
+# Download the MCP reference file to your new project
+curl -o MCP-REFERENCE.md https://raw.githubusercontent.com/lovinglifemediawebdev/AI-Agent-MCP/main/GITHUB-REPO-REFERENCE.md
 ```
 
-### Global Installation (Coming Soon)
-
-```bash
-npm install -g ai-agent-system
+### 2. Use in Cursor AI
+```
+@MCP-REFERENCE.md Please help me set up a new React project following the MCP standards
 ```
 
-Then in any project:
-```bash
-ai-agent install
+### 3. Access AI Team System
+```
+@MCP-REFERENCE.md I need help with database design. Please use the AI team system to assign the appropriate role.
 ```
 
-## 🎯 Quick Start
+## 📚 MCP Resources
 
-### 1. Install in Your Project
-```bash
-# Navigate to your project
-cd your-project
+### Core AI Team System
+- **Team Dispatcher**: https://raw.githubusercontent.com/lovinglifemediawebdev/AI-Agent-MCP/main/ai-team/00_Team_Dispatcher.md
+- **Development Head**: https://raw.githubusercontent.com/lovinglifemediawebdev/AI-Agent-MCP/main/ai-team/roles/01_Development_Head.md
+- **Backend Engineer**: https://raw.githubusercontent.com/lovinglifemediawebdev/AI-Agent-MCP/main/ai-team/roles/03_Backend_Engineer.md
+- **Frontend Engineer**: https://raw.githubusercontent.com/lovinglifemediawebdev/AI-Agent-MCP/main/ai-team/roles/04_Frontend_Engineer.md
+- **DevOps Engineer**: https://raw.githubusercontent.com/lovinglifemediawebdev/AI-Agent-MCP/main/ai-team/roles/05_DevOps_Engineer.md
 
-# Install AI Agent System
-npm run install-project
+### Development Standards
+- **Quick Reference**: https://raw.githubusercontent.com/lovinglifemediawebdev/AI-Agent-MCP/main/QUICK-REFERENCE.md
+- **Full Stack Playbook**: https://raw.githubusercontent.com/lovinglifemediawebdev/AI-Agent-MCP/main/Full-Stack-Web-Dev-Playbook.md
+- **AI Agent Reference**: https://raw.githubusercontent.com/lovinglifemediawebdev/AI-Agent-MCP/main/AI-AGENT-REFERENCE.md
 
-# Or use the interactive installer
-npm run ai-menu
+### Workflow Management
+- **Phases System**: https://raw.githubusercontent.com/lovinglifemediawebdev/AI-Agent-MCP/main/PHASES.md
+- **Changelog Instructions**: https://raw.githubusercontent.com/lovinglifemediawebdev/AI-Agent-MCP/main/AI_CHANGELOG_INSTRUCTIONS.md
+
+## 🎯 MCP Usage Patterns
+
+### Starting a New Project
+```
+@MCP-REFERENCE.md I'm starting a new Next.js project. Please help me set it up following the MCP standards and assign the appropriate AI team members.
 ```
 
-### 2. Configure Your Project
-```bash
-# Interactive configuration
-npm run ai-menu
-# Choose "Configuration" → "Edit Configuration"
-
-# Or edit directly
-nano .ai-agent-config.json
+### Getting Development Help
+```
+@MCP-REFERENCE.md I need help with React component development. Please reference the Frontend Engineer role and frontend playbook.
 ```
 
-### 3. Start Using
-```bash
-# Interactive menu
-npm run ai-menu
-
-# Quick update
-npm run ai-update
-
-# View status
-npm run view-status
+### Managing Complex Tasks
+```
+@MCP-REFERENCE.md I have a complex task that involves backend, frontend, and deployment. Please use the AI team system to break this down.
 ```
 
-## 🚀 Non-Interactive Tools (Recommended)
-
-### Problem Solved
-The interactive CLI can sometimes hang at selection screens when run from command line. These tools bypass that issue completely.
-
-### Quick Changelog Updates
-```bash
-# Cross-platform (Node.js)
-node ai-agent-system/update-changelog.js "Added new feature" "Feature complete" "Add tests"
-
-# Windows users
-ai-agent-system\update-changelog.bat "Added new feature" "Feature complete" "Add tests"
-
-# Multiple changes
-node ai-agent-system/update-changelog.js "Added feature,Fixed bug,Updated docs" "All complete" "Deploy,Monitor"
+### Updating Documentation
 ```
-
-### What These Tools Do
-- ✅ **Bypass interactive prompts** - No more hanging at selection screens
-- ✅ **Update both files** - CHANGELOG.md and AI_INSTRUCTIONS.md automatically
-- ✅ **Cross-platform support** - Works on Windows, Mac, Linux
-- ✅ **Error handling** - Clear success/error messages
-- ✅ **Validation** - Input validation before updating
-
-### Usage Examples
-```bash
-# Simple change
-node ai-agent-system/update-changelog.js "Fixed authentication bug"
-
-# With status
-node ai-agent-system/update-changelog.js "Added user dashboard" "Dashboard complete"
-
-# Full update
-node ai-agent-system/update-changelog.js "Added dashboard,Updated API" "All features working" "Add tests,Deploy"
-
-# Windows batch file
-ai-agent-system\update-changelog.bat "Added new feature" "Feature complete"
+@MCP-REFERENCE.md Please help me update the changelog with these changes: [list changes]. Reference the changelog instructions.
 ```
-
-## 📋 Available Commands
-
-### Interactive Commands
-- `npm run ai-menu` - Interactive menu with all options
-- `npm run view-changes` - View recent changes and modifications
-- `npm run view-status` - View current project status and metrics
-- `npm run ai-update` - Update documentation with changes
-- `npm run playbook` - Manage development playbooks
-- `npm run test` - Run system tests and validation
-
-### Direct Commands
-- `ai-agent install` - Install system in current project
-- `ai-agent setup` - Setup project configuration
-- `ai-agent test` - Test the system functionality
-- `ai-agent backup` - Create backup of documentation
-- `ai-agent restore` - Restore from backup
-- `ai-agent validate` - Validate system configuration
-
-### Playbook Commands
-- `ai-agent playbook list` - List available playbooks
-- `ai-agent playbook view <name>` - View specific playbook
-- `ai-agent playbook search <term>` - Search playbook content
-- `ai-agent playbook quickref <name>` - Get quick reference
 
 ## �� AI Agent Usage
 
-### Basic Usage
-```javascript
-const { updateAIInstructions } = require('./core/ai-agent-helper.js')
+### MCP Benefits
+- **No Local Installation** - Only one MD file per project
+- **Always Up-to-Date** - Latest resources via GitHub URLs
+- **Cross-Project Portability** - Copy one file to any project
+- **AI Agent Integration** - Seamless Cursor AI integration
+- **Comprehensive Resources** - Full development workflow support
 
-// Update with changes, status, and next improvements
-await updateAIInstructions(
-  ["Fixed bug in authentication", "Added new feature"],
-  "All tests passing, ready for deployment",
-  ["Add more test coverage", "Optimize performance"]
-)
+## 🎯 MCP System Benefits
 
-// Just update status
-await updateAIInstructions([], "Bug fixed and tested", [])
+### Why Use MCP?
+- **No Local Clutter** - Only one MD file per project
+- **Always Current** - Latest updates from main repository
+- **Cross-Project Portability** - Copy one file to any project
+- **AI Integration** - Seamless Cursor AI integration
+- **Comprehensive Resources** - Full development workflow support
+- **Zero Maintenance** - No local updates needed
 
-// Just add changes
-await updateAIInstructions(["Updated documentation"], "", [])
-```
-
-### Advanced Usage
-```javascript
-const { AIAgentHelper } = require('./core/ai-agent-helper.js')
-
-const helper = new AIAgentHelper()
-
-// Initialize with project
-await helper.initialize()
-
-// Create backup before major changes
-await helper.createBackup()
-
-// Full update with validation
-await helper.fullUpdate(
-  ["Implemented new feature", "Updated tests"],
-  "Feature complete and tested",
-  ["Deploy to staging", "Monitor performance"]
-)
-
-// Get project information
-const projectInfo = await helper.getProjectInfo()
-console.log(projectInfo)
-```
-
-## ⚙️ Configuration
-
-### Basic Configuration
-```json
-{
-  "projectName": "My Project",
-  "projectType": "web-app",
-  "aiInstructionsFile": "AI_INSTRUCTIONS.md",
-  "changelogFile": "CHANGELOG.md",
-  "autoUpdateChangelog": true,
-  "autoBackup": true,
-  "maxBackups": 5,
-  "customSections": []
-}
-```
-
-### Advanced Configuration
-```json
-{
-  "projectName": "My Project",
-  "projectType": "web-app",
-  "aiInstructionsFile": "AI_INSTRUCTIONS.md",
-  "changelogFile": "CHANGELOG.md",
-  "autoUpdateChangelog": true,
-  "autoBackup": true,
-  "maxBackups": 10,
-  "dateFormat": "en-US",
-  "customSections": [
-    {
-      "name": "Performance Metrics",
-      "content": "Current performance benchmarks and targets"
-    },
-    {
-      "name": "Security Notes",
-      "content": "Security considerations and updates"
-    }
-  ],
-  "npmScripts": {
-    "view-changes": "ai-agent view-changes",
-    "view-status": "ai-agent view-status",
-    "ai-menu": "ai-agent menu",
-    "ai-update": "ai-agent update"
-  }
-}
-```
-
-### Project Types
-
-- `web-app` - Web applications (React/Next.js, Vue, Angular, etc.)
-- `api` - API services (Node.js/Express, FastAPI, Django REST, etc.)
-- `mobile-app` - Mobile applications (React Native, Flutter, etc.)
-- `desktop-app` - Desktop applications (Electron, Tauri, etc.)
-- `library` - Libraries and packages (NPM, PyPI, etc.)
-- `fullstack` - Full-stack applications with frontend and backend
-- `other` - Other project types
+### Supported Project Types
+- **Web Applications** - React, Next.js, Vue, Angular
+- **API Services** - Node.js, Python, Go, Rust
+- **Mobile Apps** - React Native, Flutter
+- **Desktop Apps** - Electron, Tauri
+- **Libraries** - NPM packages, Python packages
 
 ## �� Project Structure
 
-### After Installation
+### After MCP Setup
 your-project/
-├── .ai-agent-config.json # Configuration file
-├── AI_INSTRUCTIONS.md # AI agent instructions
-├── CHANGELOG.md # User-friendly changelog
-├── .ai-agent-backups/ # Backup directory
-│ └── 2024-01-15T10-30-00/ # Timestamped backups
-├── core/ # Core system files
-│ ├── ai-agent-helper.js # Main AI agent interface
-│ ├── config-manager.js # Configuration management
-│ ├── template-manager.js # Template system
-│ ├── development-playbook.js # Playbook management
-│ ├── ai-playbook-reader.js # Playbook parsing
-│ ├── error-handler.js # Error handling
-│ ├── backup-manager.js # Backup system
-│ ├── cli.js # CLI interface
-│ └── playbooks/ # Generated playbooks
-├── install/ # Setup scripts
-│ ├── install.js # New project installer
-│ ├── setup-project.js # Existing project setup
-│ └── test-system.js # System testing
-├── update-changelog.js # Non-interactive changelog updater (Node.js)
-├── update-changelog.bat # Non-interactive changelog updater (Windows)
-├── CHANGELOG-UPDATER-README.md # Documentation for changelog tools
-├── frontend-playbook-main/ # Springer Nature Frontend Playbook
-├── Full-Stack-Web-Dev-Playbook.md # GPT-5 Full-Stack Playbook
-└── package.json # Updated with AI Agent scripts
+├── MCP-REFERENCE.md # Single MCP reference file
+├── [your project files] # Your actual project files
+└── [no other MCP files needed] # Everything else via GitHub URLs
 
-## 🔧 Customization
+## 🎯 MCP Examples
 
-### Custom Sections
-```json
-{
-  "customSections": [
-    {
-      "name": "Performance Metrics",
-      "content": "Current performance benchmarks and targets"
-    },
-    {
-      "name": "Security Notes",
-      "content": "Security considerations and updates"
-    },
-    {
-      "name": "Deployment Status",
-      "content": "Current deployment status and environment info"
-    }
-  ]
-}
+### Web Application Setup
+```
+@MCP-REFERENCE.md I'm starting a new React project with Next.js. Please help me set it up following the MCP standards and assign the appropriate AI team members for the initial setup.
 ```
 
-### Custom Templates
-Create project-specific templates by modifying the generated files or updating the configuration. The system supports:
-- Custom AI instruction templates
-- Custom changelog formats
-- Project-specific playbook integration
-- Custom validation rules
-
-## 🧪 Testing
-
-### Run System Tests
-```bash
-# Test all functionality
-npm run test
-
-# Test specific components
-npm run test-config
-npm run test-core
-npm run test-playbooks
+### API Service Development
+```
+@MCP-REFERENCE.md I need help with database design for this project. Please use the AI team system to assign the appropriate role and provide guidance.
 ```
 
-### Manual Testing
-```bash
-# Interactive testing
-npm run ai-menu
-# Choose "Validate System" to run comprehensive tests
-
-# Test documentation updates
-npm run ai-update
-# Add test changes and verify they appear in both files
+### Frontend Project Setup
 ```
-
-## 📚 Playbook Management
-
-### List Available Playbooks
-```bash
-npm run playbook
-# Choose "List Available Playbooks"
-```
-
-### View Playbook Content
-```bash
-npm run playbook
-# Choose "View Playbook Content"
-# Select the playbook you want to view
-```
-
-### Search Playbook Content
-```bash
-npm run playbook
-# Choose "Search Playbook"
-# Enter search term to find specific information
-```
-
-### Get Quick Reference
-```bash
-npm run playbook
-# Choose "Quick Reference"
-# Get concise summary of playbook guidelines
+@MCP-REFERENCE.md I'm working on a frontend project. Please reference the Frontend Engineer role and frontend playbook for best practices.
 ```
 
 ## �� Backup & Restore
 
-### Create Backup
-```bash
-# Manual backup
-npm run ai-menu
-# Choose "Backup Documentation"
+### How to Contribute
+1. **Fork the repository** on GitHub
+2. **Create a feature branch** (`git checkout -b feature/amazing-feature`)
+3. **Make your changes** following the development playbooks
+4. **Update documentation** using the AI agent system
+5. **Submit a pull request**
 
-# Or programmatically
-const { AIAgentHelper } = require('./core/ai-agent-helper.js')
-const helper = new AIAgentHelper()
-await helper.createBackup()
-```
-
-### Restore from Backup
-```bash
-# Interactive restore
-npm run ai-menu
-# Choose "Restore Documentation"
-# Select backup to restore
-
-# Or programmatically
-await helper.restoreBackup('2024-01-15T10-30-00')
-```
-
-### Backup Management
-```bash
-# List backups
-await helper.listBackups()
-
-# Delete old backup
-await helper.deleteBackup('2024-01-15T10-30-00')
-
-# Get backup statistics
-await helper.getBackupStats()
-```
+### Development Guidelines
+- Follow the Standard Development Workflow
+- Use the AI team system for complex tasks
+- Update documentation with changes
+- Follow conventional commit messages
 
 ## 🎯 Use Cases
 
@@ -528,10 +275,9 @@ await helper.getBackupStats()
 
 ### Development Guidelines
 - Follow the Standard Development Workflow
-- Use the built-in testing framework
+- Use the AI team system for complex tasks
 - Update documentation with changes
 - Follow conventional commit messages
-- Ensure all tests pass
 
 ## 📄 License
 
@@ -539,73 +285,51 @@ MIT License - see [LICENSE](LICENSE) file for details.
 
 ## 🆘 Support
 
-- **Issues**: [GitHub Issues](https://github.com/lovinglifemediawebdev/ai-agent-system/issues)
-- **Documentation**: [Wiki](https://github.com/lovinglifemediawebdev/ai-agent-system/wiki)
-- **Discussions**: [GitHub Discussions](https://github.com/lovinglifemediawebdev/ai-agent-system/discussions)
+- **Issues**: [GitHub Issues](https://github.com/lovinglifemediawebdev/AI-Agent-MCP/issues)
+- **Documentation**: [Wiki](https://github.com/lovinglifemediawebdev/AI-Agent-MCP/wiki)
+- **Discussions**: [GitHub Discussions](https://github.com/lovinglifemediawebdev/AI-Agent-MCP/discussions)
 
 ## �� Examples
 
-### Web Application Setup
+### Step 1: Copy MCP Reference
 ```bash
-cd my-react-app
-npm run install-project
-# Choose "Web Application" when prompted
-# Select "Full-Stack Web Development Playbook"
-# Customize the generated templates
+curl -o MCP-REFERENCE.md https://raw.githubusercontent.com/lovinglifemediawebdev/AI-Agent-MCP/main/GITHUB-REPO-REFERENCE.md
 ```
 
-### API Service Setup
-```bash
-cd my-api-service
-npm run install-project
-# Choose "API Service" when prompted
-# Select "Standard Development Workflow"
-# Configure for your API framework
+### Step 2: Use in Cursor AI
+```
+@MCP-REFERENCE.md Please help me set up a new React project following the MCP standards
 ```
 
-### Frontend Project Setup
-```bash
-cd my-frontend-app
-npm run install-project
-# Choose "Web Application" when prompted
-# Select "Springer Nature Frontend Playbook"
-# Configure for accessibility and performance
+### Step 3: Access AI Team System
 ```
-
-### Mobile App Setup
-```bash
-cd my-mobile-app
-npm run install-project
-# Choose "Mobile App" when prompted
-# Select "Standard Development Workflow"
-# Configure for your mobile platform
+@MCP-REFERENCE.md I need help with database design. Please use the AI team system to assign the appropriate role.
 ```
 
 ## 🚀 Roadmap
 
 ### Upcoming Features
-- [ ] **Git Integration** - Automatic commit messages and branch tracking
-- [ ] **Schema Validation** - Configuration file validation
-- [ ] **Unit Tests** - Comprehensive test coverage
-- [ ] **Plugin System** - Extensible functionality
-- [ ] **Web Dashboard** - Browser-based interface
-- [ ] **Team Collaboration** - Multi-user support
-- [ ] **Analytics Dashboard** - Project metrics and insights
+- [ ] **Enhanced AI Team Roles** - Additional specialized team members
+- [ ] **More Playbooks** - Additional development methodologies
+- [ ] **MCP Extensions** - Custom MCP integrations
+- [ ] **Video Tutorials** - Step-by-step MCP usage guides
+- [ ] **Community Resources** - Shared MCP configurations
+- [ ] **Advanced Memory System** - Enhanced pattern recognition
+- [ ] **Performance Analytics** - Development workflow insights
 
 ### Recent Updates
+- ✅ **MCP System Architecture** - Complete Model Context Protocol implementation
+- ✅ **AI Development Team System** - 9 specialized AI team roles with atomic task management
 - ✅ **Phased Workflow System** - Object-oriented phase management with verification gates
 - ✅ **8-Phase Development Process** - Discovery through Retrospective with clear navigation
-- ✅ **Verification Gates** - User confirmation required before phase progression
-- ✅ **GitHub Integration** - Direct links to phase files in repository reference
-- ✅ **Non-Interactive Changelog Tools** - Bypass CLI hanging issues with direct command-line tools
-- ✅ **Cross-Platform Support** - Windows batch files and Node.js scripts for all platforms
+- ✅ **GitHub URL Integration** - Direct access to all resources via raw GitHub URLs
+- ✅ **Cross-Project Portability** - Single file copy to any project
 - ✅ **Comprehensive Playbook System** - Multiple development methodologies
 - ✅ **Springer Nature Frontend Playbook** - Production-tested frontend guidelines
-- ✅ **GPT-5 Full-Stack Playbook** - Modern web development practices
-- ✅ **Backup & Restore System** - Document versioning and rollback
-- ✅ **Advanced CLI Interface** - Comprehensive command-line tools
-- ✅ **Error Handling & Validation** - Robust error management
-- ✅ **Template Management** - Dynamic template generation
+- ✅ **Full-Stack Web Development Playbook** - Modern web development practices
+- ✅ **Memory System Integration** - Enhanced CHANGELOG.md integration
+- ✅ **Zero Maintenance Design** - Always up-to-date via GitHub
+- ✅ **AI Agent Integration** - Seamless Cursor AI integration
 
 ---
 

@@ -9,7 +9,7 @@ This is your **Personal Model Context Protocol (MCP)** system - a comprehensive 
 ### Step 1: Copy the MCP Reference File
 ```bash
 # Download the MCP reference file to your new project
-curl -o MCP-REFERENCE.md https://raw.githubusercontent.com/lovinglifemediawebdev/ai-agent-system/main/GITHUB-REPO-REFERENCE.md
+curl -o MCP-REFERENCE.md https://raw.githubusercontent.com/lovinglifemediawebdev/AI-Agent-MCP/main/GITHUB-REPO-REFERENCE.md
 ```
 
 ### Step 2: Use in Cursor AI
@@ -25,25 +25,25 @@ curl -o MCP-REFERENCE.md https://raw.githubusercontent.com/lovinglifemediawebdev
 ## 📚 Available MCP Resources
 
 ### Core AI Team System
-- **Team Dispatcher**: https://raw.githubusercontent.com/lovinglifemediawebdev/ai-agent-system/main/ai-team/00_Team_Dispatcher.md
-- **Development Head**: https://raw.githubusercontent.com/lovinglifemediawebdev/ai-agent-system/main/ai-team/roles/01_Development_Head.md
-- **Backend Engineer**: https://raw.githubusercontent.com/lovinglifemediawebdev/ai-agent-system/main/ai-team/roles/03_Backend_Engineer.md
-- **Frontend Engineer**: https://raw.githubusercontent.com/lovinglifemediawebdev/ai-agent-system/main/ai-team/roles/04_Frontend_Engineer.md
-- **DevOps Engineer**: https://raw.githubusercontent.com/lovinglifemediawebdev/ai-agent-system/main/ai-team/roles/05_DevOps_Engineer.md
+- **Team Dispatcher**: https://raw.githubusercontent.com/lovinglifemediawebdev/AI-Agent-MCP/main/ai-team/00_Team_Dispatcher.md
+- **Development Head**: https://raw.githubusercontent.com/lovinglifemediawebdev/AI-Agent-MCP/main/ai-team/roles/01_Development_Head.md
+- **Backend Engineer**: https://raw.githubusercontent.com/lovinglifemediawebdev/AI-Agent-MCP/main/ai-team/roles/03_Backend_Engineer.md
+- **Frontend Engineer**: https://raw.githubusercontent.com/lovinglifemediawebdev/AI-Agent-MCP/main/ai-team/roles/04_Frontend_Engineer.md
+- **DevOps Engineer**: https://raw.githubusercontent.com/lovinglifemediawebdev/AI-Agent-MCP/main/ai-team/roles/05_DevOps_Engineer.md
 
 ### Development Standards
-- **Quick Reference**: https://raw.githubusercontent.com/lovinglifemediawebdev/ai-agent-system/main/QUICK-REFERENCE.md
-- **Full Stack Playbook**: https://raw.githubusercontent.com/lovinglifemediawebdev/ai-agent-system/main/Full-Stack-Web-Dev-Playbook.md
-- **AI Agent Reference**: https://raw.githubusercontent.com/lovinglifemediawebdev/ai-agent-system/main/AI-AGENT-REFERENCE.md
+- **Quick Reference**: https://raw.githubusercontent.com/lovinglifemediawebdev/AI-Agent-MCP/main/QUICK-REFERENCE.md
+- **Full Stack Playbook**: https://raw.githubusercontent.com/lovinglifemediawebdev/AI-Agent-MCP/main/Full-Stack-Web-Dev-Playbook.md
+- **AI Agent Reference**: https://raw.githubusercontent.com/lovinglifemediawebdev/AI-Agent-MCP/main/AI-AGENT-REFERENCE.md
 
 ### Workflow Management
-- **Phases System**: https://raw.githubusercontent.com/lovinglifemediawebdev/ai-agent-system/main/PHASES.md
-- **Changelog Instructions**: https://raw.githubusercontent.com/lovinglifemediawebdev/ai-agent-system/main/AI_CHANGELOG_INSTRUCTIONS.md
+- **Phases System**: https://raw.githubusercontent.com/lovinglifemediawebdev/AI-Agent-MCP/main/PHASES.md
+- **Changelog Instructions**: https://raw.githubusercontent.com/lovinglifemediawebdev/AI-Agent-MCP/main/AI_CHANGELOG_INSTRUCTIONS.md
 
 ### Specialized Resources
-- **Frontend Playbook**: https://raw.githubusercontent.com/lovinglifemediawebdev/ai-agent-system/main/frontend-playbook-main/README.md
-- **Accessibility Guide**: https://raw.githubusercontent.com/lovinglifemediawebdev/ai-agent-system/main/frontend-playbook-main/accessibility/README.md
-- **Performance Guide**: https://raw.githubusercontent.com/lovinglifemediawebdev/ai-agent-system/main/frontend-playbook-main/performance/README.md
+- **Frontend Playbook**: https://raw.githubusercontent.com/lovinglifemediawebdev/AI-Agent-MCP/main/frontend-playbook-main/README.md
+- **Accessibility Guide**: https://raw.githubusercontent.com/lovinglifemediawebdev/AI-Agent-MCP/main/frontend-playbook-main/accessibility/README.md
+- **Performance Guide**: https://raw.githubusercontent.com/lovinglifemediawebdev/AI-Agent-MCP/main/frontend-playbook-main/performance/README.md
 
 ## 🎯 Common MCP Usage Patterns
 

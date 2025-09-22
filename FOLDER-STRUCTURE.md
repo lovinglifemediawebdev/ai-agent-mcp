@@ -3,7 +3,7 @@
 ## 📁 Organized Structure
 
 ```
-ai-agent-system/
+AI-Agent-MCP/
 ├── 📁 ai-team/                           # AI Team System
 │   ├── 00_Team_Dispatcher.md            # Central command center
 │   ├── README.md                         # AI team overview

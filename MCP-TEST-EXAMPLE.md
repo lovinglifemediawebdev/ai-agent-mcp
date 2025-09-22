@@ -5,7 +5,7 @@
 ### Step 1: Copy MCP Reference
 ```bash
 # In your new project directory
-curl -o MCP-REFERENCE.md https://raw.githubusercontent.com/lovinglifemediawebdev/ai-agent-system/main/GITHUB-REPO-REFERENCE.md
+curl -o MCP-REFERENCE.md https://raw.githubusercontent.com/lovinglifemediawebdev/AI-Agent-MCP/main/GITHUB-REPO-REFERENCE.md
 ```
 
 ### Step 2: Use in Cursor AI
