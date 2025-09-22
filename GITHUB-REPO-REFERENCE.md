@@ -16,6 +16,8 @@
 - **Development Playbook**: https://raw.githubusercontent.com/lovinglifemediawebdev/ai-agent-system/main/core/development-playbook.js
 - **Changelog**: https://raw.githubusercontent.com/lovinglifemediawebdev/ai-agent-system/main/CHANGELOG.md
 - **AI Instructions**: https://raw.githubusercontent.com/lovinglifemediawebdev/ai-agent-system/main/AI_INSTRUCTIONS.md
+- **Phased Workflow Master**: https://raw.githubusercontent.com/lovinglifemediawebdev/ai-agent-system/main/PHASES.md
+- **Phases Folder Index**: https://raw.githubusercontent.com/lovinglifemediawebdev/ai-agent-system/main/phases/README.md
 
 ##  AI Agent Integration Instructions
 
@@ -42,6 +44,20 @@ Quick Setup: https://raw.githubusercontent.com/lovinglifemediawebdev/ai-agent-sy
 Development Playbook: https://raw.githubusercontent.com/lovinglifemediawebdev/ai-agent-system/main/core/development-playbook.js
 Changelog: https://raw.githubusercontent.com/lovinglifemediawebdev/ai-agent-system/main/CHANGELOG.md
 AI Instructions: https://raw.githubusercontent.com/lovinglifemediawebdev/ai-agent-system/main/AI_INSTRUCTIONS.md
+`
+
+#### Phased Workflow
+`
+Master Index: https://raw.githubusercontent.com/lovinglifemediawebdev/ai-agent-system/main/PHASES.md
+Phases Index: https://raw.githubusercontent.com/lovinglifemediawebdev/ai-agent-system/main/phases/README.md
+Phase 01 (Discovery): https://raw.githubusercontent.com/lovinglifemediawebdev/ai-agent-system/main/phases/PHASE-01-Discovery.md
+Phase 02 (Setup): https://raw.githubusercontent.com/lovinglifemediawebdev/ai-agent-system/main/phases/PHASE-02-Setup.md
+Phase 03 (Design): https://raw.githubusercontent.com/lovinglifemediawebdev/ai-agent-system/main/phases/PHASE-03-Design.md
+Phase 04 (Implementation): https://raw.githubusercontent.com/lovinglifemediawebdev/ai-agent-system/main/phases/PHASE-04-Implementation.md
+Phase 05 (Testing): https://raw.githubusercontent.com/lovinglifemediawebdev/ai-agent-system/main/phases/PHASE-05-Testing.md
+Phase 06 (Review): https://raw.githubusercontent.com/lovinglifemediawebdev/ai-agent-system/main/phases/PHASE-06-Review.md
+Phase 07 (Release): https://raw.githubusercontent.com/lovinglifemediawebdev/ai-agent-system/main/phases/PHASE-07-Release.md
+Phase 08 (Retrospective): https://raw.githubusercontent.com/lovinglifemediawebdev/ai-agent-system/main/phases/PHASE-08-Retrospective.md
 `
 
 ##  AI Agent Usage Examples
@@ -97,5 +113,5 @@ Quick Access: https://raw.githubusercontent.com/lovinglifemediawebdev/ai-agent-s
 *This GitHub repository reference enables AI agents to access the latest AI Agent System information directly from the source repository. It provides both human-readable instructions and machine-accessible URLs for seamless integration.*
 
 **Repository**: https://github.com/lovinglifemediawebdev/ai-agent-system  
-**Last Updated**: December 2024  
+**Last Updated**: September 2025  
 **Version**: 1.0.0
