@@ -174,6 +174,60 @@ If AI agent cannot access files:
 3. **Verify file permissions**: `ls -la ai-agent-mcp/`
 4. **Check Git configuration**: `git config --list | grep submodule`
 
+## 📋 Copy-Paste Ready Commands
+
+### For AI Agents - Complete Setup Command
+```
+AI Agent, please help me set up Git submodule integration for AI Agent MCP:
+
+1. Add AI Agent MCP as submodule: git submodule add https://github.com/lovinglifemediawebdev/AI-Agent-MCP.git ai-agent-mcp
+2. Initialize submodule: git submodule update --init --recursive
+3. Commit submodule reference: git add .gitmodules ai-agent-mcp && git commit -m "feat: add AI Agent MCP as submodule"
+4. Verify submodule is accessible in ./ai-agent-mcp/ folder
+5. Test that Cursor AI can access AI Agent MCP files through submodule
+6. Run initialization sequence: ls -la ai-agent-mcp/ && cat ai-agent-mcp/GITHUB-REPO-REFERENCE.md | head -20
+7. Test AI team system access: ls -la ai-agent-mcp/ai-team/roles/
+8. Verify PowerShell profile template: cat ai-agent-mcp/templates/Microsoft.PowerShell_profile.ps1 | head -10
+9. Run comprehensive test: find ai-agent-mcp/ -name "*.md" -type f | head -10
+10. Confirm all verification checklist items are accessible
+```
+
+### For Manual Setup - Copy-Paste Commands
+```bash
+# Step 1: Add AI Agent MCP as submodule
+git submodule add https://github.com/lovinglifemediawebdev/AI-Agent-MCP.git ai-agent-mcp
+
+# Step 2: Initialize and update submodule
+git submodule update --init --recursive
+
+# Step 3: Commit the submodule reference
+git add .gitmodules ai-agent-mcp
+git commit -m "feat: add AI Agent MCP as submodule"
+git push
+
+# Step 4: Verify installation
+ls -la ai-agent-mcp/
+
+# Step 5: Test system access
+echo "AI Agent MCP System Test:" && \
+echo "✅ Core Files:" && ls ai-agent-mcp/*.md && \
+echo "✅ AI Team:" && ls ai-agent-mcp/ai-team/roles/ && \
+echo "✅ Templates:" && ls ai-agent-mcp/templates/ && \
+echo "✅ Phases:" && ls ai-agent-mcp/phases/ && \
+echo "✅ Core:" && ls ai-agent-mcp/core/ && \
+echo "✅ DevDocs:" && ls ai-agent-mcp/devdocs/ | head -5
+```
+
+### For PowerShell Profile Setup
+```bash
+# Copy PowerShell profile template to project root
+cp ai-agent-mcp/templates/Microsoft.PowerShell_profile.ps1 ./Microsoft.PowerShell_profile.ps1
+
+# Verify PowerShell profile was created
+ls -la Microsoft.PowerShell_profile.ps1
+cat Microsoft.PowerShell_profile.ps1 | head -10
+```
+
 ##  AI Agent Integration Instructions
 
 ### For Cursor AI and Similar Tools
