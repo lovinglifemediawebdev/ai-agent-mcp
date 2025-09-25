@@ -108,6 +108,12 @@ Route: ai-team/roles/01_Development_Head.md → ai-team/roles/09_Database_Archit
 - Team members MUST reference latest conventions
 - Direct GitHub URLs MUST be used for up-to-date information
 
+### Terminal Protocol Integration
+- ALL terminal operations MUST follow `ai-team/rules/13_Terminal_Protocol.md`
+- Process conflicts MUST be prevented through proper terminal management
+- Terminal reuse MUST be enforced for all related operations
+- New terminals ONLY for explicitly separate concurrent tasks
+
 ### Emoji Standards
 - Use [EmojiDB](https://emojidb.org/) for consistent emoji selection
 - Avoid emoji corruption by using verified emoji references

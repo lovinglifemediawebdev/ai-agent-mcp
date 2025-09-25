@@ -38,6 +38,7 @@
 - **Technology Stack**: [Based on GITHUB-REPO-REFERENCE.md standards]
 - **Integration Points**: [APIs, databases, external services]
 - **Performance Considerations**: [Scalability, optimization needs]
+- **Terminal Requirements**: [Process management, terminal reuse needs]
 
 ### Risk Assessment
 - **Technical Risks**: [Complexity, unknowns, dependencies]
@@ -81,6 +82,7 @@
 - Environment configuration
 - Monitoring and logging
 - Performance optimization
+- Terminal protocol compliance
 
 ### Design Tasks → `ai-team/roles/08_UI_UX_Designer.md`
 - Wireframes and mockups
