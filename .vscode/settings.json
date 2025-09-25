@@ -1,0 +1,10 @@
+{
+  "powershell.powerShellDefaultVersion": "Windows PowerShell (x64)",
+  "powershell.promptToUpdatePowerShell": false,
+  "powershell.integratedConsole.showOnStartup": false,
+  "powershell.integratedConsole.shellIntegration.enabled": true,
+  "powershell.scriptAnalysis.enable": true,
+  "powershell.codeFormatting.preset": "OTBS",
+  "powershell.codeFormatting.useCorrectCasing": true,
+  "terminal.integrated.defaultProfile.windows": "PowerShell"
+}

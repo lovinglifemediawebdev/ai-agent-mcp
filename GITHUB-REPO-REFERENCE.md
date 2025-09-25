@@ -10,8 +10,9 @@
 3. **Access any resource** by referencing the GitHub URLs below
 4. **Always up-to-date** - Changes in the main repo are immediately available
 5. **Setup PowerShell Profile** - Create `Microsoft.PowerShell_profile.ps1` to prevent Cursor terminal freezing
-6. **Use React 18 Only** - React 19 not supported (limited ecosystem support)
-7. **Git Submodule Setup** - Add AI Agent MCP as submodule to avoid duplicating 500MB+ content
+6. **Setup VS Code Settings** - Create `.vscode/settings.json` for optimal PowerShell extension configuration
+7. **Use React 18 Only** - React 19 not supported (limited ecosystem support)
+8. **Git Submodule Setup** - Add AI Agent MCP as submodule to avoid duplicating 500MB+ content
 
 ### For Existing Projects:
 1. **Add this file** to your project root
@@ -35,6 +36,8 @@
 - **Phased Workflow Master**: https://raw.githubusercontent.com/lovinglifemediawebdev/AI-Agent-MCP/main/PHASES.md
 - **Phases Folder Index**: https://raw.githubusercontent.com/lovinglifemediawebdev/AI-Agent-MCP/main/phases/README.md
 - **PowerShell Profile Template**: https://raw.githubusercontent.com/lovinglifemediawebdev/AI-Agent-MCP/main/templates/Microsoft.PowerShell_profile.ps1
+- **VS Code Settings Template**: https://raw.githubusercontent.com/lovinglifemediawebdev/AI-Agent-MCP/main/.vscode/settings.json
+- **New Project Setup Script**: https://raw.githubusercontent.com/lovinglifemediawebdev/AI-Agent-MCP/main/scripts/setup-new-project.ps1
 
 ### AI Team System Files
 - **Team Dispatcher**: https://raw.githubusercontent.com/lovinglifemediawebdev/AI-Agent-MCP/main/ai-team/00_Team_Dispatcher.md
@@ -226,6 +229,19 @@ cp ai-agent-mcp/templates/Microsoft.PowerShell_profile.ps1 ./Microsoft.PowerShel
 # Verify PowerShell profile was created
 ls -la Microsoft.PowerShell_profile.ps1
 cat Microsoft.PowerShell_profile.ps1 | head -10
+```
+
+### For VS Code Settings Setup
+```bash
+# Create .vscode directory if it doesn't exist
+mkdir -p .vscode
+
+# Copy VS Code settings template for optimal PowerShell extension configuration
+cp ai-agent-mcp/.vscode/settings.json .vscode/settings.json
+
+# Verify VS Code settings were created
+ls -la .vscode/settings.json
+cat .vscode/settings.json
 ```
 
 ##  AI Agent Integration Instructions
@@ -453,7 +469,29 @@ AI Agent, please help me set up PowerShell profile to prevent Cursor terminal fr
 5. Test profile functionality in Cursor terminal
 `
 
-### Example 7: React Version Policy Enforcement
+### Example 7: VS Code Settings Setup for PowerShell Extension
+`
+AI Agent, please help me set up VS Code settings for optimal PowerShell extension configuration:
+
+1. Access VS Code Settings Template: https://raw.githubusercontent.com/lovinglifemediawebdev/AI-Agent-MCP/main/.vscode/settings.json
+2. Create .vscode/settings.json in my project root
+3. Configure PowerShell extension settings for optimal performance
+4. Enable shell integration and script analysis
+5. Test PowerShell extension functionality in Cursor AI
+`
+
+### Example 8: Automated New Project Setup
+`
+AI Agent, please help me set up a new project with all AI Agent MCP configurations:
+
+1. Access Setup Script: https://raw.githubusercontent.com/lovinglifemediawebdev/AI-Agent-MCP/main/scripts/setup-new-project.ps1
+2. Run the setup script to automatically configure everything
+3. Verify all configurations were created correctly
+4. Test PowerShell terminal and VS Code settings
+5. Start developing with full AI agent support
+`
+
+### Example 9: React Version Policy Enforcement
 `
 AI Agent, please help me set up a React project following the version policy:
 
@@ -464,7 +502,7 @@ AI Agent, please help me set up a React project following the version policy:
 5. Ensure all dependencies are compatible with React 18
 `
 
-### Example 8: Git Submodule Setup for AI Agent MCP
+### Example 10: Git Submodule Setup for AI Agent MCP
 `
 AI Agent, please help me set up Git submodule integration for AI Agent MCP:
 

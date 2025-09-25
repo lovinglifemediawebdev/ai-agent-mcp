@@ -22,6 +22,8 @@
 2. **Terminate First, Then Run:** If a process is already running, you must stop it first (e.g., by sending a `Ctrl+C` command or using `kill`). Once the previous process is terminated, execute the new command in that **same terminal**
 3. **Reuse the Terminal:** Always reuse the existing terminal for subsequent runs, debugging, and code iterations. All output and errors for this task must be contained within this single terminal
 4. **Exception for Parallel Tasks:** You are only permitted to open a new terminal when it is explicitly required to run a separate, concurrent task (for example, running a database and a web server simultaneously)
+5. **Prevent Terminal Freezing:** Use proper output flushing and avoid commands that may cause terminal to freeze
+6. **Handle Terminal Freezing:** If terminal freezes, inform user to press Enter or pop out terminal to continue
 
 ### Terminal Discipline Requirements
 - **Single Terminal Per Task**: All related operations must use the same terminal
