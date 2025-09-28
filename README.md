@@ -1,21 +1,29 @@
-# AI Agent MCP (Model Context Protocol) System
+# AI Agent MCP (Model Context Protocol) System - V2.0
 
-A comprehensive AI reference system designed for seamless integration across all your projects. This MCP provides AI agents with access to development standards, workflow patterns, specialized AI team roles, and best practices without cluttering individual projects with large reference folders.
+A comprehensive AI reference system with **atomic planning integration** and **multi-framework support** designed for seamless integration across all your projects. This enhanced MCP provides AI agents with context-aware development standards, atomic workflow patterns, specialized AI team roles, and framework-specific best practices while preventing context overload through research-backed atomic planning methodology.
 
-## 🎯 MCP Usage
+## 🎯 MCP V2.0 Usage
 
-**For New Projects:** Copy `GITHUB-REPO-REFERENCE.md` to your project root and reference it in Cursor AI  
-**For Existing Projects:** Add the MCP reference file and access resources via GitHub URLs  
-**Always Up-to-Date:** Changes in this repository are immediately available to all projects
+**For New Projects:** Copy `MCP-REFERENCE.md` (V2.0) to your project root and reference it in Cursor AI  
+**Multi-Framework Support:** Automatic detection and support for Motia, Next.js, React, Vue, Angular  
+**Atomic Planning:** Automatic task decomposition to prevent AI context overload  
+**Always Up-to-Date:** Changes in this repository are immediately available to all projects with enhanced context management
 
-## 🚀 Features
+## 🚀 V2.0 Enhanced Features
 
-### 🤖 AI Development Team System
-- **Team Dispatcher** - Central command center for routing tasks to specialized AI team members
-- **9 Specialized Roles** - Backend Engineer, Frontend Engineer, DevOps Engineer, QA Engineer, Code Reviewer, UI/UX Designer, Database Architect, Product Owner, Development Head
-- **Memory System** - Enhanced memory retention with pattern recognition and decision tracking
-- **Atomic Task Management** - ≤50 lines of code per function with clear verification criteria
-- **Phase Integration** - Works seamlessly with existing PHASES.md and GITHUB-REPO-REFERENCE.md
+### 🧠 Atomic Planning Integration
+- **Context Window Science** - Research-backed approach to managing AI context limitations
+- **Atomic Task Decomposition** - Automatic breakdown of complex tasks into manageable units
+- **Session Boundary Management** - Clear handoff instructions between atomic tasks
+- **Context Overload Prevention** - Maintains AI effectiveness at any project scale
+
+### 🤖 Multi-Framework AI Development Team System
+- **Enhanced Team Dispatcher** - Central command center with atomic planning capabilities
+- **9 Specialized Roles** - All roles enhanced with multi-framework and atomic awareness
+- **Framework Detection** - Automatic detection and adaptation for Motia, Next.js, React, Vue, Angular
+- **Memory System** - Enhanced memory retention with atomic context management
+- **Atomic Task Management** - ≤5 files per atomic task with clear verification criteria
+- **Phase Integration** - Seamlessly works with atomic-enhanced workflow phases
 
 ### Core Functionality
 - **🤖 AI Agent Helper** - Core functionality for AI agents to update documentation
@@ -121,24 +129,36 @@ The AI Agent System now includes a comprehensive phased workflow system that bre
 - **Master Index**: `PHASES.md` - Overview and navigation
 - **Phase Files**: `phases/PHASE-XX-Name.md` - Individual phase documentation
 - **Template**: `phases/_TEMPLATE.md` - For creating new phases
-- **GitHub URLs**: Available in `GITHUB-REPO-REFERENCE.md`
+- **GitHub URLs**: Available in `MCP-REFERENCE.md`
 
-## 🎯 MCP Quick Start
+## 🎯 MCP V2.0 Quick Start
 
-### 1. Copy MCP Reference File
+### 1. Copy Enhanced MCP Reference File
 ```bash
-# Download the MCP reference file to your new project
-curl -o MCP-REFERENCE.md https://raw.githubusercontent.com/lovinglifemediawebdev/AI-Agent-MCP/main/GITHUB-REPO-REFERENCE.md
+# Download the V2.0 MCP reference file to your new project
+curl -o MCP-REFERENCE.md https://raw.githubusercontent.com/lovinglifemediawebdev/ai-agent-mcp/main/MCP-REFERENCE.md
 ```
 
-### 2. Use in Cursor AI
+### 2. Use with Atomic Planning in Cursor AI
 ```
-@MCP-REFERENCE.md Please help me set up a new React project following the MCP standards
+@MCP-REFERENCE.md I'm starting a new Next.js project. Please use atomic planning to break down the setup process.
 ```
 
-### 3. Access AI Team System
+### 3. Access Multi-Framework AI Team System
 ```
-@MCP-REFERENCE.md I need help with database design. Please use the AI team system to assign the appropriate role.
+@MCP-REFERENCE.md I need help with Vue.js component development. Please assess if this needs atomic decomposition and assign the appropriate role.
+```
+
+### 4. Multi-Framework Support Examples
+```bash
+# Motia Framework
+@MCP-REFERENCE.md Create a Motia event-driven API with atomic step development
+
+# React + Next.js
+@MCP-REFERENCE.md Build a React dashboard with Next.js App Router using atomic components
+
+# Vue.js
+@MCP-REFERENCE.md Implement Vue.js state management with Pinia using atomic composables
 ```
 
 ## 📚 MCP Resources
@@ -159,26 +179,31 @@ curl -o MCP-REFERENCE.md https://raw.githubusercontent.com/lovinglifemediawebdev
 - **Phases System**: https://raw.githubusercontent.com/lovinglifemediawebdev/AI-Agent-MCP/main/PHASES.md
 - **Changelog Instructions**: https://raw.githubusercontent.com/lovinglifemediawebdev/AI-Agent-MCP/main/AI_CHANGELOG_INSTRUCTIONS.md
 
-## 🎯 MCP Usage Patterns
+## 🎯 MCP V2.0 Usage Patterns (Multi-Framework Enhanced)
 
-### Starting a New Project
+### Starting a New Project (Framework-Specific)
 ```
-@MCP-REFERENCE.md I'm starting a new Next.js project. Please help me set it up following the MCP standards and assign the appropriate AI team members.
-```
-
-### Getting Development Help
-```
-@MCP-REFERENCE.md I need help with React component development. Please reference the Frontend Engineer role and frontend playbook.
+@MCP-REFERENCE.md I'm starting a new [Motia/Next.js/React/Vue/Angular] project. Please use atomic planning to break down the setup process and assign appropriate team members.
 ```
 
-### Managing Complex Tasks
+### Getting Development Help (Context-Aware)
 ```
-@MCP-REFERENCE.md I have a complex task that involves backend, frontend, and deployment. Please use the AI team system to break this down.
+@MCP-REFERENCE.md I need help with [specific task] in my [framework] project. Please assess if this needs atomic decomposition and reference the appropriate team role.
 ```
 
-### Updating Documentation
+### Managing Complex Features (Atomic Decomposition)
 ```
-@MCP-REFERENCE.md Please help me update the changelog with these changes: [list changes]. Reference the changelog instructions.
+@MCP-REFERENCE.md I want to build [feature description] in [framework]. Please decompose this into atomic tasks and coordinate between team members.
+```
+
+### Multi-Framework Integration
+```
+@MCP-REFERENCE.md I need to connect a Vue.js frontend to a Motia backend. Please use atomic planning to coordinate this multi-framework integration.
+```
+
+### Code Review (Framework-Aware)
+```
+@MCP-REFERENCE.md Please review this [framework] code atomically: [paste specific code section]. Use framework-specific best practices.
 ```
 
 ## �� AI Agent Usage
@@ -190,22 +215,26 @@ curl -o MCP-REFERENCE.md https://raw.githubusercontent.com/lovinglifemediawebdev
 - **AI Agent Integration** - Seamless Cursor AI integration
 - **Comprehensive Resources** - Full development workflow support
 
-## 🎯 MCP System Benefits
+## 🎯 MCP V2.0 System Benefits (Enhanced)
 
-### Why Use MCP?
-- **No Local Clutter** - Only one MD file per project
-- **Always Current** - Latest updates from main repository
-- **Cross-Project Portability** - Copy one file to any project
-- **AI Integration** - Seamless Cursor AI integration
-- **Comprehensive Resources** - Full development workflow support
-- **Zero Maintenance** - No local updates needed
+### Why Use MCP V2.0?
+- **Atomic Planning Integration** - Prevents AI context overload through research-backed methodology
+- **Multi-Framework Support** - Automatic detection and support for 5+ major frameworks
+- **No Local Clutter** - Only one enhanced MD file per project
+- **Always Current** - Latest updates with atomic planning and multi-framework support
+- **Cross-Project Portability** - Copy once, use everywhere with any supported framework
+- **Context-Aware AI Integration** - Seamless Cursor AI integration with context management
+- **Comprehensive Resources** - Full development workflow support across all frameworks
+- **Zero Maintenance** - No local updates needed, always up-to-date
 
-### Supported Project Types
-- **Web Applications** - React, Next.js, Vue, Angular
-- **API Services** - Node.js, Python, Go, Rust
-- **Mobile Apps** - React Native, Flutter
-- **Desktop Apps** - Electron, Tauri
-- **Libraries** - NPM packages, Python packages
+### Supported Frameworks & Project Types
+- **Backend Frameworks** - Motia (event-driven), Next.js API routes, Express.js, FastAPI
+- **Frontend Frameworks** - React, Next.js, Vue.js, Angular with atomic component patterns
+- **Full-Stack Applications** - Multi-framework integration with atomic coordination
+- **API Services** - Framework-specific API development with atomic endpoints
+- **Mobile Apps** - React Native, Flutter with atomic development patterns
+- **Desktop Apps** - Electron, Tauri with framework integration
+- **Libraries** - NPM packages, Python packages with atomic module design
 
 ## �� Project Structure
 
@@ -293,7 +322,7 @@ MIT License - see [LICENSE](LICENSE) file for details.
 
 ### Step 1: Copy MCP Reference
 ```bash
-curl -o MCP-REFERENCE.md https://raw.githubusercontent.com/lovinglifemediawebdev/AI-Agent-MCP/main/GITHUB-REPO-REFERENCE.md
+curl -o MCP-REFERENCE.md https://raw.githubusercontent.com/lovinglifemediawebdev/ai-agent-mcp/main/MCP-REFERENCE.md
 ```
 
 ### Step 2: Use in Cursor AI
@@ -306,33 +335,38 @@ curl -o MCP-REFERENCE.md https://raw.githubusercontent.com/lovinglifemediawebdev
 @MCP-REFERENCE.md I need help with database design. Please use the AI team system to assign the appropriate role.
 ```
 
-## 🚀 Roadmap
+## 🚀 V2.0 Roadmap
 
-### Upcoming Features
-- [ ] **Enhanced AI Team Roles** - Additional specialized team members
-- [ ] **More Playbooks** - Additional development methodologies
-- [ ] **MCP Extensions** - Custom MCP integrations
-- [ ] **Video Tutorials** - Step-by-step MCP usage guides
-- [ ] **Community Resources** - Shared MCP configurations
-- [ ] **Advanced Memory System** - Enhanced pattern recognition
-- [ ] **Performance Analytics** - Development workflow insights
+### Upcoming V2.1 Features
+- [ ] **Additional Framework Support** - Svelte, Solid.js, Astro integration
+- [ ] **Advanced Atomic Patterns** - More sophisticated task decomposition algorithms
+- [ ] **Context Analytics** - Real-time context usage monitoring and optimization
+- [ ] **Framework Migration Tools** - Atomic migration between frameworks
+- [ ] **Community Atomic Patterns** - Shared atomic task templates
+- [ ] **Performance Metrics** - Atomic planning effectiveness analytics
+- [ ] **Video Tutorials** - Atomic planning and multi-framework usage guides
 
-### Recent Updates
+### V2.0 Achievements ✅
+- ✅ **Atomic Planning Integration** - Research-backed context management methodology
+- ✅ **Multi-Framework Support** - Motia, Next.js, React, Vue.js, Angular with atomic patterns
+- ✅ **Enhanced AI Team System** - All 9 roles upgraded with atomic awareness and framework expertise
+- ✅ **Context Window Science** - Prevents AI context overload through atomic task decomposition
+- ✅ **Framework Detection** - Automatic project type detection and adaptation
+- ✅ **Session Boundary Management** - Clear handoff instructions between atomic tasks
+- ✅ **Enhanced Memory System** - Atomic context management with framework-specific patterns
+- ✅ **Dual Communication** - Technical and business summaries for different stakeholders
+
+### Previous Achievements
 - ✅ **MCP System Architecture** - Complete Model Context Protocol implementation
 - ✅ **AI Development Team System** - 9 specialized AI team roles with atomic task management
 - ✅ **Phased Workflow System** - Object-oriented phase management with verification gates
 - ✅ **8-Phase Development Process** - Discovery through Retrospective with clear navigation
 - ✅ **GitHub URL Integration** - Direct access to all resources via raw GitHub URLs
 - ✅ **Cross-Project Portability** - Single file copy to any project
-- ✅ **Comprehensive Playbook System** - Multiple development methodologies
-- ✅ **Springer Nature Frontend Playbook** - Production-tested frontend guidelines
-- ✅ **Full-Stack Web Development Playbook** - Modern web development practices
-- ✅ **Memory System Integration** - Enhanced CHANGELOG.md integration
 - ✅ **Zero Maintenance Design** - Always up-to-date via GitHub
-- ✅ **AI Agent Integration** - Seamless Cursor AI integration
 
 ---
 
-**Happy coding with AI agents! 🤖✨**
+**Happy coding with atomic AI agents across all frameworks! 🤖⚛️✨**
 
-*Built with ❤️ for the AI development community*
+*V2.0 Built with ❤️ for the AI development community - Enhanced with atomic planning methodology and multi-framework support for sustained AI effectiveness at any project scale*

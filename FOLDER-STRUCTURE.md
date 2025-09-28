@@ -52,32 +52,32 @@ AI-Agent-MCP/
 │   ├── PHASE-08-Retrospective.md      # Project retrospective
 │   └── README.md                       # Phases overview
 │
-├── 📄 GITHUB-REPO-REFERENCE.md         # MCP Entry Point
+├── 📄 MCP-REFERENCE.md                 # V2.0 MCP Entry Point (Multi-Framework + Atomic Planning)
 ├── 📄 AI-AGENT-REFERENCE.md            # Portable Reference
 ├── 📄 QUICK-REFERENCE.md               # Quick Access Guide
 ├── 📄 Full-Stack-Web-Dev-Playbook.md   # Comprehensive Development Guide
+├── 📄 USAGE-EXAMPLES.md                # MCP Usage Examples
 ├── 📄 AI_CHANGELOG_INSTRUCTIONS.md     # AI-Driven Changelog System
 ├── 📄 CHANGELOG.md                     # Project History
 ├── 📄 README.md                        # Main Documentation
-├── 📄 PHASES.md                        # Phase System Overview
-├── 📄 MCP-SETUP-GUIDE.md               # MCP Setup Instructions
-└── 📄 MCP-TEST-EXAMPLE.md              # MCP Testing Examples
+└── 📄 PHASES.md                        # Phase System Overview
 ```
 
 ## 🎯 MCP Usage
 
 ### For New Projects:
-1. Copy `GITHUB-REPO-REFERENCE.md` to your project as `MCP-REFERENCE.md`
+1. Copy `MCP-REFERENCE.md` (V2.0) to your project root
 2. Reference in Cursor AI: `@MCP-REFERENCE.md [your request]`
-3. Access any resource via GitHub URLs
+3. Automatic framework detection and atomic planning
 4. Always up-to-date, no local clutter
 
 ### Key Entry Points:
-- **Main Entry**: `GITHUB-REPO-REFERENCE.md`
+- **Main Entry**: `MCP-REFERENCE.md` (V2.0 Multi-Framework + Atomic Planning)
 - **Quick Start**: `QUICK-REFERENCE.md`
-- **AI Team**: `ai-team/00_Team_Dispatcher.md`
+- **AI Team**: `ai-team/00_Team_Dispatcher.md` (Enhanced with Atomic Awareness)
 - **Workflow**: `phases/README.md`
 - **Standards**: `frontend-playbook-main/README.md`
+- **Examples**: `USAGE-EXAMPLES.md`
 
 ## 📊 Folder Sizes:
 - **Total**: ~557MB

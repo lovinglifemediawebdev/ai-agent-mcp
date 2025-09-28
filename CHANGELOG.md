@@ -6,7 +6,26 @@
 
 *This section should be updated after each modification to track project evolution*
 
-### Last Updated: January 15, 2025 at 04:00 PM
+### Last Updated: January 15, 2025 at 04:30 PM
+
+**V2.0 MAJOR SYSTEM UPGRADE - ATOMIC PLANNING & MULTI-FRAMEWORK SUPPORT:**
+- **CRITICAL FIX**: Updated Motia installation instructions to match official repository - emphasizes required project bootstrap step
+- **ENHANCED**: Complete Motia framework description with unified backend architecture, step types table, and deployment options
+- **ENHANCED**: Added official Motia repository information (8.7k+ stars, v0.7.2-beta.134, 20+ examples including ChessArena.ai)
+- **CLEANUP**: Consolidated duplicate files - removed GITHUB-REPO-REFERENCE.md, GITHUB-REPO-REFERENCE-V2.md, MCP-ATOMIC-PLANNING-ENHANCEMENT.md, MCP-SETUP-GUIDE.md, MCP-TEST-EXAMPLE.md
+- **STREAMLINED**: All functionality now consolidated in MCP-REFERENCE.md V2.0 for reduced clutter and improved maintainability
+- **BREAKTHROUGH**: Integrated atomic planning methodology to prevent AI context overload
+- **NEW**: Multi-framework support - Motia, Next.js, React, Vue.js, Angular with atomic patterns
+- **ENHANCED**: MCP-REFERENCE.md upgraded to V2.0 with context window science integration
+- **ENHANCED**: AI Team Dispatcher upgraded with atomic planning capabilities and framework detection
+- **ENHANCED**: All 9 AI team roles upgraded with atomic awareness and multi-framework expertise
+- **NEW**: Context assessment and task decomposition protocols for optimal AI effectiveness
+- **NEW**: Session boundary management with clear handoff instructions between atomic tasks
+- **NEW**: Framework-specific code templates and patterns for all supported technologies
+- **NEW**: Dual summary system (technical + business) for different stakeholders
+- **RESEARCH**: Integrated findings from Cursor context limitations and atomic planning methodology
+- **PERFORMANCE**: Prevents context amnesia, quality degradation, and loop behavior in AI responses
+- **SCALABILITY**: Maintains AI effectiveness at any project scale through atomic task management
 
 **Recent Modifications:**
 - **NEW**: Created automated new project setup script (scripts/setup-new-project.ps1)
@@ -111,15 +130,29 @@
 - **NEW**: Added comprehensive development workflow playbooks
 
 **Current Status:**
-- AI Agent MCP system fully operational with 9 specialized team roles
-- Complete date/time management system with timezone detection
-- Hierarchical AI Development Team System with atomic task management
-- 8-phase workflow system with verification gates
-- Portable reference system for cross-project usage
+- **V2.0 AI Agent MCP system** fully operational with atomic planning integration
+- **Multi-framework support** for Motia, Next.js, React, Vue.js, Angular with automatic detection
+- **Enhanced AI Development Team System** with 9 specialized roles upgraded for atomic awareness
+- **Context window management** preventing AI effectiveness degradation at scale
+- **8-phase workflow system** enhanced with atomic task boundaries and verification gates
+- **Research-backed methodology** for sustained AI effectiveness across all project sizes
+- **Framework-specific patterns** and templates for optimal development workflows
 
 ---
 
 ## Version History
+
+### v2.0.0 - Atomic Planning & Multi-Framework Support
+- **Date**: January 15, 2025
+- **Changes**:
+  - **BREAKTHROUGH**: Integrated atomic planning methodology to prevent AI context overload
+  - **MAJOR**: Added multi-framework support (Motia, Next.js, React, Vue.js, Angular)
+  - **ENHANCED**: Upgraded all AI team roles with atomic awareness and framework expertise
+  - **NEW**: Context window science integration based on research findings
+  - **NEW**: Session boundary management with clear handoff instructions
+  - **NEW**: Framework-specific code templates and development patterns
+  - **NEW**: Dual summary system for technical and business stakeholders
+  - **PERFORMANCE**: Prevents context amnesia and maintains AI effectiveness at scale
 
 ### v1.1.0 - MCP System & Date Management
 - **Date**: September 22, 2025
