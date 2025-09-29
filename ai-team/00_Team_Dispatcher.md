@@ -89,17 +89,19 @@ Deadline: [If applicable]
 
 ### Atomic-Aware Routing Logic
 1. **Context Assessment Required?** → Assess task complexity and context requirements
-2. **Decomposition Needed?** → Break down into atomic tasks before routing
-3. **Framework Analysis Required?** → Route to `ai-team/roles/01_Development_Head.md` for multi-framework coordination
-4. **Atomic Implementation Ready?** → Route to framework-specific engineer
-5. **Testing Phase?** → Route to `ai-team/roles/06_QA_Engineer.md` with atomic test scope
-6. **Review Phase?** → Route to `ai-team/roles/07_Code_Reviewer.md` with context boundaries
+2. **Research Required?** → Route to `ai-team/roles/10_Research_Engineer.md` for investigation and validation
+3. **Decomposition Needed?** → Break down into atomic tasks before routing
+4. **Framework Analysis Required?** → Route to `ai-team/roles/01_Development_Head.md` for multi-framework coordination
+5. **Atomic Implementation Ready?** → Route to framework-specific engineer
+6. **Testing Phase?** → Route to `ai-team/roles/06_QA_Engineer.md` with atomic test scope
+7. **Review Phase?** → Route to `ai-team/roles/07_Code_Reviewer.md` with context boundaries
 
 ## Team Members Available (Multi-Framework Enhanced)
 
 ### Leadership & Analysis (Atomic-Aware)
 - **`ai-team/roles/01_Development_Head.md`** - Technical leadership, architecture, atomic task planning, multi-framework coordination
 - **`ai-team/roles/02_Product_Owner.md`** - Requirements analysis, user stories, acceptance criteria, atomic requirement decomposition
+- **`ai-team/roles/10_Research_Engineer.md`** - Technical research, data validation, solution investigation, framework analysis using @Web
 
 ### Engineering Team (Framework-Specific)
 - **`ai-team/roles/03_Backend_Engineer.md`** - Multi-framework backend (Motia steps, Next.js API routes, Express.js, FastAPI), atomic implementation
@@ -146,7 +148,23 @@ Files: event-processor.step.ts (1 file)
 Route: ai-team/roles/09_Database_Architect.md → ai-team/roles/03_Backend_Engineer.md
 ```
 
-### Example 4: Multi-Framework Integration
+### Example 4: Research-Required Implementation
+```
+Input: "What's the best way to implement real-time features in Vue.js?"
+Context Assessment: Research question, requires investigation, framework-specific
+Research Scope: Vue.js real-time patterns, WebSocket libraries, performance considerations
+Route: ai-team/roles/10_Research_Engineer.md → @Web research → ai-team/roles/04_Frontend_Engineer.md
+```
+
+### Example 5: Cross-Framework Integration Research
+```
+Input: "How should I integrate Motia backend with React frontend?"
+Context Assessment: Multi-framework research, integration patterns, best practices
+Research Scope: Motia-React integration, API patterns, state management
+Route: ai-team/roles/10_Research_Engineer.md → @Web research → ai-team/roles/01_Development_Head.md
+```
+
+### Example 6: Multi-Framework Integration
 ```
 Input: "Connect Vue.js frontend to Motia backend"
 Context Assessment: Multi-framework integration, requires coordination

@@ -10,7 +10,7 @@
 
 This file provides Cursor AI with complete context for:
 - **Framework Flexibility**: Works with ANY framework - Motia, Next.js, React, Vue, Angular, or existing projects
-- **AI Team System**: 9 specialized AI roles with atomic task management
+- **AI Team System**: 10 specialized AI roles with atomic task management
 - **Development Standards**: Production-tested patterns and best practices
 - **Cross-Project Portability**: One file, any project, no installation required
 - **Atomic Planning Integration**: Context-aware task decomposition for optimal AI performance
@@ -325,6 +325,13 @@ The AI Team Dispatcher now includes atomic planning capabilities and coordinates
 
 ### Core Development Roles (Atomic-Aware)
 
+#### Research Engineer
+**URL**: https://raw.githubusercontent.com/lovinglifemediawebdev/ai-agent-mcp/main/ai-team/roles/10_Research_Engineer.md
+- **Responsibilities**: Technical research, data validation, solution investigation, framework analysis
+- **Specialties**: Web research using @Web, multi-source validation, technical analysis, implementation research
+- **Atomic Focus**: Single research queries, targeted validation, focused analysis, atomic documentation
+- **Framework Expertise**: Multi-framework research, technology trends, integration patterns, performance optimization
+
 #### Development Head
 **URL**: https://raw.githubusercontent.com/lovinglifemediawebdev/ai-agent-mcp/main/ai-team/roles/01_Development_Head.md
 - **Responsibilities**: Project architecture, technical leadership, code standards, atomic task planning
@@ -557,6 +564,24 @@ ng serve
 @MCP-REFERENCE.md Please review this [framework] code atomically: [paste specific code section]
 ```
 **Expected Flow**: Context Assessment → Framework Standards → Atomic Scope Definition → Code Reviewer → Framework-specific analysis with context boundaries
+
+### Research-Required Implementation (Research-First Approach)
+```
+@MCP-REFERENCE.md How should I implement [specific feature] in [framework]? I need to research the best approach first.
+```
+**Expected Flow**: Context Assessment → Research Triggers → Research Engineer → Multi-source investigation → Implementation recommendations → Specialist Engineer → Code Reviewer
+
+### Best Practice Research
+```
+@MCP-REFERENCE.md What's the current best practice for [specific implementation] in [framework]?
+```
+**Expected Flow**: Context Assessment → Research Question → Research Engineer → @Web research → Validation → Best practice recommendations → Implementation guidance
+
+### Cross-Framework Integration Research
+```
+@MCP-REFERENCE.md I need to integrate [Framework A] with [Framework B]. Please research the optimal approach.
+```
+**Expected Flow**: Context Assessment → Multi-framework research → Research Engineer → Integration pattern research → Validation → Implementation plan → Development Head coordination
 
 ## 📋 Development Standards (Multi-Framework Enhanced)
 
