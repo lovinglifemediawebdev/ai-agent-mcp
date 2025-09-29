@@ -9,10 +9,10 @@
 ## 🎯 MCP System Overview
 
 This file provides Cursor AI with complete context for:
-- **Multi-Framework Support**: Motia, Next.js, React, Vue, Angular, and more
+- **Framework Flexibility**: Works with ANY framework - Motia, Next.js, React, Vue, Angular, or existing projects
 - **AI Team System**: 9 specialized AI roles with atomic task management
 - **Development Standards**: Production-tested patterns and best practices
-- **Cross-Project Portability**: One file, any project, always up-to-date
+- **Cross-Project Portability**: One file, any project, no installation required
 - **Atomic Planning Integration**: Context-aware task decomposition for optimal AI performance
 
 ## 🧠 ATOMIC PLANNING PROTOCOL (MANDATORY)
@@ -333,44 +333,50 @@ The AI Team Dispatcher now includes atomic planning capabilities and coordinates
 - **RxJS**: Atomic reactive programming patterns
 - **Testing**: Atomic unit testing with Jasmine and Karma
 
-### Universal Development Commands (Framework-Agnostic)
+### Universal Development Commands (Choose Your Framework)
 ```bash
-# Motia Framework - Bootstrap Required First
-npx motia@latest create   # MUST bootstrap project first
+# Motia Framework (Optional - Unified Backend)
+npx motia@latest create   # Bootstrap unified backend project
 cd your-project-name      # Navigate to created project
 npx motia dev            # ➜ http://localhost:3000
 
-# Next.js
+# Next.js (Optional - Full-Stack React)
 npx create-next-app@latest my-app --typescript --tailwind --eslint --app
 cd my-app
 npm run dev
 
-# React (Vite)
+# React (Optional - Frontend Library)
 npm create vite@latest my-app -- --template react-ts
 cd my-app
 npm install
 npm run dev
 
-# Vue.js
+# Vue.js (Optional - Progressive Framework)
 npm create vue@latest my-app
 cd my-app
 npm install
 npm run dev
 
-# Angular
+# Angular (Optional - Enterprise Framework)
 npm install -g @angular/cli
 ng new my-app
 cd my-app
 ng serve
+
+# Or use with existing projects - no framework installation required!
 ```
 
 ## 🎯 Usage Patterns (Multi-Framework Enhanced)
 
 **NOTE**: All requests automatically trigger atomic planning analysis and context-aware responses for any framework.
 
-### Starting a New Project (Framework-Specific)
+### Starting a New Project (Framework-Flexible)
 ```
-@MCP-REFERENCE.md I'm starting a new [Motia/Next.js/React/Vue/Angular] project. Please use atomic planning to break down the setup process.
+@MCP-REFERENCE.md I'm starting a new [framework-name] project. Please use atomic planning to break down the setup process.
+```
+**OR for existing projects:**
+```
+@MCP-REFERENCE.md I have an existing project. Please detect my framework and help me get started.
 ```
 **Expected Flow**: Context Assessment → Framework Detection → Atomic Task Decomposition → Team Dispatcher → Development Head → Framework-specific setup with atomic implementation plan
 
@@ -778,10 +784,10 @@ The AI agent adapts its assistance based on detected framework:
 ## 📝 Usage Instructions (Multi-Framework Enhanced)
 
 ### Prerequisites
-**IMPORTANT**: Install the appropriate framework tools before using this MCP reference system.
+**CHOOSE YOUR FRAMEWORK**: Select and install the framework that best fits your project needs. All frameworks are fully supported with atomic planning integration.
 
-#### Motia Framework
-**IMPORTANT**: You must bootstrap a new Motia project before starting development.
+#### Motia Framework (Optional)
+**FOR UNIFIED BACKEND PROJECTS**: Choose Motia if you need a unified backend system that combines APIs, background jobs, workflows, and AI Agents.
 
 ```bash
 # 1. Bootstrap a New Motia Project (REQUIRED FIRST STEP)
@@ -821,14 +827,16 @@ npx motia --version
 - 🐳 **Docker**: Containerized deployment for any cloud provider
 - ☁️ **Self-Hosted**: Deploy to AWS, GCP, Azure, or any VPS
 
-#### Next.js
+#### Next.js (Optional)
+**FOR FULL-STACK REACT PROJECTS**: Choose Next.js for React-based applications with server-side rendering and API routes.
 ```bash
 # Create new Next.js project
 npx create-next-app@latest my-app --typescript --tailwind --eslint --app
 cd my-app
 ```
 
-#### React (Vite)
+#### React (Optional)
+**FOR FRONTEND APPLICATIONS**: Choose React for client-side applications and component-based UIs.
 ```bash
 # Create new React project with Vite
 npm create vite@latest my-app -- --template react-ts
@@ -836,7 +844,8 @@ cd my-app
 npm install
 ```
 
-#### Vue.js
+#### Vue.js (Optional)
+**FOR PROGRESSIVE APPLICATIONS**: Choose Vue.js for progressive web applications with composition API.
 ```bash
 # Create new Vue project
 npm create vue@latest my-app
@@ -844,7 +853,8 @@ cd my-app
 npm install
 ```
 
-#### Angular
+#### Angular (Optional)
+**FOR ENTERPRISE APPLICATIONS**: Choose Angular for large-scale enterprise applications with TypeScript.
 ```bash
 # Install Angular CLI and create project
 npm install -g @angular/cli
@@ -853,13 +863,14 @@ cd my-app
 ```
 
 ### Setup Steps (Framework-Agnostic)
-1. **Install Framework** using the appropriate commands above
+1. **Choose Your Framework** (optional): Select and install any supported framework using the commands above, or use with existing projects
 2. **Copy this file** to your project root as `MCP-REFERENCE.md`
 3. **Reference in Cursor AI** using `@MCP-REFERENCE.md [your request]`
-4. **Expect atomic decomposition** for complex tasks automatically
-5. **Follow framework-specific atomic task sequences** as provided by the AI team system
-6. **Verify each atomic task** before proceeding to the next
-7. **Reset context** between major atomic task sequences as recommended
+4. **Automatic Framework Detection**: The system will detect your framework automatically
+5. **Expect atomic decomposition** for complex tasks automatically
+6. **Follow framework-specific atomic task sequences** as provided by the AI team system
+7. **Verify each atomic task** before proceeding to the next
+8. **Reset context** between major atomic task sequences as recommended
 
 ### Atomic Planning Best Practices (Universal)
 1. **Start with Planning**: Always begin complex projects with atomic task decomposition

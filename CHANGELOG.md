@@ -9,7 +9,9 @@
 ### Last Updated: January 15, 2025 at 04:30 PM
 
 **V2.0 MAJOR SYSTEM UPGRADE - ATOMIC PLANNING & MULTI-FRAMEWORK SUPPORT:**
-- **CRITICAL FIX**: Updated Motia installation instructions to match official repository - emphasizes required project bootstrap step
+- **FLEXIBILITY ENHANCEMENT**: Made all frameworks optional - no required installations, works with existing projects
+- **FRAMEWORK EQUALITY**: All frameworks (Motia, Next.js, React, Vue, Angular) now treated as equal choices
+- **EXISTING PROJECT SUPPORT**: Added automatic framework detection for existing projects without installation requirements
 - **ENHANCED**: Complete Motia framework description with unified backend architecture, step types table, and deployment options
 - **ENHANCED**: Added official Motia repository information (8.7k+ stars, v0.7.2-beta.134, 20+ examples including ChessArena.ai)
 - **CLEANUP**: Consolidated duplicate files - removed GITHUB-REPO-REFERENCE.md, GITHUB-REPO-REFERENCE-V2.md, MCP-ATOMIC-PLANNING-ENHANCEMENT.md, MCP-SETUP-GUIDE.md, MCP-TEST-EXAMPLE.md
