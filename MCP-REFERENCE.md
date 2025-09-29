@@ -40,6 +40,25 @@ This file provides Cursor AI with complete context for:
 
 **CRITICAL**: When @MCP-REFERENCE.md is invoked, the following ATOMIC-AWARE protocol is AUTOMATICALLY ACTIVATED:
 
+### 🎯 Mode Selection (Agent vs Ask Mode)
+
+**CHOOSE YOUR WORKFLOW MODE** based on your terminal control needs:
+
+#### 🚀 Agent Mode (Full Automation)
+**Use When**: You want complete automation with AI executing commands directly
+- ✅ **Full Automation**: AI runs terminal commands automatically
+- ✅ **Continuous Flow**: Seamless execution without interruption
+- ❌ **Terminal Control**: Limited ability to cancel or modify running processes
+- ❌ **Read-Only Terminal**: Cannot interrupt AI-initiated commands
+
+#### 💬 Ask Mode (Recommended for Terminal Control)
+**Use When**: You need full terminal control and ability to cancel/modify commands
+- ✅ **Full Terminal Control**: You can cancel, modify, or stop any command
+- ✅ **Interactive Workflow**: AI proposes commands, you approve and run them
+- ✅ **Command Transparency**: See exactly what will be executed before running
+- ✅ **Cancellation Safety**: Stop any process at any time
+- ✅ **All MCP Features**: Complete atomic planning and AI team functionality
+
 ### 1. Context Assessment & Planning Phase
 **REQUIRED FIRST STEP**: Before any task assignment, assess context requirements:
 
@@ -91,6 +110,120 @@ This file provides Cursor AI with complete context for:
 **Session Boundary**: [When to reset context for next task]
 **Handoff Instructions**: [What to carry forward to next session]
 ```
+
+## 💬 ASK MODE WORKFLOW PROTOCOL (RECOMMENDED)
+
+**WHEN USING ASK MODE**: The following protocol ensures full terminal control while maintaining all MCP capabilities:
+
+### ASK Mode Response Format Template
+Every ASK mode response MUST follow this enhanced structure:
+
+```
+## 🧠 Context Assessment
+**Project Type**: [Framework/technology being used]
+**Project Size**: [Small/Medium/Large]
+**Task Complexity**: [Atomic/Requires Decomposition/Multi-Domain]
+**Mode**: Ask Mode (Terminal Control Enabled)
+
+## ⚛️ Atomic Task Analysis
+[If task is already atomic:]
+**Task Classification**: Atomic - ready for execution
+**Estimated Context**: [Files and token estimate]
+
+[If task needs decomposition:]
+**Decomposition Required**: Yes
+**Atomic Tasks**: [Numbered list of atomic tasks]
+**Recommended Sequence**: [Execution order]
+
+## 🎯 Team Dispatcher Analysis
+**Request Type**: [API/Database/Frontend/DevOps/Security/Architecture/Multi-domain]
+**Complexity**: [Simple/Moderate/Complex/Multi-domain]
+**Assigned Role(s)**: [Specific AI team member(s)]
+**Reasoning**: [Why this role was selected + atomic considerations]
+
+## 👨‍💻 [Role Name] Response
+**Referenced Resources**: 
+- [List of GitHub URLs consulted]
+- [Specific documentation sections used]
+
+**Context Management**:
+- **Active Files**: [Max 5 files for this task]
+- **Token Budget**: [Estimated context usage]
+- **Session Scope**: [What's included in this session]
+
+**Solution**:
+[Detailed response based on Development Resources - scoped to atomic task]
+
+**Implementation Steps**:
+1. [Step with resource reference + file context]
+2. [Step with resource reference + file context]
+3. [Step with resource reference + file context]
+
+## 🛠️ PROPOSED COMMANDS (Ask Mode)
+**Terminal Commands to Execute** (copy and run manually):
+```bash
+# Command 1: [Description of what this command does]
+[command here]
+
+# Command 2: [Description of what this command does]
+[command here]
+
+# Command 3: [Description of what this command does]
+[command here]
+```
+
+**Manual Steps** (for non-terminal operations):
+1. [Manual step with file paths and specific instructions]
+2. [Manual step with verification instructions]
+3. [Manual step with success criteria]
+
+## ✅ Verification Steps
+**After Running Commands**:
+- [ ] Verify: [How to check if command succeeded]
+- [ ] Test: [How to test the implementation]
+- [ ] Confirm: [Success criteria for this atomic task]
+
+**Next Steps** (if applicable):
+- [ ] Complete verification before proceeding
+- [ ] Run next command when ready
+- [ ] Reset context if recommended
+
+## 📊 DUAL SUMMARY (MANDATORY)
+
+### 🔧 Technical Summary (For Developers)
+**Current Task Scope**: [What this atomic task accomplishes]
+**Tech Stack**: [Technologies used in this specific task]
+**Architecture Impact**: [How this task fits in overall architecture]
+**Performance**: [Performance considerations for this task]
+**Security**: [Security measures for this specific task]
+**Dependencies**: [What this task depends on/affects]
+**Next Atomic Task**: [What should be tackled next]
+
+### 📈 Business Summary (For Project Managers & Executives)
+**Task Progress**: [What was accomplished in business terms]
+**Feature Status**: [How this contributes to overall feature]
+**Business Value**: [Specific value delivered by this atomic task]
+**Timeline Impact**: [How this affects project timeline]
+**Resource Efficiency**: [Benefits of atomic approach for this task]
+**Risk Management**: [How atomic approach reduces risks]
+**Next Milestone**: [What business milestone is next]
+
+## 📚 Resource Citations
+- **Primary Reference**: [Main GitHub URL used]
+- **Supporting Documentation**: [Additional URLs referenced]
+- **Best Practices Applied**: [Specific patterns followed]
+- **Atomic Planning Sources**: 
+  - https://collett.me/atomic-planning-in-cursor/
+  - https://cursor.com/learn/context
+```
+
+### ASK Mode Benefits
+- **Full Control**: You decide when and how to execute each command
+- **Safety First**: Review all commands before execution
+- **Cancellation**: Stop any process at any time
+- **Modification**: Customize commands before running
+- **Learning**: Understand exactly what each command does
+- **Debugging**: Easily troubleshoot issues step by step
 
 ## 📋 ENHANCED AUTOMATIC WORKFLOW EXECUTION
 
@@ -370,6 +503,22 @@ ng serve
 
 **NOTE**: All requests automatically trigger atomic planning analysis and context-aware responses for any framework.
 
+### 🎯 Mode Selection Guidance
+
+#### Use Agent Mode When:
+- You want complete automation
+- You're comfortable with AI running commands directly
+- You don't need to interrupt or modify commands
+- You prefer hands-off execution
+
+#### Use Ask Mode When:
+- You need full terminal control
+- You want to review commands before execution
+- You need to cancel or modify running processes
+- You prefer step-by-step verification
+- You're working with sensitive operations
+- You want to learn what each command does
+
 ### Starting a New Project (Framework-Flexible)
 ```
 @MCP-REFERENCE.md I'm starting a new [framework-name] project. Please use atomic planning to break down the setup process.
@@ -385,6 +534,17 @@ ng serve
 @MCP-REFERENCE.md I need help with [specific task] in my [framework] project. Please assess if this needs atomic decomposition.
 ```
 **Expected Flow**: Context Assessment → Framework Analysis → Atomic Analysis → Team Dispatcher → Appropriate AI role → Framework-specific, context-bounded solution
+
+### ASK Mode Usage Examples
+```
+@MCP-REFERENCE.md I'm using Ask Mode. Help me set up [framework] project with full terminal control.
+```
+**Expected Flow**: Context Assessment → ASK Mode Protocol → Proposed Commands → Manual Execution → Verification Steps
+
+```
+@MCP-REFERENCE.md I need to run git commands but want to review them first. Use Ask Mode workflow.
+```
+**Expected Flow**: ASK Mode Analysis → Proposed Git Commands → Manual Copy/Paste → User Execution → Verification
 
 ### Managing Complex Features (Atomic Decomposition)
 ```
@@ -865,12 +1025,14 @@ cd my-app
 ### Setup Steps (Framework-Agnostic)
 1. **Choose Your Framework** (optional): Select and install any supported framework using the commands above, or use with existing projects
 2. **Copy this file** to your project root as `MCP-REFERENCE.md`
-3. **Reference in Cursor AI** using `@MCP-REFERENCE.md [your request]`
-4. **Automatic Framework Detection**: The system will detect your framework automatically
-5. **Expect atomic decomposition** for complex tasks automatically
-6. **Follow framework-specific atomic task sequences** as provided by the AI team system
-7. **Verify each atomic task** before proceeding to the next
-8. **Reset context** between major atomic task sequences as recommended
+3. **Select Your Mode**: Choose Agent Mode (automation) or Ask Mode (terminal control)
+4. **Reference in Cursor AI** using `@MCP-REFERENCE.md [your request]`
+5. **Automatic Framework Detection**: The system will detect your framework automatically
+6. **Expect atomic decomposition** for complex tasks automatically
+7. **Follow framework-specific atomic task sequences** as provided by the AI team system
+8. **Execute Commands**: Agent Mode runs automatically, Ask Mode provides proposed commands
+9. **Verify each atomic task** before proceeding to the next
+10. **Reset context** between major atomic task sequences as recommended
 
 ### Atomic Planning Best Practices (Universal)
 1. **Start with Planning**: Always begin complex projects with atomic task decomposition

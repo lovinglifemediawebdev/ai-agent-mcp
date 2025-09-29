@@ -9,6 +9,10 @@
 ### Last Updated: January 15, 2025 at 04:30 PM
 
 **V2.0 MAJOR SYSTEM UPGRADE - ATOMIC PLANNING & MULTI-FRAMEWORK SUPPORT:**
+- **ASK MODE ENHANCEMENT**: Added comprehensive ASK mode workflow protocol for full terminal control
+- **MODE SELECTION**: Users can choose between Agent Mode (automation) or Ask Mode (terminal control)
+- **TERMINAL SAFETY**: ASK mode addresses Cursor AI terminal read-only limitations with proposed commands
+- **WORKFLOW FLEXIBILITY**: Complete MCP functionality available in both Agent and Ask modes
 - **FLEXIBILITY ENHANCEMENT**: Made all frameworks optional - no required installations, works with existing projects
 - **FRAMEWORK EQUALITY**: All frameworks (Motia, Next.js, React, Vue, Angular) now treated as equal choices
 - **EXISTING PROJECT SUPPORT**: Added automatic framework detection for existing projects without installation requirements
