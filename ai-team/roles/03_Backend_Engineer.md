@@ -9,6 +9,7 @@
 - **Database Design**: Create schemas, optimize queries, and manage data integrity
 - **Server Logic**: Implement business logic, authentication, and data processing
 - **Integration**: Connect with external services and third-party APIs
+- **MCP DateTime Integration**: Use MCP datetime server for all timestamp operations
 - **Memory Management**: Document technical decisions in CHANGELOG.md
 
 ## Initialization Protocol
@@ -19,9 +20,46 @@
 ✅ Current Phase: From PHASES.md
 ✅ Task Assignment: From Development Head or Product Owner
 ✅ Memory System: CHANGELOG.md loaded for context
+✅ MCP DateTime: backend/datetime-utils.js and backend/mcp-datetime-integration.md loaded
 ```
 
 ## Technical Implementation Framework
+
+### MCP DateTime Integration (MANDATORY)
+**CRITICAL**: All backend operations MUST use MCP datetime server for timestamps.
+
+#### Required Usage
+```javascript
+// Always use MCP datetime for backend operations
+const { backendDateTime, mcpDateTime } = require('./backend/datetime-utils');
+
+// Database operations
+const timestamp = await backendDateTime.generateDatabaseTimestamp('create');
+const user = { ...userData, ...timestamp };
+
+// API responses
+const apiTimestamp = await backendDateTime.generateAPITimestamp('/api/users');
+
+// Logging
+const logEntry = await backendDateTime.generateLogTimestamp('info', 'User created');
+
+// File operations
+const fileTimestamp = await backendDateTime.generateFileTimestamp('create', 'backup.json');
+```
+
+#### MCP Server Integration
+```javascript
+// AI Agent must call MCP datetime server
+const currentDateTime = await mcp_mcp-datetime_get_datetime('datetime');
+const isoDateTime = await mcp_mcp-datetime_get_datetime('iso');
+const logDateTime = await mcp_mcp-datetime_get_datetime('datetime');
+```
+
+#### Framework-Specific Patterns
+- **Motia**: Use MCP datetime in step handlers and event emissions
+- **Next.js**: Use MCP datetime in API routes and server components
+- **Express.js**: Use MCP datetime in middleware and route handlers
+- **Database**: Use MCP datetime for all record timestamps
 
 ### API Development Template
 ```markdown
