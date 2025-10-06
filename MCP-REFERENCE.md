@@ -1,10 +1,10 @@
 # MCP-REFERENCE.md - V2.0 Complete System Update
 
-**Version**: 2.0.0  
+**Version**: 2.0.1  
 **Repository**: [ai-agent-system](https://github.com/lovinglifemediawebdev/ai-agent-mcp)  
 **Framework**: Multi-Framework Support (Motia, Next.js, React, Vue, etc.)  
 **Usage**: Copy this file to any project for complete AI agent assistance  
-**Enhancement**: Integrated atomic planning methodology + Multi-framework support for optimal Cursor AI performance
+**Enhancement**: Integrated atomic planning methodology + Multi-framework support + Context7 integration for optimal Cursor AI performance
 
 ## 🎯 MCP System Overview
 
@@ -14,6 +14,10 @@ This file provides Cursor AI with complete context for:
 - **Development Standards**: Production-tested patterns and best practices
 - **Cross-Project Portability**: One file, any project, no installation required
 - **Atomic Planning Integration**: Context-aware task decomposition for optimal AI performance
+- **Context7 Integration**: Up-to-date library documentation through Context7 MCP Server
+- **Test Environment**: Isolated testing with git exclusion for safe development
+- **MCP Datetime**: Accurate timestamp management through MCP datetime tool
+- **AI Implementation Mode**: Direct command execution with terminal control options
 
 ## 🧠 ATOMIC PLANNING PROTOCOL (MANDATORY)
 
@@ -35,6 +39,46 @@ This file provides Cursor AI with complete context for:
 3. **Self-Contained**: Can be completed independently
 4. **Verifiable**: Clear success/failure criteria
 5. **Session Sized**: Completable in 1-2 Cursor sessions
+
+## 🔗 CONTEXT7 MCP INTEGRATION (ENHANCED AI STAFF)
+
+**NEW**: Context7 MCP Server integration provides AI Staff with up-to-date library documentation for enhanced accuracy and current best practices.
+
+### 🎯 Context7 Enhanced Workflow
+**Dual Verification System**: AI Staff now uses a two-layer approach:
+1. **Playbook Guidance**: Apply established best practices from our documentation
+2. **Context7 Verification**: Query Context7 for current library documentation and patterns
+3. **Implementation**: Combine both sources for optimal, current code
+
+### 🛠️ Context7 Tools Available
+- **`resolve-library-id`**: Convert library names to Context7-compatible IDs
+- **`get-library-docs`**: Fetch up-to-date library documentation with topic focus
+- **API Integration**: Direct access to Context7's comprehensive library database
+
+### 📋 Context7 Usage Examples
+```
+@MCP-REFERENCE.md "Create React component with hooks"
+
+AI Staff will:
+1. Apply React playbook patterns (best practices)
+2. Query Context7 for latest React hooks documentation
+3. Implement with verified, current patterns
+4. Result: Modern React component with up-to-date patterns
+```
+
+### 🔧 Context7 Configuration
+**MCP Server Setup**: Add to your `mcp.json`:
+```json
+"context7": {
+  "url": "https://mcp.context7.com/mcp",
+  "headers": {
+    "Authorization": "Bearer YOUR_CONTEXT7_API_KEY"
+  }
+}
+```
+
+**API Key**: Get from https://context7.com/dashboard
+**Documentation**: See [CONTEXT7-SETUP.md](./CONTEXT7-SETUP.md) for complete setup guide
 
 ## 🤖 ENHANCED MANDATORY WORKFLOW PROTOCOL
 
@@ -321,58 +365,65 @@ Every MCP-REFERENCE.md response MUST follow this enhanced structure:
 ### Team Dispatcher (Enhanced)
 **URL**: https://raw.githubusercontent.com/lovinglifemediawebdev/ai-agent-mcp/main/ai-team/00_Team_Dispatcher.md
 
-The AI Team Dispatcher now includes atomic planning capabilities and coordinates all development tasks using specialized roles with context awareness:
+The AI Team Dispatcher now includes atomic planning capabilities and coordinates all development tasks using specialized roles with context awareness and Context7 integration:
 
 ### Core Development Roles (Atomic-Aware)
 
 #### Research Engineer
 **URL**: https://raw.githubusercontent.com/lovinglifemediawebdev/ai-agent-mcp/main/ai-team/roles/10_Research_Engineer.md
 - **Responsibilities**: Technical research, data validation, solution investigation, framework analysis
-- **Specialties**: Web research using @Web, multi-source validation, technical analysis, implementation research
+- **Specialties**: Web research using @Web, multi-source validation, technical analysis, implementation research, Context7 integration
 - **Atomic Focus**: Single research queries, targeted validation, focused analysis, atomic documentation
 - **Framework Expertise**: Multi-framework research, technology trends, integration patterns, performance optimization
+- **Context7 Integration**: Uses Context7 for up-to-date library documentation and current best practices
 
 #### Development Head
 **URL**: https://raw.githubusercontent.com/lovinglifemediawebdev/ai-agent-mcp/main/ai-team/roles/01_Development_Head.md
 - **Responsibilities**: Project architecture, technical leadership, code standards, atomic task planning
-- **Specialties**: System design, technology decisions, team coordination, context management
+- **Specialties**: System design, technology decisions, team coordination, context management, Context7 integration
 - **Atomic Focus**: Breaks down architectural decisions into implementable atomic tasks
 - **Framework Expertise**: Multi-framework architecture patterns (Motia, Next.js, React, Vue, Angular)
+- **Context7 Integration**: Uses Context7 for current architecture patterns and best practices
 
 #### Backend Engineer  
 **URL**: https://raw.githubusercontent.com/lovinglifemediawebdev/ai-agent-mcp/main/ai-team/roles/03_Backend_Engineer.md
 - **Responsibilities**: API development, database design, server-side logic, atomic implementation
-- **Specialties**: Multi-framework backend development, event systems, state management, authentication, context-bounded coding
+- **Specialties**: Multi-framework backend development, event systems, state management, authentication, context-bounded coding, Context7 integration
 - **Atomic Focus**: Implements single endpoints, individual event handlers, isolated database operations
 - **Framework Expertise**: Motia steps, Next.js API routes, Express.js, FastAPI, microservices
+- **Context7 Integration**: Uses Context7 for current backend patterns and API best practices
 
 #### Frontend Engineer
 **URL**: https://raw.githubusercontent.com/lovinglifemediawebdev/ai-agent-mcp/main/ai-team/roles/04_Frontend_Engineer.md  
 - **Responsibilities**: UI/UX implementation, client-side logic, responsive design, atomic component development
-- **Specialties**: React, Next.js, Vue, Angular, TypeScript, modern CSS, component architecture
+- **Specialties**: React, Next.js, Vue, Angular, TypeScript, modern CSS, component architecture, Context7 integration
 - **Atomic Focus**: Single components, individual features, isolated styling tasks
 - **Framework Expertise**: React hooks, Next.js App Router, Vue Composition API, Angular standalone components
+- **Context7 Integration**: Uses Context7 for current frontend patterns and component best practices
 
 #### DevOps Engineer
 **URL**: https://raw.githubusercontent.com/lovinglifemediawebdev/ai-agent-mcp/main/ai-team/roles/05_DevOps_Engineer.md
 - **Responsibilities**: Deployment, CI/CD, infrastructure, monitoring, atomic deployment tasks
-- **Specialties**: Docker, Vercel, AWS, cloud platforms, automation, performance optimization
+- **Specialties**: Docker, Vercel, AWS, cloud platforms, automation, performance optimization, Context7 integration
 - **Atomic Focus**: Single configuration files, individual deployment steps, isolated monitoring setups
 - **Framework Expertise**: Multi-framework deployment patterns, containerization strategies
+- **Context7 Integration**: Uses Context7 for current DevOps patterns and deployment best practices
 
 #### Code Reviewer
 **URL**: https://raw.githubusercontent.com/lovinglifemediawebdev/ai-agent-mcp/main/ai-team/roles/07_Code_Reviewer.md
 - **Responsibilities**: Code quality, security review, best practices enforcement, atomic code analysis
-- **Specialties**: Static analysis, security patterns, performance review, focused code reviews
+- **Specialties**: Static analysis, security patterns, performance review, focused code reviews, Context7 integration
 - **Atomic Focus**: Reviews single functions, individual files, specific security concerns
 - **Framework Expertise**: Framework-specific best practices, security patterns, performance optimization
+- **Context7 Integration**: Uses Context7 for current code review standards and security best practices
 
 #### Database Architect
 **URL**: https://raw.githubusercontent.com/lovinglifemediawebdev/ai-agent-mcp/main/ai-team/roles/09_Database_Architect.md
 - **Responsibilities**: Schema design, query optimization, data modeling, atomic database changes
-- **Specialties**: SQL design, indexing, migrations, data integrity, incremental schema evolution
+- **Specialties**: SQL design, indexing, migrations, data integrity, incremental schema evolution, Context7 integration
 - **Atomic Focus**: Single table designs, individual migrations, specific query optimizations
 - **Framework Expertise**: Multi-framework database integration, ORM patterns, state management
+- **Context7 Integration**: Uses Context7 for current database patterns and ORM best practices
 
 ## 📚 Development Resources (Multi-Framework Enhanced)
 

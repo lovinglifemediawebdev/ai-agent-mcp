@@ -1,0 +1,1 @@
+Context7 testing file - should be ignored by git
