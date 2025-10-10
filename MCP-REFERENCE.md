@@ -1,22 +1,24 @@
-# MCP-REFERENCE.md - V2.0 Complete System Update
+# MCP-REFERENCE.md - V3.0 Complete System
 
-**Version**: 2.0.1  
+**Version**: 3.0.0  
 **Repository**: [ai-agent-system](https://github.com/lovinglifemediawebdev/ai-agent-mcp)  
 **Framework**: Multi-Framework Support (Motia, Next.js, React, Vue, etc.)  
 **Usage**: Copy this file to any project for complete AI agent assistance  
-**Enhancement**: Integrated atomic planning methodology + Multi-framework support + Context7 integration for optimal Cursor AI performance
+**Enhancement**: Optional methodologies (BMAD™, Spec-Driven) + Production patterns + Atomic planning + Multi-framework support + Context7 integration
 
 ## 🎯 MCP System Overview
 
 This file provides Cursor AI with complete context for:
 - **Framework Flexibility**: Works with ANY framework - Motia, Next.js, React, Vue, Angular, or existing projects
 - **AI Team System**: 10 specialized AI roles with atomic task management
-- **Development Standards**: Production-tested patterns and best practices
+- **Development Standards**: Production-tested patterns and best practices from HVAC Estimator deployment
 - **Cross-Project Portability**: One file, any project, no installation required
 - **Atomic Planning Integration**: Context-aware task decomposition for optimal AI performance
 - **Context7 Integration**: Up-to-date library documentation through Context7 MCP Server
-- **Test Environment**: Isolated testing with git exclusion for safe development
-- **MCP Datetime**: Accurate timestamp management through MCP datetime tool
+- **Operational Enhancements**: 9 battle-tested operational patterns for production deployment
+- **Enhanced Patterns**: Security-first, responsive design, and authentication patterns
+- **Documentation Resources**: Complete guides for Vercel, Supabase, design systems, and forms
+- **Automated Timestamps**: Local PowerShell datetime integration (no MCP server required)
 - **AI Implementation Mode**: Direct command execution with terminal control options
 
 ## 🧠 ATOMIC PLANNING PROTOCOL (MANDATORY)
@@ -78,7 +80,559 @@ AI Staff will:
 ```
 
 **API Key**: Get from https://context7.com/dashboard
-**Documentation**: See [CONTEXT7-SETUP.md](./CONTEXT7-SETUP.md) for complete setup guide
+**Documentation**: See [CONTEXT7-SETUP.md](./docs/guides/CONTEXT7-SETUP.md) for complete setup guide
+
+## 🚀 OPERATIONAL ENHANCEMENTS (PRODUCTION-TESTED)
+
+**Source**: HVAC Estimator Production Deployment  
+**Status**: Battle-Tested Patterns  
+**Priority**: Mandatory for All AI Agent Operations
+
+These operational enhancements represent critical improvements derived from real-world production deployment experience. Every AI agent operation MUST follow these patterns.
+
+### 1. **Markdown File Organization** 📁
+
+**Pattern**: Consolidate all Markdown (`.md`) files into dedicated documentation folder
+
+**Implementation**:
+```
+project-root/
+├── docs/                          # All documentation centralized
+│   ├── deployment/                # Deployment guides
+│   ├── authentication/            # Auth setup and patterns
+│   ├── design-systems/            # Design system documentation
+│   ├── forms/                     # Form patterns and logic
+│   └── troubleshooting/           # Debug and troubleshooting
+├── MCP-REFERENCE.md               # This file (root level)
+├── README.md                      # Project readme (root level)
+├── CHANGELOG.md                   # Project changelog (root level)
+└── src/                           # Source code
+```
+
+**Benefits**:
+- Cleaner root directory structure
+- Improved project navigability
+- Centralized documentation management
+- Professional project organization
+
+### 2. **Intelligent Development Server Management** 🔧
+
+**Pattern**: Check for existing dev server before starting new one
+
+**Implementation**:
+```bash
+# BEFORE running npm run dev, the agent MUST:
+1. Check if server is already running on required ports (typically 3000, 3001, etc.)
+2. If server detected:
+   - Verify server is healthy and responding
+   - If healthy: Use existing server
+   - If unhealthy/conflicting: Gracefully terminate and start fresh
+3. If no server running: Start new server with npm run dev
+```
+
+**Agent Workflow**:
+```typescript
+// Pseudo-code for agent server management
+async function startDevServer() {
+  // Step 1: Check for existing server
+  const serverRunning = await checkPort(3000)
+  
+  if (serverRunning) {
+    const isHealthy = await checkServerHealth('http://localhost:3000')
+    
+    if (isHealthy) {
+      console.log('✅ Development server already running and healthy')
+      return 'existing'
+    } else {
+      console.log('⚠️ Unhealthy server detected, restarting...')
+      await terminateProcessOnPort(3000)
+    }
+  }
+  
+  // Step 2: Start fresh server
+  console.log('🚀 Starting development server...')
+  await runCommand('npm run dev')
+  return 'started'
+}
+```
+
+**Benefits**:
+- Prevents port conflicts (EADDRINUSE errors)
+- Reduces redundant server starts
+- Ensures stable development environment
+- Saves developer time and frustration
+
+### 3. **Automated Changelog & README Updates** 📝
+
+**Pattern**: Auto-update documentation before git push operations
+
+**Implementation**:
+```typescript
+// BEFORE any git push, the agent MUST:
+1. Get accurate timestamp using: Get-Date -Format "MMMM dd, yyyy 'at' h:mm tt"
+2. Update CHANGELOG.md with latest changes and timestamp
+3. Update README.md if structural changes made (add/update timestamp)
+4. Commit documentation updates
+5. THEN perform git push
+```
+
+**CHANGELOG.md Update Format**:
+```markdown
+### Last Updated: October 11, 2025 at 12:25 AM
+
+## [Version] - Description
+
+### Added
+- Feature descriptions with atomic task references
+
+### Changed
+- Modification descriptions with file references
+
+### Fixed
+- Bug fix descriptions with issue references
+
+### Security
+- Security improvements with vulnerability references
+```
+
+**Mechanism**: 
+- **Command**: `Get-Date -Format "MMMM dd, yyyy 'at' h:mm tt"` (PowerShell)
+- **Frequency**: Before every git push
+- **Automation**: Agent automatically updates both files with accurate timestamps
+- **No Dependencies**: Works locally without MCP server configuration
+
+**Benefits**:
+- Maintains up-to-date project documentation
+- Provides clear version history
+- Reduces manual documentation overhead
+- Ensures timestamp accuracy
+
+### 4. **Pre-Push Git Confirmation** ⚠️
+
+**Pattern**: Explicit user confirmation before git push
+
+**🚨 CRITICAL PRE-PUSH CHECKLIST (MANDATORY)**:
+```
+BEFORE executing `git push`, the agent MUST COMPLETE IN ORDER:
+
+✅ STEP 1: Update Timestamps (Enhancement #3)
+   - Run: Get-Date -Format "MMMM dd, yyyy 'at' h:mm tt"
+   - Update CHANGELOG.md "Last Updated" timestamp
+   - Update README.md "Last Updated" timestamp
+
+✅ STEP 2: Display Push Summary
+   - Show branch name and remote
+   - List files changed
+   - Show commit count
+
+✅ STEP 3: Ask Explicit Confirmation
+   - Wait for user approval
+   - Provide options (Yes/No/Show Diff)
+
+✅ STEP 4: Execute Push (only after confirmation)
+   - git push origin [branch]
+```
+
+**Confirmation Prompt Template**:
+```
+📊 Git Push Summary:
+Branch: [branch-name]
+Remote: [remote-name]
+Commits: [number] new commit(s)
+Files Changed: [number] file(s)
+
+Changes:
+- [List of modified files]
+
+⚠️ CONFIRMATION REQUIRED:
+Should I proceed with pushing these changes to Git, or do you have any 
+further modifications or issues to address?
+
+Options:
+1. ✅ Yes, push changes
+2. ❌ No, wait (I need to make more changes)
+3. 📋 Show me the diff first
+```
+
+**Benefits**:
+- Provides final review opportunity
+- Prevents unintended pushes
+- Ensures user control over version control
+- Reduces accidental deployments
+
+### 5. **Explicit Mode Awareness** 🤖
+
+**Pattern**: Always state current operational mode
+
+**Implementation**:
+```
+EVERY agent response MUST include mode indicator:
+
+[Claude 3.7 Sonnet] - Ask Mode
+[Claude 3.7 Sonnet] - Agent Mode
+[GPT-4o] - Ask Mode
+[o1] - Agent Mode
+```
+
+**Mode Capabilities**:
+- **Ask Mode**: Full terminal control, manual command execution
+- **Agent Mode**: Automated command execution, continuous flow
+
+**Benefits**:
+- Enhances transparency
+- Helps user understand capabilities
+- Guides interaction patterns
+- Prevents mode confusion
+
+### 6. **Standardized Response Prefix** 🏷️
+
+**Pattern**: All responses begin with LLM identifier
+
+**Implementation**:
+```
+MANDATORY RESPONSE FORMAT:
+[<LLM Name/Version>] - <Mode>
+
+Examples:
+[Claude 3.7 Sonnet] - Ask Mode
+[Claude 3.5 Sonnet] - Agent Mode
+[GPT-4o] - Ask Mode
+[o1] - Ask Mode
+[cursor-small] - Agent Mode
+```
+
+**Benefits**:
+- Clearly identifies active LLM model
+- Aids in tracking model performance
+- Provides consistent user experience
+- Enables model-specific optimization
+
+### 7. **Dynamic LLM Token Management** 🧠
+
+**Pattern**: Adjust token management based on active LLM's context window
+
+**Token Limits by Model** (from Cursor documentation):
+
+| Model Category | Models | Context Window | Strategy |
+|---------------|--------|----------------|----------|
+| **Ultra-High Capacity** | o1 | 1,000,000 tokens | Large codebases, extensive context, comprehensive analysis |
+| **Premium Tier** | Claude 3.7 Sonnet, Claude 3.5 Sonnet, Claude 3 Opus, GPT-4o, o1-mini, Grok-2, DeepSeek R1 | 200,000 tokens | Medium projects, moderate context, selective files |
+| **Standard Tier** | cursor-small, Claude 3.5 Haiku, GPT-4o Mini, o3-mini-high, DeepSeek V3 | 40,000 tokens | Atomic tasks, frequent resets, minimal files |
+
+**Implementation**:
+```typescript
+// Pseudo-code for dynamic token management
+function getContextStrategy(modelName: string) {
+  const tokenLimits = {
+    'o1': { limit: 1000000, strategy: 'extensive' },
+    'claude-3.7-sonnet': { limit: 200000, strategy: 'moderate' },
+    'claude-3.5-sonnet': { limit: 200000, strategy: 'moderate' },
+    'gpt-4o': { limit: 200000, strategy: 'moderate' },
+    'cursor-small': { limit: 40000, strategy: 'atomic' },
+    'claude-3.5-haiku': { limit: 40000, strategy: 'atomic' },
+    'gpt-4o-mini': { limit: 40000, strategy: 'atomic' },
+  }
+  
+  return tokenLimits[modelName] || { limit: 40000, strategy: 'atomic' }
+}
+
+// Apply strategy
+const { limit, strategy } = getContextStrategy(currentModel)
+
+if (strategy === 'atomic') {
+  // Enforce strict atomic planning: max 5 files, frequent context resets
+  maxFilesPerTask = 5
+  recommendContextReset = true
+} else if (strategy === 'moderate') {
+  // Allow medium complexity: max 15 files, selective context resets
+  maxFilesPerTask = 15
+  recommendContextReset = estimatedTokens > 150000
+} else {
+  // Extensive context: max 50 files, minimal resets
+  maxFilesPerTask = 50
+  recommendContextReset = estimatedTokens > 800000
+}
+```
+
+**Pre-Response Check**:
+```typescript
+// Before sending response, verify LLM can process its own prefix
+function verifyModelCapability(modelName: string, responseContent: string) {
+  const hasPrefix = responseContent.startsWith(`[${modelName}]`)
+  
+  if (!hasPrefix) {
+    console.warn(`Missing LLM prefix for ${modelName}`)
+    // Add prefix automatically
+    return `[${modelName}] - ${mode}\n\n${responseContent}`
+  }
+  
+  return responseContent
+}
+```
+
+**Benefits**:
+- Optimizes token usage per model
+- Prevents context window overflows
+- Ensures model operates within constraints
+- Maximizes AI effectiveness
+
+### 8. **Adaptive Auto Mode Behavior** 🎯
+
+**Pattern**: Adjust behavior based on Cursor's auto-LLM selection
+
+**Auto Mode Considerations** (from [Cursor Pricing](https://cursor.com/docs/account/pricing#auto)):
+
+1. **Dynamic Model Selection**
+   - Auto mode intelligently chooses best model for the task
+   - Balances capability with cost efficiency
+   - Adapts to conversation complexity
+
+2. **Cost Optimization**
+   - Uses smaller models for simple tasks
+   - Escalates to premium models for complex tasks
+   - Minimizes unnecessary premium usage
+
+3. **Context Management**
+   - Handles long conversations effectively
+   - Automatically manages context window
+   - Prevents context overflow
+
+4. **Performance Optimization**
+   - Routes tasks to optimal model
+   - Maintains conversation continuity
+   - Adapts to user interaction patterns
+
+**Implementation**:
+```typescript
+// Agent adapts behavior based on auto-selected model
+if (mode === 'auto') {
+  // Let Cursor choose optimal model
+  // Agent adapts to selected model's capabilities
+  const detectedModel = getCurrentModel()
+  const strategy = getContextStrategy(detectedModel)
+  
+  console.log(`[Auto Mode] Using ${detectedModel} with ${strategy.strategy} strategy`)
+  
+  // Apply model-specific optimizations
+  applyOptimizationsFor(detectedModel)
+}
+```
+
+**Benefits**:
+- Platform alignment with Cursor's intent
+- Optimized resource utilization
+- Reduced operational costs
+- Improved performance
+
+### 9. **Enhanced Context Management by Token Limit** 📊
+
+**Strategies by Model Tier**:
+
+#### 40k Token Models (cursor-small, Claude 3.5 Haiku, GPT-4o Mini)
+```
+Strategy: STRICT ATOMIC PLANNING
+
+- Max 5 files per task
+- Frequent context resets (every 2-3 tasks)
+- Minimal file attachments
+- Single-focus operations
+- Clear session boundaries
+- Aggressive atomic decomposition
+```
+
+#### 200k Token Models (Claude 3.7 Sonnet, GPT-4o, o1-mini)
+```
+Strategy: MODERATE CONTEXT USAGE
+
+- Max 15 files per task
+- Moderate context resets (every 5-7 tasks)
+- Selective file attachments
+- Medium-complexity operations
+- Flexible session boundaries
+- Balanced atomic decomposition
+```
+
+#### 1M Token Models (o1)
+```
+Strategy: EXTENSIVE CONTEXT
+
+- Max 50 files per task
+- Minimal context resets (only when needed)
+- Comprehensive file analysis
+- Large-scale operations
+- Extended session boundaries
+- Natural atomic decomposition
+```
+
+**Implementation Matrix**:
+
+| Task Type | 40k Models | 200k Models | 1M Models |
+|-----------|-----------|-------------|-----------|
+| Single file edit | ✅ Optimal | ✅ Optimal | ✅ Optimal |
+| Multi-file feature (5-10 files) | ⚠️ Decompose | ✅ Optimal | ✅ Optimal |
+| Large refactor (20+ files) | ❌ Decompose | ⚠️ Decompose | ✅ Optimal |
+| Architecture review (50+ files) | ❌ Not recommended | ❌ Decompose | ✅ Optimal |
+
+**Benefits**:
+- Model-optimized workflows
+- Prevents context overload
+- Maximizes AI effectiveness
+- Reduces errors and loops
+
+### 10. **Deep Exploration Protocol Before Implementation** 🔍
+
+**Pattern**: Comprehensive understanding before any code changes
+
+**MANDATORY Workflow**:
+```
+BEFORE writing code, agent MUST:
+1. Explore existing codebase thoroughly
+2. Understand current patterns and dependencies
+3. Reason deeply about world-class approach
+4. Generate and critique multiple solutions
+5. Propose final plan
+6. WAIT for user approval
+```
+
+**Benefits**:
+- Prevents incorrect implementations
+- Ensures architectural consistency
+- Reduces rework and bugs
+- Aligns with user intent
+
+### 11. **Pre-Implementation Clarification Protocol** ❓
+
+**Pattern**: Explicit clarification before coding
+
+**MANDATORY Workflow**:
+```
+BEFORE implementing, agent MUST:
+1. Ask clarifying questions for ambiguities
+2. Present alternatives as yes/no questions
+3. Offer improvements as option sets (A, B, C)
+4. Ensure full task understanding
+5. Get explicit confirmation
+```
+
+**Question Format**:
+- **Yes/No**: "Should I [action]? (Yes/No)"
+- **Options**: "Which approach? A) [opt1], B) [opt2], C) [opt3]"
+- **Clarity**: "To clarify: [question]?"
+
+**Benefits**:
+- Prevents misunderstood requirements
+- Reduces implementation errors
+- Improves solution quality
+- Ensures user satisfaction
+
+### 12. **BMAD-METHOD™ Agentic Workflow** 🤖 (Optional)
+
+**Pattern**: AI-driven agentic planning and development methodology
+
+**What is BMAD-METHOD™?**
+Breakthrough Method for Agile AI-Driven Development - a two-phase approach using specialized AI agents:
+
+**Phase 1 - Agentic Planning (Web UI)**:
+- Analyst, PM, and Architect agents collaborate with you
+- Creates detailed PRD (Product Requirements Document)
+- Develops comprehensive Architecture documents
+- Human-in-the-loop refinement for consistency
+- Eliminates planning inconsistency
+
+**Phase 2 - Context-Engineered Development (IDE)**:
+- Scrum Master transforms plans into hyper-detailed stories
+- Dev agent receives complete context in story files
+- QA agent validates against specifications
+- Eliminates context loss through embedded context
+
+**When to Suggest**:
+```
+Suggest BMAD-METHOD™ when:
+- Complex full-stack projects with multiple domains
+- AI-first development teams comfortable with agentic workflows
+- Rapid prototyping requiring quality and consistency
+- Knowledge transfer needs (new team members, documentation)
+- Non-software projects (creative writing, business strategy via expansion packs)
+
+User signals:
+- "Can AI help me plan the architecture?"
+- "I need AI agents to build this"
+- "How can AI understand full context?"
+- "I want AI-driven planning and development"
+```
+
+**Setup & Resources**:
+- **Quick Start**: `npx bmad-method install`
+- **Repository**: https://github.com/bmad-code-org/BMAD-METHOD
+- **Requirements**: Node.js v20+
+- **Integrations**: Gemini Gems, CustomGPT, IDE
+
+**Integration with MCP**:
+- Use BMAD for high-level planning phase
+- Use MCP atomic planning for execution phase
+- Complementary approaches (BMAD planning → MCP implementation)
+
+**Benefits**:
+- Specialized AI agents for each role
+- Context embedded in story files
+- Web UI for planning, IDE for development
+- Expansion packs for non-software domains
+- Human oversight at decision points
+
+### 13. **Spec-Driven Development Protocol** 📋 (Optional)
+
+**Pattern**: Specification-first development approach
+
+**What is Spec-Driven Development?**
+A methodology where specifications (specs) drive the entire development lifecycle - write specs before writing code.
+
+**Core Principles**:
+- **Spec-First**: Write specifications before implementation
+- **Single Source of Truth**: Specs define expected behavior
+- **Living Documentation**: Specs evolve with project, always current
+- **Executable Specs**: Automated validation and testing
+- **Collaborative Design**: Cross-functional team alignment
+
+**When to Suggest**:
+```
+Suggest Spec-Driven Development when:
+- Requirements-heavy or compliance-driven projects (healthcare, finance)
+- Cross-functional teams needing clear communication contracts
+- API and contract-first development
+- Quality-critical systems requiring executable specifications
+- Legacy system enhancement with clear behavioral documentation
+
+User signals:
+- "I need clear requirements first"
+- "How do we define the contract before coding?"
+- "We need testable documentation"
+- "Can we ensure everyone understands the spec?"
+```
+
+**Workflow**:
+1. Write specification defining expected behavior
+2. Review spec with stakeholders for alignment
+3. Implement code to meet specification
+4. Validate implementation against spec (automated)
+5. Update spec as requirements evolve
+
+**Integration with MCP**:
+- Use Spec-Driven for planning/requirements phase
+- Use MCP atomic planning for implementation phase
+- Specs provide clear acceptance criteria for atomic tasks
+
+**Resources**:
+- **GitHub Spec-Kit**: https://github.com/github/spec-kit
+- **Spec-Driven Development Guide**: See Spec-Kit README
+
+**Benefits**:
+- Reduced rework through upfront clarity
+- Better team communication and alignment
+- Testable, executable documentation
+- Clear acceptance criteria
+- Alignment between stakeholders and developers
+
+---
 
 ## 🤖 ENHANCED MANDATORY WORKFLOW PROTOCOL
 
@@ -113,7 +667,28 @@ AI Staff will:
 **Task Complexity**: [Atomic | Requires Decomposition | Multi-Domain]
 **Context Requirements**: [Files needed, estimated tokens]
 **Session Strategy**: [Single session | Multi-session atomic sequence]
+**Exploration Required**: [Yes/No - Apply Deep Exploration Protocol]
+**Clarification Needed**: [Yes/No - Apply Clarification Protocol]
 ```
+
+**Deep Exploration Protocol** (if new codebase or complex changes):
+- Explore existing code before proposing changes
+- Understand current patterns and architecture
+- Generate multiple solution approaches
+- Critique and refine before proposing
+- Present final plan for approval
+
+**Pre-Implementation Clarification** (if ambiguities exist):
+- Ask clarifying questions before coding
+- Present alternatives as yes/no or option sets
+- Suggest improvements user may not have considered
+- Ensure full understanding before implementation
+
+**Optional Methodology Consideration** (for planning-heavy projects):
+- Detect if project would benefit from BMAD-METHOD™ or Spec-Driven Development
+- Ask user: "Would you like to use [methodology] for this project? (Yes/No)"
+- If yes, provide setup guidance and integrate with MCP workflow
+- If no, proceed with standard MCP atomic planning
 
 ### 2. Atomic Task Decomposition
 **MANDATORY**: All non-atomic requests MUST be decomposed using this template:
@@ -232,7 +807,7 @@ Every ASK mode response MUST follow this enhanced structure:
 - [ ] Run next command when ready
 - [ ] Reset context if recommended
 
-## 📊 DUAL SUMMARY (MANDATORY)
+## 📊 DUAL SUMMARY (Optional - Ask User)
 
 ### 🔧 Technical Summary (For Developers)
 **Current Task Scope**: [What this atomic task accomplishes]
@@ -320,7 +895,14 @@ Every MCP-REFERENCE.md response MUST follow this enhanced structure:
 - [Expected outcomes for this specific task]
 - [When to proceed to next atomic task]
 
-## 📊 DUAL SUMMARY (MANDATORY)
+## 📊 Summary Prompt (Token-Optimized)
+**Need summary? Tech/Business/Both/Skip**
+
+---
+
+*If user requests summary, provide below:*
+
+## 📊 DUAL SUMMARY (Optional - Ask User)
 
 ### 🔧 Technical Summary (For Developers)
 **Current Task Scope**: [What this atomic task accomplishes]
@@ -355,7 +937,7 @@ Every MCP-REFERENCE.md response MUST follow this enhanced structure:
 3. **Role Consistency**: Stay in character of assigned AI team member
 4. **Quality Assurance**: Cross-reference multiple sources for accuracy
 5. **Completeness**: Provide implementation steps and verification methods
-6. **MANDATORY DUAL SUMMARY**: Every response MUST include both Technical and Business summaries
+6. **OPTIONAL DUAL SUMMARY**: Ask user at end: "Need summary? (Tech/Business/Both/Skip)"
 7. **ATOMIC PLANNING COMPLIANCE**: All tasks must be atomic or properly decomposed
 8. **CONTEXT AWARENESS**: Monitor and manage context window usage
 9. **SESSION BOUNDARIES**: Clearly define when to reset context for next task
@@ -974,6 +1556,363 @@ export function useResource() {
 - **React**: Context API, Redux Toolkit, Zustand with atomic actions
 - **Vue.js**: Pinia stores, reactive state, atomic mutations
 - **Angular**: NgRx, services, atomic state management patterns
+
+## 🎨 PRODUCTION-ENHANCED PATTERNS
+
+**Source**: HVAC Estimator Production Deployment  
+**Status**: Battle-Tested in Real-World Applications  
+**Documentation**: Complete guides in `docs/` folder
+
+These enhanced patterns represent production-proven solutions for common development challenges, derived from successful deployment experience.
+
+### 1. **Context-Aware Atomic Planning Enhancements** 🧠
+
+**Pattern**: Session boundary management with memory integration
+
+**Key Enhancements**:
+- **Context Window Monitoring**: Track token usage per session
+- **File Count Limits**: Maximum 5 files per atomic task (strict enforcement)
+- **Memory Integration**: Use CHANGELOG.md for context persistence across sessions
+- **Handoff Instructions**: Clear context transfer between atomic tasks
+
+**Atomic Task Verification Gates**:
+```markdown
+**Pre-Task Verification**:
+- [ ] Verify context requirements (≤5 files)
+- [ ] Estimate token usage for task
+- [ ] Confirm task is truly atomic (single objective)
+- [ ] Identify dependencies on previous tasks
+
+**Mid-Task Verification**:
+- [ ] Check progress against success criteria
+- [ ] Monitor context window usage
+- [ ] Verify no scope creep occurring
+
+**Post-Task Verification**:
+- [ ] Document completion in CHANGELOG.md
+- [ ] List next atomic tasks in sequence
+- [ ] Prepare handoff instructions
+- [ ] Recommend context reset if needed
+
+**Rollback Procedures**:
+- [ ] Clear rollback steps documented
+- [ ] Version control checkpoint created
+- [ ] Dependencies identified for rollback
+```
+
+**Benefits**:
+- Prevents context amnesia
+- Enables multi-session complex projects
+- Maintains AI effectiveness at scale
+- Clear progress tracking
+
+### 2. **Security-First Development Patterns** 🔒
+
+**Pattern**: Comprehensive pre-deployment security audit
+
+**Pre-Deployment Security Checklist**:
+```markdown
+## 🔒 Security Audit (Mandatory Before Deployment)
+
+### Credential Audit
+- [ ] No hardcoded API keys in code
+- [ ] No hardcoded passwords in code
+- [ ] No hardcoded database URLs in code
+- [ ] All secrets in environment variables
+- [ ] .env files in .gitignore
+- [ ] No .env files in git history
+
+### Data Exposure Audit
+- [ ] Audit all console.log statements
+- [ ] Remove PII from console logs
+- [ ] Remove sensitive data from error messages
+- [ ] No sensitive data in client-side code
+- [ ] Server-side validation for all inputs
+
+### Authentication & Authorization
+- [ ] Authentication flows tested and working
+- [ ] Authorization boundaries tested
+- [ ] RLS policies applied (if using Supabase)
+- [ ] Session management secure
+- [ ] Password reset flow secure
+
+### Environment Variables
+- [ ] Development variables configured
+- [ ] Preview variables configured
+- [ ] Production variables configured
+- [ ] No sensitive defaults in code
+```
+
+**Production-Ready Security Standards**:
+- **Environment Variables**: All secrets via environment variables
+- **Console Logging**: No PII in production logs
+- **Authentication**: RLS-based authorization patterns (see `docs/authentication/`)
+- **Data Handling**: Secure data flow patterns
+- **Input Validation**: Server-side validation for all user inputs
+
+**Documentation References**:
+- **Complete Guide**: `docs/authentication/SUPABASE_AUTHENTICATION_SETUP.md`
+- **RLS Patterns**: Database-level security without hardcoded credentials
+- **Magic Link Auth**: Passwordless authentication system
+- **Password Reset**: Secure client-side token handling
+
+**Benefits**:
+- Prevents security vulnerabilities before deployment
+- Ensures compliance with security best practices
+- Protects user data and system integrity
+- Reduces security-related rollbacks
+
+### 3. **Data-Driven Responsive Design Strategy** 📱
+
+**Pattern**: Optimize for actual user demographics, not edge cases
+
+**User Demographics Analysis Example** (from HVAC Estimator):
+```
+📊 Actual User Data:
+- 55% Mobile users (primary target)
+- 35% 1080p Desktop users (secondary target)
+- 10% 1440p+ Desktop users (edge case)
+
+🎯 Design Decision:
+Optimize for the 90% majority, not the 10% edge case
+```
+
+**Container Width Strategy**:
+```css
+/* ✅ Good: Optimized for majority users */
+.container {
+  max-width: 1536px;  /* max-w-6xl */
+  /* Optimal for:
+     - Mobile: Full width with padding
+     - 1080p: ~1400px usable width (excellent)
+     - 1440p+: ~1400px usable width (acceptable, not stretched)
+  */
+}
+
+.text-content {
+  max-width: 896px;   /* max-w-4xl */
+  /* Optimal readability for all screen sizes */
+}
+
+/* ❌ Bad: Optimizing for edge case */
+.container {
+  max-width: 1920px;  /* max-w-screen-2xl */
+  /* Problems:
+     - Looks stretched on 1080p (35% of users)
+     - Too wide for comfortable reading
+     - Optimizes for only 10% of users
+  */
+}
+```
+
+**Strategic Design Principles**:
+1. **Mobile-First**: Start with mobile design, enhance for desktop
+2. **Touch Targets**: Minimum 44x44px for all interactive elements
+3. **Readability**: Max width for text content (65-75 characters per line)
+4. **Professional Appearance**: Industry-standard container widths
+5. **Accessibility**: WCAG compliance with proper contrast ratios
+
+**Performance Impact**:
+- Better conversion rates from target users (90% majority)
+- Professional appearance for business stakeholders
+- Improved accessibility scores
+- Faster load times with optimized assets
+
+**Documentation Reference**:
+- **Complete Guide**: `docs/design-systems/UNIFIED_BUTTON_SYSTEM.md`
+- **Design Patterns**: Scalable design system with global styling
+- **Accessibility**: Built-in WCAG 2.1 compliance
+
+**Benefits**:
+- Data-driven design decisions
+- Better UX for majority of users
+- Professional stakeholder presentations
+- Measurable conversion improvements
+
+### 4. **Complete Authentication System Patterns** 🔐
+
+**Pattern**: Production-ready authentication with all flows
+
+**Supabase Integration Patterns**:
+
+#### RLS-Based Authorization (No Hardcoded Credentials)
+```sql
+-- Example: Admin authorization via database
+CREATE TABLE admin_users (
+  id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+  user_id UUID REFERENCES auth.users(id) ON DELETE CASCADE,
+  email TEXT NOT NULL UNIQUE,
+  created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
+);
+
+-- Enable RLS
+ALTER TABLE admin_users ENABLE ROW LEVEL SECURITY;
+
+-- Policy: Users can read their own admin status
+CREATE POLICY "Users can read own admin status"
+  ON admin_users
+  FOR SELECT
+  USING (auth.uid() = user_id);
+```
+
+#### Magic Link Authentication (Passwordless)
+```typescript
+// Simple, secure passwordless login
+const { error } = await supabase.auth.signInWithOtp({
+  email,
+  options: {
+    emailRedirectTo: `${window.location.origin}/auth/callback`,
+  },
+})
+```
+
+#### Password Reset Flow (Client-Side Token Handling)
+```typescript
+// Step 1: Request reset link
+await supabase.auth.resetPasswordForEmail(email, {
+  redirectTo: `${window.location.origin}/auth/reset-password`,
+})
+
+// Step 2: Handle reset on callback page
+await supabase.auth.updateUser({
+  password: newPassword,
+})
+```
+
+#### Session Management
+```typescript
+// Middleware for Next.js (session persistence)
+import { createMiddlewareClient } from '@supabase/auth-helpers-nextjs'
+
+export async function middleware(req: NextRequest) {
+  const res = NextResponse.next()
+  const supabase = createMiddlewareClient({ req, res })
+  await supabase.auth.getSession() // Refresh session
+  return res
+}
+```
+
+**Security Best Practices**:
+- ✅ No hardcoded credentials anywhere
+- ✅ Server-side authorization checks
+- ✅ Secure client-side token handling
+- ✅ User-friendly error messages
+- ✅ Proper session persistence
+
+**Redirect URL Configuration** (Critical for Production):
+```
+Development:
+- Site URL: http://localhost:3000
+- Redirect URLs:
+  - http://localhost:3000/auth/callback
+  - http://localhost:3000/auth/confirm
+  - http://localhost:3000/auth/reset-password
+
+Preview (Vercel):
+- Redirect URLs (wildcard):
+  - https://*-username.vercel.app/auth/callback
+  - https://*-username.vercel.app/auth/confirm
+  - https://*-username.vercel.app/auth/reset-password
+
+Production:
+- Site URL: https://yourapp.vercel.app
+- Redirect URLs:
+  - https://yourapp.vercel.app/auth/callback
+  - https://yourapp.vercel.app/auth/confirm
+  - https://yourapp.vercel.app/auth/reset-password
+```
+
+**Documentation References**:
+- **Complete Setup Guide**: `docs/authentication/SUPABASE_AUTHENTICATION_SETUP.md`
+- **Deployment Workflow**: `docs/deployment/VERCEL_WORKFLOW_GUIDE.md`
+- **Form Patterns**: `docs/forms/CONDITIONAL_FORM_LOGIC.md`
+
+**Benefits**:
+- Production-ready authentication from day one
+- Multiple authentication methods (password, magic link)
+- Database-level security with RLS
+- Clear troubleshooting documentation
+- No security vulnerabilities from hardcoded credentials
+
+### 5. **Advanced Form Logic Patterns** 📋
+
+**Pattern**: Multi-path forms with conditional validation
+
+**Key Patterns**:
+- **Multi-Path Forms**: Different flows based on user selections
+- **Warning Screens**: User-friendly validation with clear actions
+- **State Management**: React best practices for complex form state
+- **Type Safety**: TypeScript patterns for optional fields
+- **Dynamic Validation**: Requirements that change based on user input
+
+**Example: New vs Existing Customer Flow**:
+```typescript
+// Dynamic validation based on customer type
+const getRequiredFields = (customerType: 'new' | 'existing' | null): string[] => {
+  const baseRequired = ['jobDescription']
+  
+  if (customerType === 'new') {
+    return [...baseRequired, 'name', 'phone', 'address']
+  }
+  
+  if (customerType === 'existing') {
+    return [...baseRequired, 'phone'] // Only phone to verify identity
+  }
+  
+  return baseRequired
+}
+```
+
+**Documentation Reference**:
+- **Complete Guide**: `docs/forms/CONDITIONAL_FORM_LOGIC.md`
+- **Examples**: Real-world production patterns
+- **Testing**: Comprehensive test patterns for conditional logic
+
+**Benefits**:
+- Professional user experiences
+- Reduced form abandonment
+- Clear user guidance
+- Type-safe implementations
+
+---
+
+## 📚 PRODUCTION DOCUMENTATION RESOURCES
+
+All new documentation files are located in the `docs/` folder:
+
+### Deployment
+- **`docs/deployment/VERCEL_WORKFLOW_GUIDE.md`**: Complete Vercel environment management
+  - Clarifies Development/Preview/Production confusion
+  - Simplified dev/main → Preview → main → Production workflow
+  - Environment variable setup for each environment
+  - Supabase redirect URL configuration
+  - Branch naming best practices
+
+### Authentication
+- **`docs/authentication/SUPABASE_AUTHENTICATION_SETUP.md`**: Complete auth flow documentation
+  - Password reset with client-side token handling
+  - Magic link (passwordless) authentication
+  - RLS-based authorization (no hardcoded credentials)
+  - Redirect URL configuration steps
+  - Comprehensive troubleshooting guide
+
+### Design Systems
+- **`docs/design-systems/UNIFIED_BUTTON_SYSTEM.md`**: Scalable design system pattern
+  - Single source of truth for all button styling
+  - CSS custom properties for easy theming
+  - Mobile-first design with accessibility
+  - Works with existing UI libraries
+  - Brand consistency patterns
+
+### Forms
+- **`docs/forms/CONDITIONAL_FORM_LOGIC.md`**: Advanced form patterns
+  - Multi-path forms based on user selections
+  - Warning screens with clear user actions
+  - React state management best practices
+  - TypeScript patterns for optional fields
+  - Professional validation messaging
+
+---
 
 ## 📊 Project Context (Multi-Framework Aware)
 

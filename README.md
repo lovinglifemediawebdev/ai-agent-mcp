@@ -1,32 +1,150 @@
-# AI Agent MCP (Model Context Protocol) System - V2.0
+# AI Agent MCP (Model Context Protocol) System - V3.0
 
-A comprehensive AI reference system with **atomic planning integration** and **multi-framework support** designed for seamless integration across all your projects. This enhanced MCP provides AI agents with context-aware development standards, atomic workflow patterns, specialized AI team roles, and framework-specific best practices while preventing context overload through research-backed atomic planning methodology.
+**Last Updated**: October 11, 2025 at 12:33 AM
 
-## 🎯 MCP V2.0 Usage
+A comprehensive AI reference system with **optional methodologies**, **production-tested enhancements**, **atomic planning integration**, and **multi-framework support** designed for seamless integration across all your projects. This battle-tested MCP provides AI agents with operational best practices from real-world deployments, context-aware development standards, atomic workflow patterns, specialized AI team roles, and framework-specific best practices.
 
-**For New Projects:** Copy `MCP-REFERENCE.md` (V2.0) to your project root and reference it in Cursor AI  
+## 🎯 MCP V3.0 Usage
+
+**For New Projects:** Copy `MCP-REFERENCE.md` (V3.0) to your project root and reference it in Cursor AI  
 **Multi-Framework Support:** Automatic detection and support for Motia, Next.js, React, Vue, Angular  
 **Atomic Planning:** Automatic task decomposition to prevent AI context overload  
-**Context7 Integration:** Enhanced AI Staff with up-to-date library documentation (see [CONTEXT7-SETUP.md](./CONTEXT7-SETUP.md))  
-**Test Environment:** Created test-files/ folder with .gitignore exclusion for safe testing  
-**MCP Datetime:** Integrated MCP datetime tool for accurate timestamps  
+**Production-Tested:** 20+ enhancements from HVAC Estimator successful deployment  
+**Complete Documentation:** Battle-tested guides in `docs/` folder for deployment, auth, design, forms  
+**Context7 Integration:** Enhanced AI Staff with up-to-date library documentation (see [CONTEXT7-SETUP.md](./docs/guides/CONTEXT7-SETUP.md))  
+**Operational Enhancements:** 9 critical patterns for production-ready AI agent operations  
+**Enhanced Patterns:** Security-first, responsive design, authentication, and form logic patterns  
+**Automated Timestamps:** Local PowerShell datetime (no MCP server required)  
 **AI Implementation Mode:** Enhanced workflow with direct command execution capabilities  
-**Always Up-to-Date:** Changes in this repository are immediately available to all projects with enhanced context management
+**Always Up-to-Date:** Changes in this repository are immediately available to all projects
 
-## 🚀 V2.0 Enhanced Features
+## 🚀 V3.0 Enhanced Features
+
+### 🎨 NEW: Production Documentation Resources
+Complete guides in `docs/` folder from HVAC Estimator deployment:
+
+#### Deployment
+- **[VERCEL_WORKFLOW_GUIDE.md](./docs/deployment/VERCEL_WORKFLOW_GUIDE.md)** - Complete Vercel environment management
+  - Clarifies Development/Preview/Production confusion
+  - Simplified `dev/main` → Preview → `main` → Production workflow
+  - Environment variable setup for each environment
+  - Supabase redirect URL configuration
+  - Professional branch naming best practices
+
+#### Authentication
+- **[SUPABASE_AUTHENTICATION_SETUP.md](./docs/authentication/SUPABASE_AUTHENTICATION_SETUP.md)** - Complete auth flow documentation
+  - Password reset with client-side token handling
+  - Magic link (passwordless) authentication
+  - RLS-based authorization (no hardcoded credentials)
+  - Redirect URL configuration steps
+  - Comprehensive troubleshooting guide
+
+#### Design Systems
+- **[UNIFIED_BUTTON_SYSTEM.md](./docs/design-systems/UNIFIED_BUTTON_SYSTEM.md)** - Scalable design system pattern
+  - Single source of truth for all button styling
+  - CSS custom properties for easy theming
+  - Mobile-first design with accessibility
+  - Works with existing UI libraries
+
+#### Forms
+- **[CONDITIONAL_FORM_LOGIC.md](./docs/forms/CONDITIONAL_FORM_LOGIC.md)** - Advanced form patterns
+  - Multi-path forms based on user selections
+  - Warning screens with clear user actions
+  - React state management best practices
+  - TypeScript patterns for optional fields
+
+### 🔧 NEW: 13 Operational Enhancements
+Production-ready patterns for AI agent operations:
+
+1. **Markdown File Organization** - Centralized docs/ folder structure
+2. **Intelligent Dev Server Management** - Check existing servers, prevent port conflicts
+3. **Automated Changelog & README Updates** - Local PowerShell Get-Date for accurate timestamps
+4. **Pre-Push Git Confirmation** - Explicit user confirmation before pushing
+5. **Explicit Mode Awareness** - Always state current mode (Ask/Agent)
+6. **Standardized Response Prefix** - [LLM Name/Version] - Mode format
+7. **Dynamic LLM Token Management** - Adjust strategy per model's context window
+   - Ultra-High (o1): 1M tokens - extensive context
+   - Premium (Claude 3.7, GPT-4o): 200k tokens - moderate context
+   - Standard (cursor-small, Haiku): 40k tokens - strict atomic
+8. **Adaptive Auto Mode Behavior** - Align with Cursor's auto-LLM selection
+9. **Enhanced Context Management** - Model-specific workflows prevent overload
+10. **Deep Exploration Protocol** - Mandatory codebase exploration before implementation
+11. **Pre-Implementation Clarification** - Question-driven development with user approval
+12. **BMAD-METHOD™ Agentic Workflow (Optional)** - AI-driven planning with specialized agents
+13. **Spec-Driven Development (Optional)** - Specification-first for requirements-heavy projects
+
+### 🎨 NEW: 5 Enhanced Patterns
+Production-proven solutions from real-world deployment:
+
+1. **Context-Aware Atomic Planning** - Session boundary management with memory integration
+2. **Security-First Development** - Comprehensive pre-deployment security audit
+3. **Data-Driven Responsive Design** - Optimize for actual user demographics (55% mobile, 35% 1080p, 10% 1440p+)
+4. **Complete Authentication System** - Production-ready Supabase patterns with RLS
+5. **Advanced Form Logic** - Multi-path forms with conditional validation
+
+### 🔧 NEW: Optional Development Methodologies
+AI can suggest these when appropriate for your project:
+
+#### BMAD-METHOD™ Agentic Workflow
+- **What**: AI-driven planning with specialized agents (Analyst, PM, Architect, SM, Dev, QA)
+- **When**: Complex full-stack projects, AI-first teams, rapid prototyping with quality
+- **Setup**: `npx bmad-method install`
+- **Learn More**: [BMAD-METHOD Repository](https://github.com/bmad-code-org/BMAD-METHOD)
+
+#### Spec-Driven Development
+- **What**: Specification-first development with executable, testable specs
+- **When**: Requirements-heavy projects, compliance-driven systems, API contracts
+- **Learn More**: [GitHub Spec-Kit](https://github.com/github/spec-kit)
+
+Both methodologies complement MCP's atomic planning - use them for planning phase, then execute with MCP atomic tasks.
+
+---
+
+## 📚 Complete Documentation
+
+### Essential Files (Root Directory)
+- **README.md** - This file - project overview and quick start
+- **CHANGELOG.md** - Version history and detailed updates
+- **MCP-REFERENCE.md** - Complete AI agent system reference (copy this to your projects!)
+
+### Comprehensive Guides (docs/guides/)
+All detailed documentation has been organized in `docs/guides/`:
+
+- **AI-AGENT-REFERENCE.md** - AI agent system documentation
+- **AI_CHANGELOG_INSTRUCTIONS.md** - Changelog automation guide
+- **CONTEXT7-SETUP.md** - Context7 MCP Server integration guide
+- **CONTEXT7-IMPLEMENTATION-SUMMARY.md** - Context7 implementation details
+- **Full-Stack-Web-Dev-Playbook.md** - Complete web development methodology
+- **QUICK-REFERENCE.md** - Quick start commands and patterns
+- **PHASES.md** - 8-phase development workflow system
+- **USAGE-EXAMPLES.md** - Practical usage examples
+- **FOLDER-STRUCTURE.md** - Project organization guide
+- **VSCODE-SETUP-REFERENCE.md** - VS Code configuration
+- **ZORINOS-POWERSHELL-CORE-SETUP.md** - PowerShell setup for Linux
+- **MCP_ENHANCEMENT_PACKAGE.md** - Enhancement package from HVAC Estimator
+
+### Production Documentation (docs/)
+- **docs/deployment/** - Vercel workflow and deployment guides
+- **docs/authentication/** - Supabase auth setup and patterns
+- **docs/design-systems/** - Unified button system and design patterns
+- **docs/forms/** - Conditional form logic and advanced patterns
+
+---
 
 ### 🧠 Atomic Planning Integration
 - **Context Window Science** - Research-backed approach to managing AI context limitations
 - **Atomic Task Decomposition** - Automatic breakdown of complex tasks into manageable units
 - **Session Boundary Management** - Clear handoff instructions between atomic tasks
 - **Context Overload Prevention** - Maintains AI effectiveness at any project scale
+- **File Count Limits** - Strict ≤5 files per atomic task enforcement
+- **Verification Gates** - Pre-task, mid-task, post-task validation
 
 ### 🤖 Multi-Framework AI Development Team System
 - **Enhanced Team Dispatcher** - Central command center with atomic planning capabilities
 - **10 Specialized Roles** - All roles enhanced with multi-framework and atomic awareness
 - **Context7 Integration** - Up-to-date library documentation through Context7 MCP Server
 - **Test Environment** - Isolated test-files/ folder with git exclusion for safe testing
-- **MCP Datetime** - Accurate timestamp management through MCP datetime tool
+- **Automated Timestamps** - Local PowerShell Get-Date command (no MCP server required)
 - **AI Implementation Mode** - Direct command execution with terminal control options
 - **Framework Detection** - Automatic detection and adaptation for Motia, Next.js, React, Vue, Angular
 - **Memory System** - Enhanced memory retention with atomic context management
