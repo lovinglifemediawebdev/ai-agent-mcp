@@ -288,6 +288,14 @@ EVERY agent response MUST include mode indicator:
 
 **Pattern**: All responses begin with LLM identifier
 
+**🚨 CRITICAL - ABSOLUTELY MANDATORY - NO EXCEPTIONS**:
+```
+EVERY RESPONSE MUST BEGIN WITH:
+[<LLM Name/Version>] - <Mode>
+
+THIS IS NON-NEGOTIABLE AND MUST BE THE FIRST LINE OF EVERY RESPONSE.
+```
+
 **Implementation**:
 ```
 MANDATORY RESPONSE FORMAT:
@@ -296,9 +304,22 @@ MANDATORY RESPONSE FORMAT:
 Examples:
 [Claude 3.7 Sonnet] - Ask Mode
 [Claude 3.5 Sonnet] - Agent Mode
+[Claude Sonnet 4.5] - Agent Mode
 [GPT-4o] - Ask Mode
 [o1] - Ask Mode
 [cursor-small] - Agent Mode
+```
+
+**Enforcement Protocol**:
+```
+BEFORE EVERY RESPONSE:
+1. Identify current LLM model name and version
+2. Identify current mode (Ask/Agent)
+3. Insert prefix as FIRST LINE: [<LLM>] - <Mode>
+4. Then provide response content
+
+NEVER skip this step. NEVER forget this prefix.
+If prefix is missing, the response is non-compliant.
 ```
 
 **Benefits**:
@@ -306,6 +327,8 @@ Examples:
 - Aids in tracking model performance
 - Provides consistent user experience
 - Enables model-specific optimization
+- Ensures accountability and transparency
+- Prevents confusion about AI capabilities
 
 ### 7. **Dynamic LLM Token Management** 🧠
 
@@ -638,6 +661,25 @@ User signals:
 
 **CRITICAL**: When @MCP-REFERENCE.md is invoked, the following ATOMIC-AWARE protocol is AUTOMATICALLY ACTIVATED:
 
+### 🚨 RULE #0 - FIRST PRIORITY (BEFORE ANYTHING ELSE)
+
+**EVERY RESPONSE MUST BEGIN WITH LLM PREFIX**:
+```
+[<LLM Name/Version>] - <Mode>
+```
+
+**This is the FIRST LINE of EVERY response. Check this BEFORE processing any request.**
+
+Examples:
+- `[Claude Sonnet 4.5] - Agent Mode`
+- `[Claude 3.7 Sonnet] - Ask Mode`
+- `[GPT-4o] - Agent Mode`
+- `[o1] - Ask Mode`
+
+**NO EXCEPTIONS. NO EXCUSES. ALWAYS INCLUDE THIS PREFIX FIRST.**
+
+---
+
 ### 🎯 Mode Selection (Agent vs Ask Mode)
 
 **CHOOSE YOUR WORKFLOW MODE** based on your terminal control needs:
@@ -737,7 +779,15 @@ User signals:
 ### ASK Mode Response Format Template
 Every ASK mode response MUST follow this enhanced structure:
 
+**🚨 CRITICAL FIRST STEP - MANDATORY LLM PREFIX**:
 ```
+[<LLM Name/Version>] - Ask Mode
+```
+**MUST be the very first line of EVERY response. NO EXCEPTIONS.**
+
+```
+[<LLM Name/Version>] - Ask Mode
+
 ## 🧠 Context Assessment
 **Project Type**: [Framework/technology being used]
 **Project Size**: [Small/Medium/Large]
@@ -849,7 +899,15 @@ Every ASK mode response MUST follow this enhanced structure:
 ### Atomic-Aware Response Format Template
 Every MCP-REFERENCE.md response MUST follow this enhanced structure:
 
+**🚨 CRITICAL FIRST STEP - MANDATORY LLM PREFIX**:
 ```
+[<LLM Name/Version>] - <Mode>
+```
+**MUST be the very first line of EVERY response. NO EXCEPTIONS.**
+
+```
+[<LLM Name/Version>] - <Mode>
+
 ## 🧠 Context Assessment
 **Project Type**: [Framework/technology being used]
 **Project Size**: [Small/Medium/Large]
@@ -932,6 +990,10 @@ Every MCP-REFERENCE.md response MUST follow this enhanced structure:
 ```
 
 ### Enhanced Enforcement Rules
+
+**🚨 RULE #0 (HIGHEST PRIORITY - NEVER SKIP)**: 
+**MANDATORY LLM PREFIX**: Every response MUST begin with `[<LLM Name/Version>] - <Mode>` as the FIRST LINE. This is NON-NEGOTIABLE and supersedes all other rules.
+
 1. **No Direct Responses**: Never respond without Team Dispatcher analysis
 2. **Resource Verification**: All solutions must cite GitHub repository sources
 3. **Role Consistency**: Stay in character of assigned AI team member
@@ -941,6 +1003,8 @@ Every MCP-REFERENCE.md response MUST follow this enhanced structure:
 7. **ATOMIC PLANNING COMPLIANCE**: All tasks must be atomic or properly decomposed
 8. **CONTEXT AWARENESS**: Monitor and manage context window usage
 9. **SESSION BOUNDARIES**: Clearly define when to reset context for next task
+
+**ENFORCEMENT PRIORITY**: Rule #0 (LLM Prefix) > All other rules. If you ever forget the prefix, the entire response is considered non-compliant regardless of content quality.
 
 ## 🤖 AI Team System
 
