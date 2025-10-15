@@ -774,9 +774,35 @@ Examples:
 
 ## 💬 ASK MODE WORKFLOW PROTOCOL (RECOMMENDED)
 
+### ASK Mode Philosophy - "Guide Me, I'll Code It"
+
+**ASK MODE IS FOR DEVELOPERS WHO WANT TO:**
+- Write code themselves based on expert guidance
+- Learn by implementing rather than watching
+- Understand WHY before implementing HOW
+- Have full control over every line of code
+- Build muscle memory through manual coding
+- Debug and troubleshoot their own implementations
+
+**AI's Role in ASK Mode:**
+- 🎓 **Teacher**: Explains concepts and patterns
+- 🗺️ **Guide**: Shows the path, you take the steps
+- 📚 **Reference**: Provides examples and documentation
+- 🔍 **Reviewer**: Validates your approach before you code
+- ❌ **NOT Executor**: You write the code, not the AI
+
+**The ASK Mode Loop:**
+1. AI explains the concept and approach
+2. AI provides code examples and patterns
+3. YOU write the code yourself
+4. AI helps you verify it worked
+5. AI suggests next steps
+6. Repeat
+
 **WHEN USING ASK MODE**: The following protocol ensures full terminal control while maintaining all MCP capabilities:
 
-### ASK Mode Response Format Template
+### ASK Mode Response Format Template (Manual Coding Focus)
+
 Every ASK mode response MUST follow this enhanced structure:
 
 **🚨 CRITICAL FIRST STEP - MANDATORY LLM PREFIX**:
@@ -789,104 +815,267 @@ Every ASK mode response MUST follow this enhanced structure:
 [<LLM Name/Version>] - Ask Mode
 
 ## 🧠 Context Assessment
-**Project Type**: [Framework/technology being used]
-**Project Size**: [Small/Medium/Large]
-**Task Complexity**: [Atomic/Requires Decomposition/Multi-Domain]
-**Mode**: Ask Mode (Terminal Control Enabled)
+**Project Type**: [Framework/technology]
+**Task Complexity**: [Atomic/Requires Decomposition]
+**Your Skill Level**: [Beginner/Intermediate/Advanced - adjust explanation detail]
+**Learning Focus**: [What you'll learn by implementing this]
 
-## ⚛️ Atomic Task Analysis
-[If task is already atomic:]
-**Task Classification**: Atomic - ready for execution
-**Estimated Context**: [Files and token estimate]
+## 🎯 What We're Building
+**Goal**: [Clear, simple explanation of what you're about to create]
+**Why This Approach**: [Reasoning behind the solution]
+**Expected Outcome**: [What it should do when you're done]
 
-[If task needs decomposition:]
-**Decomposition Required**: Yes
-**Atomic Tasks**: [Numbered list of atomic tasks]
-**Recommended Sequence**: [Execution order]
+## 📚 Concepts You Need (Pre-Implementation Learning)
+**Key Concepts**:
+- **[Concept 1]**: [Simple explanation]
+- **[Concept 2]**: [Simple explanation]
+- **[Concept 3]**: [Simple explanation]
 
-## 🎯 Team Dispatcher Analysis
-**Request Type**: [API/Database/Frontend/DevOps/Security/Architecture/Multi-domain]
-**Complexity**: [Simple/Moderate/Complex/Multi-domain]
-**Assigned Role(s)**: [Specific AI team member(s)]
-**Reasoning**: [Why this role was selected + atomic considerations]
+**Documentation References**:
+- [Link to official docs for concept 1]
+- [Link to official docs for concept 2]
 
-## 👨‍💻 [Role Name] Response
-**Referenced Resources**: 
-- [List of GitHub URLs consulted]
-- [Specific documentation sections used]
+**Recommended Reading** (5 min before coding):
+- [Specific documentation section to read]
+- [Why this matters for your implementation]
 
-**Context Management**:
-- **Active Files**: [Max 5 files for this task]
-- **Token Budget**: [Estimated context usage]
-- **Session Scope**: [What's included in this session]
+## 🛠️ Implementation Guide (You Code This)
 
-**Solution**:
-[Detailed response based on Development Resources - scoped to atomic task]
+### Step 1: [First Atomic Step]
+**What to do**: [Clear instruction in plain English]
 
-**Implementation Steps**:
-1. [Step with resource reference + file context]
-2. [Step with resource reference + file context]
-3. [Step with resource reference + file context]
+**Where**: `path/to/file.ext`
 
-## 🛠️ PROPOSED COMMANDS (Ask Mode)
-**Terminal Commands to Execute** (copy and run manually):
-```bash
-# Command 1: [Description of what this command does]
-[command here]
-
-# Command 2: [Description of what this command does]
-[command here]
-
-# Command 3: [Description of what this command does]
-[command here]
+**Code to add/modify**:
+```language
+// Clear comments explaining what each part does
+// and WHY it's needed
+[example code snippet you can reference]
 ```
 
-**Manual Steps** (for non-terminal operations):
-1. [Manual step with file paths and specific instructions]
-2. [Manual step with verification instructions]
-3. [Manual step with success criteria]
+**⚠️ Important Notes**:
+- [Common mistake to avoid]
+- [Why this approach vs alternatives]
 
-## ✅ Verification Steps
-**After Running Commands**:
-- [ ] Verify: [How to check if command succeeded]
-- [ ] Test: [How to test the implementation]
-- [ ] Confirm: [Success criteria for this atomic task]
+**✅ Verify Step 1**:
+- [ ] Check: [How to verify this step worked]
+- [ ] Expected result: [What you should see]
+- [ ] If it doesn't work: [Quick troubleshooting tip]
 
-**Next Steps** (if applicable):
-- [ ] Complete verification before proceeding
-- [ ] Run next command when ready
-- [ ] Reset context if recommended
+---
 
-## 📊 DUAL SUMMARY (Optional - Ask User)
+### Step 2: [Second Atomic Step]
+**What to do**: [Clear instruction in plain English]
 
-### 🔧 Technical Summary (For Developers)
-**Current Task Scope**: [What this atomic task accomplishes]
-**Tech Stack**: [Technologies used in this specific task]
-**Architecture Impact**: [How this task fits in overall architecture]
-**Performance**: [Performance considerations for this task]
-**Security**: [Security measures for this specific task]
-**Dependencies**: [What this task depends on/affects]
-**Next Atomic Task**: [What should be tackled next]
+**Where**: `path/to/file.ext`
 
-### 📈 Business Summary (For Project Managers & Executives)
-**Task Progress**: [What was accomplished in business terms]
-**Feature Status**: [How this contributes to overall feature]
-**Business Value**: [Specific value delivered by this atomic task]
-**Timeline Impact**: [How this affects project timeline]
-**Resource Efficiency**: [Benefits of atomic approach for this task]
-**Risk Management**: [How atomic approach reduces risks]
-**Next Milestone**: [What business milestone is next]
+**Code to add/modify**:
+```language
+// Clear comments explaining each part
+[example code snippet]
+```
+
+**🔗 How this connects to Step 1**:
+[Explain how this builds on previous step]
+
+**✅ Verify Step 2**:
+- [ ] Check: [How to verify]
+- [ ] Expected result: [What you should see]
+- [ ] Debug tip: [Common issue and fix]
+
+---
+
+### Step 3: [Third Atomic Step]
+[Continue pattern...]
+
+## 🧪 Testing Your Implementation
+
+**Manual Testing Steps**:
+1. **Test Case 1**: [What to test]
+   - Action: [What to do]
+   - Expected: [What should happen]
+   - Command: `npm run dev` or test command
+
+2. **Test Case 2**: [What to test]
+   - Action: [What to do]
+   - Expected: [What should happen]
+
+**Automated Testing** (optional, if applicable):
+```bash
+# Test command to run
+npm test [specific-test-file]
+```
+
+## 🐛 Troubleshooting Guide
+
+**Common Issues You Might Encounter**:
+
+### Issue 1: [Common error message or problem]
+**Symptoms**: [What you'll see]
+**Cause**: [Why it happens]
+**Fix**: [Step-by-step solution]
+**Verify**: [How to confirm it's fixed]
+
+### Issue 2: [Another common issue]
+**Symptoms**: [What you'll see]
+**Cause**: [Why it happens]
+**Fix**: [Step-by-step solution]
+
+## ✅ Verification Checklist
+
+**Before Moving On**:
+- [ ] All code compiles without errors
+- [ ] Manual tests pass (see Testing section)
+- [ ] Console has no unexpected errors
+- [ ] Browser/app behaves as expected
+- [ ] I understand WHY each part works
+
+**Questions to Ask Yourself**:
+- Can I explain what each part does?
+- What would break if I removed X?
+- How does this fit into the larger system?
+
+## 🎓 Learning Recap
+
+**What You Just Learned**:
+- [Key skill 1]
+- [Key skill 2]
+- [Key concept internalized]
+
+**How This Applies Elsewhere**:
+[Where else in your project this pattern is useful]
+
+## 🚀 Next Steps (Your Choice)
+
+**Option A: Continue Building** (recommended path)
+- Next atomic task: [What to tackle next]
+- Why this order: [Reasoning]
+- Estimated time: [Time estimate]
+
+**Option B: Deepen Understanding**
+- Explore: [Related concept to study]
+- Try: [Experiment suggestion]
+- Read: [Documentation reference]
+
+**Option C: Refactor/Improve**
+- Consider: [Improvement opportunity]
+- Optimize: [Performance enhancement]
+- Secure: [Security consideration]
+
+## 📋 Quick Command Reference (If Needed)
+
+**Development Commands**:
+```bash
+# Start dev server (if not running)
+npm run dev
+
+# Run tests
+npm test
+
+# Check types (TypeScript)
+npm run type-check
+
+# Lint code
+npm run lint
+```
+
+**Git Commands** (when ready to commit):
+```bash
+# See what changed
+git status
+git diff
+
+# Stage and commit
+git add [files]
+git commit -m "feat: [what you implemented]"
+```
 
 ## 📚 Resource Citations
-- **Primary Reference**: [Main GitHub URL used]
-- **Supporting Documentation**: [Additional URLs referenced]
-- **Best Practices Applied**: [Specific patterns followed]
-- **Atomic Planning Sources**: 
-  - https://collett.me/atomic-planning-in-cursor/
-  - https://cursor.com/learn/context
+- **Primary Reference**: [Main documentation]
+- **Pattern Source**: [Where this pattern comes from]
+- **Further Reading**: [Deep dive resources]
 ```
 
-### ASK Mode Benefits
+### Learning-Focused ASK Mode Benefits
+
+**🎓 Educational Advantages**:
+- **Active Learning**: You write every line, building real understanding
+- **Concept Mastery**: Explanations focus on WHY, not just WHAT
+- **Debugging Skills**: You troubleshoot your own code, building confidence
+- **Pattern Recognition**: Repeated manual implementation builds intuition
+- **Long-term Retention**: Typing code yourself cements learning
+
+**💪 Skill Building**:
+- **Muscle Memory**: Manual coding builds typing and syntax familiarity
+- **Problem Solving**: Working through issues yourself develops troubleshooting skills
+- **Independence**: Reduces reliance on AI generation over time
+- **Code Ownership**: Every line is yours, you understand it completely
+- **Interview Preparation**: Practice explaining code you wrote yourself
+
+**🎯 When to Use ASK Mode for Learning**:
+- Learning a new framework or library
+- Practicing a specific pattern or technique
+- Building portfolio projects you need to explain
+- Preparing for technical interviews
+- Teaching yourself best practices
+- Any time understanding > speed
+
+### Manual Implementation Tips (ASK Mode Best Practices)
+
+**Before You Start Coding**:
+1. Read the entire implementation guide first
+2. Understand the concepts section completely
+3. Have official documentation open in another tab
+4. Set up your testing method (npm run dev ready)
+5. Clear understanding of success criteria
+
+**While You Code**:
+1. Type code manually, don't copy/paste (builds muscle memory)
+2. Read and understand each comment before typing
+3. Experiment: try changing values to see what breaks
+4. Verify frequently: test after each small change
+5. Keep a notepad for questions that arise
+
+**After Each Step**:
+1. Run verification checks immediately
+2. If it doesn't work, try debugging yourself first
+3. Use troubleshooting guide when stuck
+4. Ask AI for clarification if needed (not solutions)
+5. Don't move forward until step works
+
+**Maximizing Learning**:
+- **Ask "Why" questions**: Request explanations, not just solutions
+- **Request alternatives**: "What's another way to do this?"
+- **Seek deeper understanding**: "How does this work under the hood?"
+- **Practice variations**: "What if I wanted to do X instead?"
+- **Review patterns**: "Where else would I use this pattern?"
+
+### ASK Mode Example Prompts (Guide Me Style)
+
+**Instead of**: "Build me a login form"
+**Use**: "Guide me to build a login form step-by-step. Explain concepts first, then I'll code it."
+
+**Instead of**: "Fix this code [paste]"
+**Use**: "I'm getting [error]. Help me understand what's wrong so I can fix it myself."
+
+**Instead of**: "Add authentication"
+**Use**: "I want to learn authentication. Break it into atomic steps and explain each concept before I implement."
+
+**Instead of**: "Optimize this"
+**Use**: "Review my code and suggest improvements. Explain why each improvement matters so I can implement them."
+
+**Pattern**: 
+- ✅ "Guide me to..."
+- ✅ "Explain how I should..."
+- ✅ "Help me understand..."
+- ✅ "What approach should I take..."
+- ❌ "Build me..."
+- ❌ "Create..."
+- ❌ "Implement..."
+
+### Traditional ASK Mode Benefits (Command Execution)
+
+**When You Need Command-Based Workflow**:
 - **Full Control**: You decide when and how to execute each command
 - **Safety First**: Review all commands before execution
 - **Cancellation**: Stop any process at any time
