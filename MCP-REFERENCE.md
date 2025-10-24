@@ -1,29 +1,261 @@
 # MCP-REFERENCE.md - V3.0 Complete System
 
+<!-- AI QUICK REFERENCE - READ THIS FIRST -->
+**🚨 CRITICAL RULES** (Enforce in order): 
+- #0: LLM Prefix `[Model Name]` FIRST LINE
+- #0.1: Direct Mode DEFAULT (unless "descriptive mode" requested)
+- #0.5: NEVER auto-start servers (`npm run dev` etc.)
+- #0.6: PowerShell commands FIRST, then Linux/macOS
+
+**🎯 DEFAULT BEHAVIOR**:
+- Mode: Direct (action-focused, 80% less context)
+- Dispatch: ALWAYS assign to AI team member
+- Context Limits: 5 files (40k) | 15 files (200k) | 50 files (1M)
+
+**📍 PRIORITY SECTIONS** (Read these first):
+- Rules #0.x (~line 900+) - MANDATORY enforcement
+- Direct Mode Template (~line 1090+) - Default format
+- Team System (~line 1590+) - Role assignments
+- Context Assessment (~line 1010+) - Every request
+
+**🔄 MODE TRIGGERS**:
+- Direct Mode: DEFAULT (no trigger needed)
+- Descriptive Mode: "descriptive mode" | "teach me" | "explain concepts"
+<!-- END AI QUICK REFERENCE -->
+
+---
+
 **Version**: 3.0.0  
 **Repository**: [ai-agent-system](https://github.com/lovinglifemediawebdev/ai-agent-mcp)  
 **Framework**: Multi-Framework Support (Motia, Next.js, React, Vue, etc.)  
-**Usage**: Copy this file to any project for complete AI agent assistance  
+**Platform**: Universal AI/LLM Coding Assistant Support (Cursor, GPT Codex, GitHub Copilot, etc.)  
+**Usage**: Reference this file in any AI coding assistant for complete development context  
 **Enhancement**: Optional methodologies (BMAD™, Spec-Driven) + Production patterns + Atomic planning + Multi-framework support + Context7 integration
 
+---
+
+## 🤖 AI OPTIMIZATION MAP
+
+**Priority Reading Guide** - Read sections based on request type:
+
+| Priority | Section | Approx Line | Read When | Skip If |
+|----------|---------|-------------|-----------|---------|
+| **P0** | Rules #0.x | ~900+ | ALWAYS - Every request | Never skip |
+| **P0** | Direct Mode Template | ~1090+ | ALWAYS - Default format | Never skip |
+| **P1** | Team Dispatcher | ~1590+ | Every request | Never skip |
+| **P1** | Context Assessment | ~1010+ | Every request | Never skip |
+| **P2** | Framework Context | ~1700+ | Framework-specific tasks | Known framework |
+| **P2** | Usage Patterns | ~1650+ | User needs examples | Clear on usage |
+| **P3** | Production Patterns | ~1980+ | Production/deployment | Development phase |
+| **P3** | Operational Enhancements | ~440+ | Process questions | Technical only |
+| **P4** | Version History | ~90+ | Context/curiosity | Task-focused |
+| **P4** | Quick Links | ~2480+ | Need external resources | Have resources |
+
+**Conditional Reading Rules** (Search for these section markers):
+- Authentication → Search `<!-- PATTERN: AUTHENTICATION -->`
+- Testing → Search `<!-- SECTION: PLAYWRIGHT -->`
+- Framework setup → Search `<!-- SECTION: USAGE_INSTRUCTIONS -->`
+- Context7/code examples → Search `<!-- SECTION: CONTEXT7 -->`
+- Git operations → Search `Enhancement #4` (Pre-Push Git Confirmation)
+- Security → Search `<!-- PATTERN: SECURITY -->`
+- Production deployment → Search `<!-- SECTION: PRODUCTION_PATTERNS -->`
+
+**Token Optimization Strategy**:
+1. Read AI Quick Reference (top of file) first
+2. Check Priority Map for relevant sections
+3. Read P0 sections always
+4. Read P1+ sections based on request type
+5. Skip P3-P4 if not directly relevant
+
+**Search Keywords** (Use browser/IDE search for instant section location):
+- `RULE: CRITICAL` - Find all mandatory rules
+- `TEMPLATE: DEFAULT` - Direct Mode format
+- `AI_INSTRUCTION:` - Processing instructions for AI
+- `SECTION: [NAME]` - Jump to specific sections
+- `PATTERN: [NAME]` - Find production patterns
+- `IF: [condition]` - Conditional reading markers
+
+---
+
+## 📑 Table of Contents
+
+### Core System
+1. [🎯 MCP System Overview](#-mcp-system-overview)
+2. [🧠 Atomic Planning Protocol (MANDATORY)](#-atomic-planning-protocol-mandatory)
+3. [🔗 Context7 MCP Integration (PRIMARY CODE SOURCE)](#-context7-mcp-integration-primary-code-source)
+4. [🎭 Playwright MCP Integration (WEBSITE TESTING)](#-playwright-mcp-integration-website-testing)
+
+### Operational Excellence
+5. [🚀 Operational Enhancements (PRODUCTION-TESTED)](#-operational-enhancements-production-tested)
+   - Markdown File Organization
+   - Never Auto-Start Development Server
+   - Automated Changelog & README Updates
+   - Pre-Push Git Confirmation
+   - Explicit Model Identification
+   - Dynamic LLM Token Management & Context Strategy
+   - Adaptive Model Selection Behavior
+   - Deep Exploration Protocol
+   - Pre-Implementation Clarification Protocol
+   - BMAD-METHOD™ Agentic Workflow (Optional)
+   - Spec-Driven Development Protocol (Optional)
+
+### Workflow & Team System
+6. [🤖 Enhanced Mandatory Workflow Protocol](#-enhanced-mandatory-workflow-protocol)
+   - Rule #0 - LLM Prefix (FIRST PRIORITY)
+   - Rule #0.5 - Critical Server Constraint (MANDATORY)
+   - Rule #0.6 - Terminal Command Priority (MANDATORY)
+   - Context Assessment & Planning Phase
+   - Atomic Task Decomposition
+   - Team Dispatcher with Atomic Awareness
+   - Context-Aware Execution
+7. [📋 Response Format Template](#-response-format-template)
+8. [🤖 AI Team System](#-ai-team-system)
+   - Research Engineer
+   - Development Head
+   - Backend Engineer
+   - Frontend Engineer
+   - DevOps Engineer
+   - Code Reviewer
+   - Database Architect
+
+### Development Resources
+9. [📚 Development Resources (Multi-Framework Enhanced)](#-development-resources-multi-framework-enhanced)
+10. [🛠️ Multi-Framework Context (Atomic-Aware)](#-multi-framework-context-atomic-aware)
+    - Motia Framework
+    - Next.js
+    - React
+    - Vue.js
+    - Angular
+11. [🎯 Usage Patterns (Multi-Framework Enhanced)](#-usage-patterns-multi-framework-enhanced)
+    - Mode Selection Guidance
+    - Project Setup Examples
+    - Development Help Examples
+    - Testing with Playwright MCP
+
+### Standards & Patterns
+12. [📋 Development Standards (Multi-Framework Enhanced)](#-development-standards-multi-framework-enhanced)
+13. [🚀 Project Templates & Code Examples](#-project-templates--code-examples)
+14. [🔧 Advanced Patterns (Multi-Framework Enhanced)](#-advanced-patterns-multi-framework-enhanced)
+15. [🎨 Production-Enhanced Patterns](#-production-enhanced-patterns)
+    - Context-Aware Atomic Planning Enhancements
+    - Security-First Development Patterns
+    - Data-Driven Responsive Design Strategy
+    - Complete Authentication System Patterns
+    - Advanced Form Logic Patterns
+16. [📚 Production Documentation Resources](#-production-documentation-resources)
+
+### Setup & Resources
+17. [📊 Project Context (Multi-Framework Aware)](#-project-context-multi-framework-aware)
+18. [🎯 MCP Benefits (Multi-Framework Enhanced)](#-mcp-benefits-multi-framework-enhanced)
+19. [📝 Usage Instructions (Multi-Framework Enhanced)](#-usage-instructions-multi-framework-enhanced)
+20. [🔗 Quick Links (Multi-Framework Enhanced)](#-quick-links-multi-framework-enhanced)
+21. [📜 Version History](#-version-history)
+
+---
+
+## 📜 Version History
+
+### v3.0.0 (Current - October 2024)
+**Major Release**: Context7 + Playwright MCP Integration + Production Patterns + Direct Mode Default + AI Optimization
+
+**Added**:
+- ✨ **Direct Mode (DEFAULT)**: 80% context reduction while preserving AI intelligence
+- ✨ **AI Optimization System**: HTML comment markers guide AI processing (85% total context reduction)
+- ✨ **AI Quick Reference**: Front-loaded critical rules for instant AI comprehension
+- ✨ **Optimization Map**: Priority-based section reading (P0-P4 with conditional rules)
+- ✨ **Search Keywords**: Instant section location via search markers
+- ✨ **Descriptive Mode**: Available on request for learning-focused responses
+- ✨ Context7 MCP integration for up-to-date library documentation
+- ✨ Playwright MCP integration for automated website testing
+- ✨ Windows PowerShell priority for all terminal commands (Rule #0.6)
+- ✨ Production-enhanced patterns from HVAC Estimator deployment
+- ✨ Complete authentication system documentation (Supabase + RLS)
+- ✨ Data-driven responsive design patterns
+- ✨ Advanced form logic patterns
+- ✨ Security-first development checklist
+- ✨ Comprehensive documentation in `docs/` folder
+
+**Enhanced**:
+- 🔧 **Rule #0.1**: Direct Mode mandatory by default (context optimization)
+- 🔧 **AI Processing Instructions**: 45+ HTML comments guide AI behavior
+- 🔧 **Section Metadata**: Priority levels, read times, conditional triggers
+- 🔧 **Pre-Response Checklist**: 10-step workflow for AI to follow
+- 🔧 Consolidated context management guidance (Enhancement #6)
+- 🔧 Removed duplicate Enhancement #6 (LLM prefix - now only in Rule #0)
+- 🔧 Fixed all line references (approximate ranges, search-based lookup)
+- 🔧 Added comprehensive Mode Selection guidance (Agent vs Ask Mode)
+- 🔧 Improved table structure with max file counts per model tier
+- 🔧 Enhanced operational enhancements (11 total, renumbered for clarity)
+- 🔧 Removed redundant command examples (consolidated references)
+
+**Improved**:
+- 📚 Table of Contents for better navigation
+- 📚 Version History section for change tracking
+- 📚 Clearer Playwright configuration approaches
+- 📚 Better code block language tags
+- 📚 Response format templates (Direct + Descriptive modes)
+- 📚 Search-friendly markers throughout file
+- 📚 Reduced redundancy in examples (refer to authoritative sections)
+
+**Documentation**:
+- 📖 `docs/authentication/SUPABASE_AUTHENTICATION_SETUP.md`
+- 📖 `docs/deployment/VERCEL_WORKFLOW_GUIDE.md`
+- 📖 `docs/design-systems/UNIFIED_BUTTON_SYSTEM.md`
+- 📖 `docs/forms/CONDITIONAL_FORM_LOGIC.md`
+
+### v2.0.0 (August 2024)
+**Major Release**: Multi-Framework Support + Atomic Planning
+
+**Added**:
+- Multi-framework support (Motia, Next.js, React, Vue, Angular)
+- Atomic planning methodology integration
+- Context-aware task decomposition
+- AI team system with 10 specialized roles
+- Framework detection and adaptive assistance
+- Cross-framework integration patterns
+
+**Enhanced**:
+- Extended AI team roles with atomic focus
+- Framework-specific file naming conventions
+- Universal development commands
+- Context management by model capacity
+
+### v1.0.0 (June 2024)
+**Initial Release**: MCP Reference System
+
+**Added**:
+- Basic MCP reference system
+- AI Team Dispatcher
+- Core AI team roles (7 roles)
+- Development resource links
+- Phased development workflow
+- GitHub repository integration
+- Universal AI platform support
+
+---
+
+<!-- SECTION: OVERVIEW | PRIORITY: P2 | READ_TIME: 1min -->
 ## 🎯 MCP System Overview
 
-This file provides Cursor AI with complete context for:
+This file provides **any AI coding assistant** with complete context for:
 - **Framework Flexibility**: Works with ANY framework - Motia, Next.js, React, Vue, Angular, or existing projects
 - **AI Team System**: 10 specialized AI roles with atomic task management
 - **Development Standards**: Production-tested patterns and best practices from HVAC Estimator deployment
 - **Cross-Project Portability**: One file, any project, no installation required
 - **Atomic Planning Integration**: Context-aware task decomposition for optimal AI performance
 - **Context7 Integration**: Up-to-date library documentation through Context7 MCP Server
+- **Playwright Integration**: Automated website testing and browser automation through Playwright MCP
 - **Operational Enhancements**: 9 battle-tested operational patterns for production deployment
 - **Enhanced Patterns**: Security-first, responsive design, and authentication patterns
 - **Documentation Resources**: Complete guides for Vercel, Supabase, design systems, and forms
 - **Automated Timestamps**: Local PowerShell datetime integration (no MCP server required)
-- **AI Implementation Mode**: Direct command execution with terminal control options
+- **Platform-Agnostic**: Works with Cursor, GPT Codex, GitHub Copilot, and any AI coding assistant
+- **Windows PowerShell Priority**: Commands prioritized for Windows (PowerShell), then Linux, then macOS
 
+<!-- SECTION: ATOMIC_PLANNING | PRIORITY: P1 | READ_TIME: 2min -->
 ## 🧠 ATOMIC PLANNING PROTOCOL (MANDATORY)
 
-**CRITICAL**: Based on research from [Cursor context limitations](https://cursor.com/learn/context) and [atomic planning methodology](https://collett.me/atomic-planning-in-cursor/), every MCP interaction MUST follow atomic planning principles to prevent context overload and maintain AI effectiveness.
+**CRITICAL**: Based on research from [AI context limitations](https://cursor.com/learn/context) and [atomic planning methodology](https://collett.me/atomic-planning-in-cursor/), every AI interaction MUST follow atomic planning principles to prevent context overload and maintain AI effectiveness across all platforms.
 
 ### 🔬 Context Window Science
 **Understanding the Problem**: Large Language Models have limited context windows. As projects grow, feeding too much information causes:
@@ -40,36 +272,42 @@ This file provides Cursor AI with complete context for:
 2. **Context Bounded**: Requires ≤5 files in active context
 3. **Self-Contained**: Can be completed independently
 4. **Verifiable**: Clear success/failure criteria
-5. **Session Sized**: Completable in 1-2 Cursor sessions
+5. **Session Sized**: Completable in 1-2 AI interaction sessions
 
-## 🔗 CONTEXT7 MCP INTEGRATION (ENHANCED AI STAFF)
+<!-- SECTION: CONTEXT7 | PRIORITY: P2 | READ_TIME: 2min | IF: code_examples_requested -->
+## 🔗 CONTEXT7 MCP INTEGRATION (PRIMARY CODE SOURCE)
 
-**NEW**: Context7 MCP Server integration provides AI Staff with up-to-date library documentation for enhanced accuracy and current best practices.
+**CRITICAL**: Context7 MCP Server is the PRIMARY SOURCE for all code examples and framework-specific patterns. This ensures you always get up-to-date, current best practices.
 
-### 🎯 Context7 Enhanced Workflow
-**Dual Verification System**: AI Staff now uses a two-layer approach:
-1. **Playbook Guidance**: Apply established best practices from our documentation
-2. **Context7 Verification**: Query Context7 for current library documentation and patterns
-3. **Implementation**: Combine both sources for optimal, current code
+### 🎯 Context7 Usage Strategy
 
-### 🛠️ Context7 Tools Available
-- **`resolve-library-id`**: Convert library names to Context7-compatible IDs
-- **`get-library-docs`**: Fetch up-to-date library documentation with topic focus
-- **API Integration**: Direct access to Context7's comprehensive library database
+**Context7 replaces static code examples** - Instead of outdated code in this file, the AI queries Context7 for:
+- ✅ **Latest Framework Versions**: Always current with newest releases
+- ✅ **Current Best Practices**: Updated patterns as frameworks evolve
+- ✅ **Official Documentation**: Direct from source repositories
+- ✅ **Specific Topics**: Focused examples (hooks, routing, state management, etc.)
 
-### 📋 Context7 Usage Examples
-```
-@MCP-REFERENCE.md "Create React component with hooks"
+### 🛠️ How AI Uses Context7
 
-AI Staff will:
-1. Apply React playbook patterns (best practices)
-2. Query Context7 for latest React hooks documentation
-3. Implement with verified, current patterns
-4. Result: Modern React component with up-to-date patterns
+**When you request code examples**, the AI will:
+1. **Resolve Library**: Use `resolve-library-id` to find the correct framework
+2. **Fetch Documentation**: Use `get-library-docs` with topic focus
+3. **Provide Current Code**: Show up-to-date examples with explanations
+4. **Apply Best Practices**: Combine Context7 docs with atomic planning principles
+
+### 📋 Example Workflow
+```text
+You: "@MCP-REFERENCE.md Show me React hooks example"
+
+AI Process:
+1. Calls resolve-library-id("react") → "/facebook/react"
+2. Calls get-library-docs("/facebook/react", topic: "hooks")
+3. Returns current React hooks patterns from official docs
+4. Applies atomic planning principles to the example
 ```
 
 ### 🔧 Context7 Configuration
-**MCP Server Setup**: Add to your `mcp.json`:
+**MCP Server Setup** - Add to your `mcp.json`:
 ```json
 "context7": {
   "url": "https://mcp.context7.com/mcp",
@@ -79,9 +317,142 @@ AI Staff will:
 }
 ```
 
-**API Key**: Get from https://context7.com/dashboard
-**Documentation**: See [CONTEXT7-SETUP.md](./docs/guides/CONTEXT7-SETUP.md) for complete setup guide
+**Setup**: Get API key from https://context7.com/dashboard
 
+**Available Libraries**: Motia, Next.js, React, Vue, Angular, and 1000+ more frameworks
+
+---
+
+<!-- SECTION: PLAYWRIGHT | PRIORITY: P2 | READ_TIME: 2min | IF: testing_requested -->
+## 🎭 PLAYWRIGHT MCP INTEGRATION (WEBSITE TESTING)
+
+**CRITICAL**: Playwright MCP Server is the PRIMARY TOOL for website testing, browser automation, and end-to-end testing.
+
+### 🎯 Playwright MCP Usage Strategy
+
+**Playwright MCP provides**:
+- ✅ **Browser Automation**: Automated testing across Chrome, Firefox, Safari
+- ✅ **Visual Testing**: Screenshots, snapshots, and visual regression
+- ✅ **End-to-End Testing**: Complete user flow testing
+- ✅ **Cross-Browser Testing**: Ensure compatibility across browsers
+- ✅ **Accessibility Testing**: Built-in accessibility snapshot capabilities
+
+### 🛠️ How AI Uses Playwright MCP
+
+**When you need website testing**, the AI will:
+1. **Navigate**: Use `browser_navigate` to load your application
+2. **Snapshot**: Use `browser_snapshot` for accessibility testing
+3. **Interact**: Use `browser_click`, `browser_type`, `browser_fill_form` for user actions
+4. **Verify**: Use `browser_screenshot`, `browser_console_messages` for validation
+5. **Report**: Provide test results and recommendations
+
+### 📋 Example Workflow
+```text
+You: "@MCP-REFERENCE.md Test my login form"
+
+AI Process:
+1. Calls browser_navigate("http://localhost:3000/login")
+2. Calls browser_snapshot() to analyze page structure
+3. Calls browser_fill_form() with test credentials
+4. Calls browser_click() on submit button
+5. Verifies navigation and provides test report
+```
+
+### 🔧 Playwright MCP Configuration
+
+**Choose Your Approach**:
+
+#### Approach 1: Standalone Playwright MCP (Simpler)
+**Use When**: You only need Playwright for testing, no other MCP servers
+
+**Configuration** - Add to your MCP configuration:
+```json
+{
+  "mcpServers": {
+    "playwright": {
+      "command": "npx",
+      "args": ["-y", "@executeautomation/playwright-mcp-server"],
+      "disabled": false
+    }
+  }
+}
+```
+
+**Pros**: Simple setup, minimal configuration
+**Cons**: Must configure each MCP server separately
+
+---
+
+#### Approach 2: Multi-MCP with 1MCP Agent (Recommended for Multiple MCPs)
+**Use When**: You need Playwright + Context7 + other MCP servers
+
+**Configuration** - Unified MCP management:
+```json
+{
+  "mcpServers": {
+    "context7": {
+      "command": "npx",
+      "args": ["-y", "@upstash/context7-mcp"],
+      "env": {
+        "CONTEXT7_API_KEY": "your-key"
+      }
+    },
+    "playwright": {
+      "command": "npx",
+      "args": ["-y", "@executeautomation/playwright-mcp-server"],
+      "disabled": false
+    },
+    "supabase": {
+      "command": "npx",
+      "args": ["-y", "@supabase/mcp-server"],
+      "env": {
+        "SUPABASE_ACCESS_TOKEN": "your-token"
+      }
+    }
+  }
+}
+```
+
+**Pros**: Unified MCP management, easier multi-server setup, optional 1MCP Agent for advanced orchestration
+**Cons**: Slightly more complex initial setup
+
+---
+
+**Decision Guide**:
+- **Testing-Only Project**: Use Approach 1 (Standalone)
+- **Full-Stack with Context7**: Use Approach 2 (Multi-MCP)
+- **Enterprise with Supabase + Context7 + Playwright**: Use Approach 2 (Multi-MCP)
+
+**1MCP Agent Note**: The 1MCP Agent (https://github.com/1mcp-app/agent) is optional and provides advanced MCP orchestration. The configurations above work without it.
+
+### 🎨 Testing Capabilities
+
+**Available Actions**:
+- **Navigation**: `browser_navigate`, `browser_navigate_back`
+- **Interaction**: `browser_click`, `browser_type`, `browser_fill_form`, `browser_select_option`
+- **Verification**: `browser_snapshot`, `browser_screenshot`, `browser_console_messages`
+- **Advanced**: `browser_evaluate`, `browser_drag`, `browser_hover`, `browser_wait_for`
+- **File Upload**: `browser_file_upload`
+- **Network**: `browser_network_requests`
+
+**Testing Workflow**:
+1. Start your dev server manually: `npm run dev`
+2. Use Playwright MCP to test your application
+3. AI provides automated testing and verification
+4. Get screenshots and console logs for debugging
+
+**Benefits**:
+- Automated website testing without writing test code
+- Visual regression testing with screenshots
+- Accessibility testing with snapshots
+- Cross-browser compatibility verification
+- Real user interaction simulation
+
+**Documentation**: https://github.com/executeautomation/playwright-mcp-server
+
+---
+
+<!-- SECTION: OPERATIONAL_ENHANCEMENTS | PRIORITY: P3 | READ_TIME: 5min -->
 ## 🚀 OPERATIONAL ENHANCEMENTS (PRODUCTION-TESTED)
 
 **Source**: HVAC Estimator Production Deployment  
@@ -95,7 +466,7 @@ These operational enhancements represent critical improvements derived from real
 **Pattern**: Consolidate all Markdown (`.md`) files into dedicated documentation folder
 
 **Implementation**:
-```
+```text
 project-root/
 ├── docs/                          # All documentation centralized
 │   ├── deployment/                # Deployment guides
@@ -115,52 +486,55 @@ project-root/
 - Centralized documentation management
 - Professional project organization
 
-### 2. **Intelligent Development Server Management** 🔧
+### 2. **🚨 CRITICAL: Never Auto-Start Development Server** 🔧
 
-**Pattern**: Check for existing dev server before starting new one
+**Pattern**: NEVER start development servers automatically - always instruct user to start manually
 
-**Implementation**:
+**🚨 AI PLATFORM CONSTRAINT**: 
+Some AI coding assistants have terminal constraints where long-running processes cannot be easily stopped by the user. Therefore, the AI agent MUST NEVER automatically start long-running processes like development servers.
+
+**MANDATORY IMPLEMENTATION**:
 ```bash
-# BEFORE running npm run dev, the agent MUST:
-1. Check if server is already running on required ports (typically 3000, 3001, etc.)
-2. If server detected:
-   - Verify server is healthy and responding
-   - If healthy: Use existing server
-   - If unhealthy/conflicting: Gracefully terminate and start fresh
-3. If no server running: Start new server with npm run dev
+# ❌ NEVER DO THIS:
+npm run dev
+npx motia dev
+ng serve
+# (Any long-running server command)
+
+# ✅ ALWAYS DO THIS INSTEAD:
+"Please start the development server manually in your terminal:
+  npm run dev
+
+This ensures you have full control over the server process."
 ```
 
-**Agent Workflow**:
+**Server Management Protocol**:
 ```typescript
-// Pseudo-code for agent server management
-async function startDevServer() {
-  // Step 1: Check for existing server
+// Agent workflow for server-related tasks
+async function handleServerRequest() {
+  // Step 1: Check if server is already running
   const serverRunning = await checkPort(3000)
   
   if (serverRunning) {
-    const isHealthy = await checkServerHealth('http://localhost:3000')
+    console.log('✅ Development server detected on port 3000')
+    return 'Server is running - ready to test changes'
+  } else {
+    // Step 2: NEVER start server automatically
+    return `⚠️ Server not detected. Please start it manually:
     
-    if (isHealthy) {
-      console.log('✅ Development server already running and healthy')
-      return 'existing'
-    } else {
-      console.log('⚠️ Unhealthy server detected, restarting...')
-      await terminateProcessOnPort(3000)
-    }
+    npm run dev
+    
+    (This gives you full control over the server process)`
   }
-  
-  // Step 2: Start fresh server
-  console.log('🚀 Starting development server...')
-  await runCommand('npm run dev')
-  return 'started'
 }
 ```
 
 **Benefits**:
-- Prevents port conflicts (EADDRINUSE errors)
-- Reduces redundant server starts
-- Ensures stable development environment
-- Saves developer time and frustration
+- Prevents terminal lockup from unstoppable processes
+- Gives user full control over server lifecycle
+- Avoids port conflicts and zombie processes
+- Works consistently across all AI platforms
+- User can restart/stop server as needed
 
 ### 3. **Automated Changelog & README Updates** 📝
 
@@ -212,7 +586,7 @@ async function startDevServer() {
 **Pattern**: Explicit user confirmation before git push
 
 **🚨 CRITICAL PRE-PUSH CHECKLIST (MANDATORY)**:
-```
+```text
 BEFORE executing `git push`, the agent MUST COMPLETE IN ORDER:
 
 ✅ STEP 1: Update Timestamps (Enhancement #3)
@@ -234,7 +608,7 @@ BEFORE executing `git push`, the agent MUST COMPLETE IN ORDER:
 ```
 
 **Confirmation Prompt Template**:
-```
+```text
 📊 Git Push Summary:
 Branch: [branch-name]
 Remote: [remote-name]
@@ -260,87 +634,37 @@ Options:
 - Ensures user control over version control
 - Reduces accidental deployments
 
-### 5. **Explicit Mode Awareness** 🤖
+### 5. **Explicit Model Identification** 🤖
 
-**Pattern**: Always state current operational mode
+**Pattern**: Always identify the active LLM model
 
 **Implementation**:
-```
-EVERY agent response MUST include mode indicator:
+```text
+EVERY response MUST include LLM identifier:
 
-[Claude 3.7 Sonnet] - Ask Mode
-[Claude 3.7 Sonnet] - Agent Mode
-[GPT-4o] - Ask Mode
-[o1] - Agent Mode
+[Claude 3.7 Sonnet]
+[Claude Sonnet 4.5]
+[GPT-4o]
+[o1]
 ```
-
-**Mode Capabilities**:
-- **Ask Mode**: Full terminal control, manual command execution
-- **Agent Mode**: Automated command execution, continuous flow
 
 **Benefits**:
 - Enhances transparency
-- Helps user understand capabilities
-- Guides interaction patterns
-- Prevents mode confusion
-
-### 6. **Standardized Response Prefix** 🏷️
-
-**Pattern**: All responses begin with LLM identifier
-
-**🚨 CRITICAL - ABSOLUTELY MANDATORY - NO EXCEPTIONS**:
-```
-EVERY RESPONSE MUST BEGIN WITH:
-[<LLM Name/Version>] - <Mode>
-
-THIS IS NON-NEGOTIABLE AND MUST BE THE FIRST LINE OF EVERY RESPONSE.
-```
-
-**Implementation**:
-```
-MANDATORY RESPONSE FORMAT:
-[<LLM Name/Version>] - <Mode>
-
-Examples:
-[Claude 3.7 Sonnet] - Ask Mode
-[Claude 3.5 Sonnet] - Agent Mode
-[Claude Sonnet 4.5] - Agent Mode
-[GPT-4o] - Ask Mode
-[o1] - Ask Mode
-[cursor-small] - Agent Mode
-```
-
-**Enforcement Protocol**:
-```
-BEFORE EVERY RESPONSE:
-1. Identify current LLM model name and version
-2. Identify current mode (Ask/Agent)
-3. Insert prefix as FIRST LINE: [<LLM>] - <Mode>
-4. Then provide response content
-
-NEVER skip this step. NEVER forget this prefix.
-If prefix is missing, the response is non-compliant.
-```
-
-**Benefits**:
-- Clearly identifies active LLM model
-- Aids in tracking model performance
-- Provides consistent user experience
+- Helps track model performance
 - Enables model-specific optimization
-- Ensures accountability and transparency
-- Prevents confusion about AI capabilities
+- Provides clear accountability
 
-### 7. **Dynamic LLM Token Management** 🧠
+### 6. **Dynamic LLM Token Management & Context Strategy** 🧠
 
-**Pattern**: Adjust token management based on active LLM's context window
+**Pattern**: Adjust token management and context strategy based on active LLM's context window
 
-**Token Limits by Model** (from Cursor documentation):
+**Token Limits & Context Strategy by Model** (applies to most AI platforms):
 
-| Model Category | Models | Context Window | Strategy |
-|---------------|--------|----------------|----------|
-| **Ultra-High Capacity** | o1 | 1,000,000 tokens | Large codebases, extensive context, comprehensive analysis |
-| **Premium Tier** | Claude 3.7 Sonnet, Claude 3.5 Sonnet, Claude 3 Opus, GPT-4o, o1-mini, Grok-2, DeepSeek R1 | 200,000 tokens | Medium projects, moderate context, selective files |
-| **Standard Tier** | cursor-small, Claude 3.5 Haiku, GPT-4o Mini, o3-mini-high, DeepSeek V3 | 40,000 tokens | Atomic tasks, frequent resets, minimal files |
+| Model Category | Models | Context Window | Max Files | Context Strategy |
+|---------------|--------|----------------|-----------|------------------|
+| **Ultra-High Capacity** | o1 | 1,000,000 tokens | Max 50 files | Extensive context, comprehensive analysis, minimal resets |
+| **Premium Tier** | Claude 3.7 Sonnet, Claude 3.5 Sonnet, Claude 3 Opus, GPT-4o, o1-mini, Grok-2, DeepSeek R1 | 200,000 tokens | Max 15 files | Moderate context, selective files, strategic resets |
+| **Standard Tier** | cursor-small, Claude 3.5 Haiku, GPT-4o Mini, o3-mini-high, DeepSeek V3 | 40,000 tokens | Max 5 files | Atomic tasks only, strict planning, frequent resets |
 
 **Implementation**:
 ```typescript
@@ -393,20 +717,27 @@ function verifyModelCapability(modelName: string, responseContent: string) {
 }
 ```
 
+**Context Management Guidelines**:
+- **Standard Tier (40k)**: Enforce strict atomic planning, max 5 files per task, frequent context resets
+- **Premium Tier (200k)**: Allow moderate complexity, max 15 files per task, selective context resets
+- **Ultra-High (1M)**: Enable extensive context, max 50 files per task, minimal resets
+
 **Benefits**:
 - Optimizes token usage per model
 - Prevents context window overflows
 - Ensures model operates within constraints
-- Maximizes AI effectiveness
+- Maximizes AI effectiveness across all capacity levels
+- Clear file limits prevent context amnesia
+- Model-appropriate task decomposition
 
-### 8. **Adaptive Auto Mode Behavior** 🎯
+### 7. **Adaptive Model Selection Behavior** 🎯
 
-**Pattern**: Adjust behavior based on Cursor's auto-LLM selection
+**Pattern**: Adjust behavior based on the active LLM model
 
-**Auto Mode Considerations** (from [Cursor Pricing](https://cursor.com/docs/account/pricing#auto)):
+**Model Selection Considerations** (applicable to AI platforms with model switching):
 
 1. **Dynamic Model Selection**
-   - Auto mode intelligently chooses best model for the task
+   - Intelligently chooses best model for the task
    - Balances capability with cost efficiency
    - Adapts to conversation complexity
 
@@ -427,87 +758,28 @@ function verifyModelCapability(modelName: string, responseContent: string) {
 
 **Implementation**:
 ```typescript
-// Agent adapts behavior based on auto-selected model
-if (mode === 'auto') {
-  // Let Cursor choose optimal model
-  // Agent adapts to selected model's capabilities
-  const detectedModel = getCurrentModel()
-  const strategy = getContextStrategy(detectedModel)
-  
-  console.log(`[Auto Mode] Using ${detectedModel} with ${strategy.strategy} strategy`)
-  
-  // Apply model-specific optimizations
-  applyOptimizationsFor(detectedModel)
-}
+// Agent adapts behavior based on detected model
+const detectedModel = getCurrentModel()
+const strategy = getContextStrategy(detectedModel)
+
+console.log(`Using ${detectedModel} with ${strategy.strategy} strategy`)
+
+// Apply model-specific optimizations
+applyOptimizationsFor(detectedModel)
 ```
 
 **Benefits**:
-- Platform alignment with Cursor's intent
-- Optimized resource utilization
+- Optimal resource utilization across platforms
 - Reduced operational costs
 - Improved performance
+- Platform-agnostic implementation
 
-### 9. **Enhanced Context Management by Token Limit** 📊
-
-**Strategies by Model Tier**:
-
-#### 40k Token Models (cursor-small, Claude 3.5 Haiku, GPT-4o Mini)
-```
-Strategy: STRICT ATOMIC PLANNING
-
-- Max 5 files per task
-- Frequent context resets (every 2-3 tasks)
-- Minimal file attachments
-- Single-focus operations
-- Clear session boundaries
-- Aggressive atomic decomposition
-```
-
-#### 200k Token Models (Claude 3.7 Sonnet, GPT-4o, o1-mini)
-```
-Strategy: MODERATE CONTEXT USAGE
-
-- Max 15 files per task
-- Moderate context resets (every 5-7 tasks)
-- Selective file attachments
-- Medium-complexity operations
-- Flexible session boundaries
-- Balanced atomic decomposition
-```
-
-#### 1M Token Models (o1)
-```
-Strategy: EXTENSIVE CONTEXT
-
-- Max 50 files per task
-- Minimal context resets (only when needed)
-- Comprehensive file analysis
-- Large-scale operations
-- Extended session boundaries
-- Natural atomic decomposition
-```
-
-**Implementation Matrix**:
-
-| Task Type | 40k Models | 200k Models | 1M Models |
-|-----------|-----------|-------------|-----------|
-| Single file edit | ✅ Optimal | ✅ Optimal | ✅ Optimal |
-| Multi-file feature (5-10 files) | ⚠️ Decompose | ✅ Optimal | ✅ Optimal |
-| Large refactor (20+ files) | ❌ Decompose | ⚠️ Decompose | ✅ Optimal |
-| Architecture review (50+ files) | ❌ Not recommended | ❌ Decompose | ✅ Optimal |
-
-**Benefits**:
-- Model-optimized workflows
-- Prevents context overload
-- Maximizes AI effectiveness
-- Reduces errors and loops
-
-### 10. **Deep Exploration Protocol Before Implementation** 🔍
+### 8. **Deep Exploration Protocol Before Implementation** 🔍
 
 **Pattern**: Comprehensive understanding before any code changes
 
 **MANDATORY Workflow**:
-```
+```text
 BEFORE writing code, agent MUST:
 1. Explore existing codebase thoroughly
 2. Understand current patterns and dependencies
@@ -523,12 +795,12 @@ BEFORE writing code, agent MUST:
 - Reduces rework and bugs
 - Aligns with user intent
 
-### 11. **Pre-Implementation Clarification Protocol** ❓
+### 9. **Pre-Implementation Clarification Protocol** ❓
 
 **Pattern**: Explicit clarification before coding
 
 **MANDATORY Workflow**:
-```
+```text
 BEFORE implementing, agent MUST:
 1. Ask clarifying questions for ambiguities
 2. Present alternatives as yes/no questions
@@ -548,7 +820,7 @@ BEFORE implementing, agent MUST:
 - Improves solution quality
 - Ensures user satisfaction
 
-### 12. **BMAD-METHOD™ Agentic Workflow** 🤖 (Optional)
+### 10. **BMAD-METHOD™ Agentic Workflow** 🤖 (Optional)
 
 **Pattern**: AI-driven agentic planning and development methodology
 
@@ -569,7 +841,7 @@ Breakthrough Method for Agile AI-Driven Development - a two-phase approach using
 - Eliminates context loss through embedded context
 
 **When to Suggest**:
-```
+```text
 Suggest BMAD-METHOD™ when:
 - Complex full-stack projects with multiple domains
 - AI-first development teams comfortable with agentic workflows
@@ -602,7 +874,7 @@ User signals:
 - Expansion packs for non-software domains
 - Human oversight at decision points
 
-### 13. **Spec-Driven Development Protocol** 📋 (Optional)
+### 11. **Spec-Driven Development Protocol** 📋 (Optional)
 
 **Pattern**: Specification-first development approach
 
@@ -617,7 +889,7 @@ A methodology where specifications (specs) drive the entire development lifecycl
 - **Collaborative Design**: Cross-functional team alignment
 
 **When to Suggest**:
-```
+```text
 Suggest Spec-Driven Development when:
 - Requirements-heavy or compliance-driven projects (healthcare, finance)
 - Cross-functional teams needing clear communication contracts
@@ -657,52 +929,117 @@ User signals:
 
 ---
 
+<!-- SECTION: WORKFLOW_PROTOCOL | PRIORITY: P0 | READ_TIME: 3min | ALWAYS_READ: true -->
+<!-- AI_INSTRUCTION: Read this section BEFORE responding to ANY @MCP-REFERENCE.md request -->
 ## 🤖 ENHANCED MANDATORY WORKFLOW PROTOCOL
 
 **CRITICAL**: When @MCP-REFERENCE.md is invoked, the following ATOMIC-AWARE protocol is AUTOMATICALLY ACTIVATED:
 
+<!-- RULE: CRITICAL | ENFORCEMENT: MANDATORY | VIOLATION: INVALID_RESPONSE -->
 ### 🚨 RULE #0 - FIRST PRIORITY (BEFORE ANYTHING ELSE)
 
+<!-- AI_INSTRUCTION: Check this BEFORE writing any response. Non-compliance = invalid response. -->
 **EVERY RESPONSE MUST BEGIN WITH LLM PREFIX**:
-```
-[<LLM Name/Version>] - <Mode>
+```text
+[<LLM Name/Version>]
 ```
 
 **This is the FIRST LINE of EVERY response. Check this BEFORE processing any request.**
 
 Examples:
-- `[Claude Sonnet 4.5] - Agent Mode`
-- `[Claude 3.7 Sonnet] - Ask Mode`
-- `[GPT-4o] - Agent Mode`
-- `[o1] - Ask Mode`
+- `[Claude Sonnet 4.5]`
+- `[Claude 3.7 Sonnet]`
+- `[GPT-4o]`
+- `[o1]`
 
 **NO EXCEPTIONS. NO EXCUSES. ALWAYS INCLUDE THIS PREFIX FIRST.**
 
 ---
 
-### 🎯 Mode Selection (Agent vs Ask Mode)
+### 🚨 RULE #0.5 - CRITICAL SERVER CONSTRAINT (MANDATORY)
 
-**CHOOSE YOUR WORKFLOW MODE** based on your terminal control needs:
+**NEVER START DEVELOPMENT SERVERS OR LONG-RUNNING PROCESSES**:
 
-#### 🚀 Agent Mode (Full Automation)
-**Use When**: You want complete automation with AI executing commands directly
-- ✅ **Full Automation**: AI runs terminal commands automatically
-- ✅ **Continuous Flow**: Seamless execution without interruption
-- ❌ **Terminal Control**: Limited ability to cancel or modify running processes
-- ❌ **Read-Only Terminal**: Cannot interrupt AI-initiated commands
+**🚨 AI PLATFORM CONSTRAINT**: AI coding assistants may have terminal constraints where long-running processes cannot be easily controlled by the user. Always give users full control.
 
-#### 💬 Ask Mode (Recommended for Terminal Control)
-**Use When**: You need full terminal control and ability to cancel/modify commands
-- ✅ **Full Terminal Control**: You can cancel, modify, or stop any command
-- ✅ **Interactive Workflow**: AI proposes commands, you approve and run them
-- ✅ **Command Transparency**: See exactly what will be executed before running
-- ✅ **Cancellation Safety**: Stop any process at any time
-- ✅ **All MCP Features**: Complete atomic planning and AI team functionality
+**FORBIDDEN COMMANDS** (Never run automatically):
+```bash
+❌ npm run dev
+❌ npx motia dev
+❌ ng serve
+❌ npm start
+❌ any long-running process
+```
+
+**REQUIRED BEHAVIOR**:
+```text
+✅ "Please start the development server manually in your terminal:
+     npm run dev
+   
+   This gives you full control over the server process."
+```
+
+**This rule applies universally across all AI platforms.**
+
+---
+
+<!-- RULE: CRITICAL | ENFORCEMENT: MANDATORY | DEFAULT: powershell -->
+### 🚨 RULE #0.6 - TERMINAL COMMAND PRIORITY (MANDATORY)
+
+<!-- AI_INSTRUCTION: Show PowerShell command FIRST, then Linux/macOS alternatives. Never show only bash/Linux without PowerShell. -->
+**COMMAND PLATFORM PRIORITIZATION**: When providing terminal commands, ALWAYS follow this priority order:
+
+**Priority Order**:
+1. **Windows PowerShell** (PRIMARY) - User's main development environment
+2. **Linux/Unix** (SECONDARY) - Cross-platform alternative
+3. **macOS** (TERTIARY) - Mac-specific if needed
+
+**Implementation Format**:
+```powershell
+# Windows PowerShell (PRIMARY)
+Get-Date -Format "MMMM dd, yyyy 'at' h:mm tt"
+Get-ChildItem -Recurse
+Remove-Item -Path "file.txt"
+
+# Linux/Unix (Alternative)
+date '+%B %d, %Y at %I:%M %p'
+ls -R
+rm file.txt
+
+# macOS (If different from Linux)
+# [Mac-specific command if applicable]
+```
+
+**When to Show Multiple Platforms**:
+- Show PowerShell FIRST (always)
+- Add Linux alternative if command differs significantly
+- Only add macOS if command is specifically different
+- Never show just bash/Linux without PowerShell first
+
+**Example - Good**:
+```powershell
+# Check Node version
+node --version  # Works on all platforms
+
+# Count files
+Get-ChildItem -Recurse | Measure-Object  # PowerShell
+# Linux/macOS: find . -type f | wc -l
+```
+
+**Example - Bad**:
+```bash
+# ❌ DON'T show only bash/Linux
+find . -type f | wc -l
+```
+
+**This rule ensures commands work on user's primary Windows development environment.**
+
+---
 
 ### 1. Context Assessment & Planning Phase
 **REQUIRED FIRST STEP**: Before any task assignment, assess context requirements:
 
-```
+```text
 ## 🧠 Context Assessment
 **Project Type**: [Framework/technology being used]
 **Project Size**: [Small <10 files | Medium 10-50 files | Large 50+ files]
@@ -735,7 +1072,7 @@ Examples:
 ### 2. Atomic Task Decomposition
 **MANDATORY**: All non-atomic requests MUST be decomposed using this template:
 
-```
+```text
 ## ⚛️ Atomic Task Breakdown
 **Original Request**: [User's original request]
 **Decomposition Reasoning**: [Why this needs to be broken down]
@@ -764,7 +1101,7 @@ Examples:
 ### 4. Context-Aware Execution
 **MANDATORY**: All AI staff responses must include context management:
 
-```
+```text
 ## 📊 Context Management
 **Active Files**: [List of files in current context - MAX 5]
 **Token Estimate**: [Rough estimate of context usage]
@@ -772,53 +1109,68 @@ Examples:
 **Handoff Instructions**: [What to carry forward to next session]
 ```
 
-## 💬 ASK MODE WORKFLOW PROTOCOL (RECOMMENDED)
+<!-- SECTION: RESPONSE_TEMPLATES | PRIORITY: P0 | READ_TIME: 2min | ALWAYS_READ: true -->
+<!-- AI_INSTRUCTION: Use these templates for ALL responses. Default = Direct Mode unless mode switch detected. -->
+## 📋 RESPONSE FORMAT TEMPLATES
 
-### ASK Mode Philosophy - "Guide Me, I'll Code It"
+<!-- TEMPLATE: DEFAULT | TOKEN_USAGE: LOW | CONTEXT_EFFICIENT: true -->
+### 🎯 Direct Mode (DEFAULT)
 
-**ASK MODE IS FOR DEVELOPERS WHO WANT TO:**
-- Write code themselves based on expert guidance
-- Learn by implementing rather than watching
-- Understand WHY before implementing HOW
-- Have full control over every line of code
-- Build muscle memory through manual coding
-- Debug and troubleshoot their own implementations
+**Use by default** - Efficient, action-focused responses that preserve AI team intelligence while minimizing context usage.
 
-**AI's Role in ASK Mode:**
-- 🎓 **Teacher**: Explains concepts and patterns
-- 🗺️ **Guide**: Shows the path, you take the steps
-- 📚 **Reference**: Provides examples and documentation
-- 🔍 **Reviewer**: Validates your approach before you code
-- ❌ **NOT Executor**: You write the code, not the AI
+Every response should follow this structure by default:
 
-**The ASK Mode Loop:**
-1. AI explains the concept and approach
-2. AI provides code examples and patterns
-3. YOU write the code yourself
-4. AI helps you verify it worked
-5. AI suggests next steps
-6. Repeat
+```text
+[<LLM Name/Version>]
 
-**WHEN USING ASK MODE**: The following protocol ensures full terminal control while maintaining all MCP capabilities:
+## 🧠 Context Assessment
+**Project Type**: [Framework/technology]
+**Task Complexity**: [Atomic/Requires Decomposition]
+**Mode**: Direct
 
-### ASK Mode Response Format Template (Manual Coding Focus)
+## 🎯 Team Dispatcher Analysis
+**Assigned To**: [AI Team Member]
+**Reasoning**: [Why this role + what they'll solve]
 
-Every ASK mode response MUST follow this enhanced structure:
+## 👨‍💻 [Role Name] - Solution
 
-**🚨 CRITICAL FIRST STEP - MANDATORY LLM PREFIX**:
+### 🛠️ Actions Required
+1. **[Action 1]**: [Specific file/command with brief why]
+2. **[Action 2]**: [Specific file/command with brief why]
+3. **[Action 3]**: [Specific file/command with brief why]
+
+### ✅ Verify
+```bash
+[Test command]
 ```
-[<LLM Name/Version>] - Ask Mode
-```
-**MUST be the very first line of EVERY response. NO EXCEPTIONS.**
+**Expected**: [What you should see]
 
+### 💡 Expand Details (Optional)
+- Type `explain concepts` - Get detailed explanations
+- Type `troubleshoot` - See common issues & fixes
+- Type `show code` - Get complete code examples
+- Type `descriptive mode` - Switch to full learning format
 ```
-[<LLM Name/Version>] - Ask Mode
+
+---
+
+<!-- TEMPLATE: ON_REQUEST | TOKEN_USAGE: HIGH | CONTEXT_EFFICIENT: false -->
+<!-- TRIGGER_KEYWORDS: "descriptive mode", "teach me", "explain concepts", "show everything" -->
+### 📚 Descriptive Mode (On Request)
+
+**Use when**: User explicitly requests "descriptive mode", "teach me", "explain concepts", or needs learning focus.
+
+Every response should follow this enhanced learning structure (see Rule #0 for LLM prefix requirement):
+
+```text
+[<LLM Name/Version>]  # See Rule #0
 
 ## 🧠 Context Assessment
 **Project Type**: [Framework/technology]
 **Task Complexity**: [Atomic/Requires Decomposition]
 **Your Skill Level**: [Beginner/Intermediate/Advanced - adjust explanation detail]
 **Learning Focus**: [What you'll learn by implementing this]
+**Mode**: Descriptive
 
 ## 🎯 What We're Building
 **Goal**: [Clear, simple explanation of what you're about to create]
@@ -962,146 +1314,144 @@ npm test [specific-test-file]
 - Optimize: [Performance enhancement]
 - Secure: [Security consideration]
 
-## 📋 Quick Command Reference (If Needed)
+## 📋 Quick Command Reference (Windows PowerShell Priority)
 
 **Development Commands**:
-```bash
-# Start dev server (if not running)
-npm run dev
+```powershell
+# 🚨 Start dev server (YOU must run this manually - not AI)
+npm run dev        # Works on all platforms
 
-# Run tests
-npm test
+# Run tests & quality checks
+npm test           # Works on all platforms
+npm run type-check # TypeScript type checking
+npm run lint       # Code linting
 
-# Check types (TypeScript)
-npm run type-check
-
-# Lint code
-npm run lint
+# File operations (PowerShell-first)
+Get-Content file.txt       # Read file
+Get-ChildItem -Recurse     # List files recursively
+# Linux/macOS: cat file.txt, ls -R
 ```
 
-**Git Commands** (when ready to commit):
-```bash
-# See what changed
-git status
-git diff
+**⚠️ Important**: The AI should not start the dev server for you. You must run server commands manually in your own terminal for full control.
 
-# Stage and commit
-git add [files]
-git commit -m "feat: [what you implemented]"
-```
+**Git Commands** (See Enhancement #4 for complete git workflow with pre-push checklist)
 
 ## 📚 Resource Citations
 - **Primary Reference**: [Main documentation]
 - **Pattern Source**: [Where this pattern comes from]
 - **Further Reading**: [Deep dive resources]
+- **Git Workflow**: See Enhancement #4 (Pre-Push Git Confirmation) for complete commands
 ```
 
-### Learning-Focused ASK Mode Benefits
+---
 
-**🎓 Educational Advantages**:
-- **Active Learning**: You write every line, building real understanding
-- **Concept Mastery**: Explanations focus on WHY, not just WHAT
-- **Debugging Skills**: You troubleshoot your own code, building confidence
-- **Pattern Recognition**: Repeated manual implementation builds intuition
-- **Long-term Retention**: Typing code yourself cements learning
+### 📋 Direct Mode Example
 
-**💪 Skill Building**:
-- **Muscle Memory**: Manual coding builds typing and syntax familiarity
-- **Problem Solving**: Working through issues yourself develops troubleshooting skills
-- **Independence**: Reduces reliance on AI generation over time
-- **Code Ownership**: Every line is yours, you understand it completely
-- **Interview Preparation**: Practice explaining code you wrote yourself
+**Request**: "@MCP-REFERENCE.md Add a contact form to my Next.js site"
 
-**🎯 When to Use ASK Mode for Learning**:
-- Learning a new framework or library
-- Practicing a specific pattern or technique
-- Building portfolio projects you need to explain
-- Preparing for technical interviews
-- Teaching yourself best practices
-- Any time understanding > speed
+**Direct Mode Response**:
+```text
+[Claude Sonnet 4.5]
 
-### Manual Implementation Tips (ASK Mode Best Practices)
+## 🧠 Context Assessment
+**Project Type**: Next.js App Router
+**Task Complexity**: Atomic
+**Mode**: Direct
 
-**Before You Start Coding**:
-1. Read the entire implementation guide first
-2. Understand the concepts section completely
-3. Have official documentation open in another tab
-4. Set up your testing method (npm run dev ready)
-5. Clear understanding of success criteria
+## 🎯 Team Dispatcher Analysis
+**Assigned To**: Frontend Engineer
+**Reasoning**: UI component with form handling - Frontend's specialty
 
-**While You Code**:
-1. Type code manually, don't copy/paste (builds muscle memory)
-2. Read and understand each comment before typing
-3. Experiment: try changing values to see what breaks
-4. Verify frequently: test after each small change
-5. Keep a notepad for questions that arise
+## 👨‍💻 Frontend Engineer - Solution
 
-**After Each Step**:
-1. Run verification checks immediately
-2. If it doesn't work, try debugging yourself first
-3. Use troubleshooting guide when stuck
-4. Ask AI for clarification if needed (not solutions)
-5. Don't move forward until step works
+### 🛠️ Actions Required
+1. **Create form component**: `app/components/ContactForm.tsx`
+   - Add form fields (name, email, message)
+   - Include client-side validation with react-hook-form + zod
 
-**Maximizing Learning**:
-- **Ask "Why" questions**: Request explanations, not just solutions
-- **Request alternatives**: "What's another way to do this?"
-- **Seek deeper understanding**: "How does this work under the hood?"
-- **Practice variations**: "What if I wanted to do X instead?"
-- **Review patterns**: "Where else would I use this pattern?"
+2. **Create API endpoint**: `app/api/contact/route.ts`
+   - Handle POST request
+   - Validate with Zod schema
+   - Return success/error response
 
-### ASK Mode Example Prompts (Guide Me Style)
+3. **Add to page**: Import ContactForm in `app/contact/page.tsx`
+   - Render component with proper error handling
 
-**Instead of**: "Build me a login form"
-**Use**: "Guide me to build a login form step-by-step. Explain concepts first, then I'll code it."
-
-**Instead of**: "Fix this code [paste]"
-**Use**: "I'm getting [error]. Help me understand what's wrong so I can fix it myself."
-
-**Instead of**: "Add authentication"
-**Use**: "I want to learn authentication. Break it into atomic steps and explain each concept before I implement."
-
-**Instead of**: "Optimize this"
-**Use**: "Review my code and suggest improvements. Explain why each improvement matters so I can implement them."
-
-**Pattern**: 
-- ✅ "Guide me to..."
-- ✅ "Explain how I should..."
-- ✅ "Help me understand..."
-- ✅ "What approach should I take..."
-- ❌ "Build me..."
-- ❌ "Create..."
-- ❌ "Implement..."
-
-### Traditional ASK Mode Benefits (Command Execution)
-
-**When You Need Command-Based Workflow**:
-- **Full Control**: You decide when and how to execute each command
-- **Safety First**: Review all commands before execution
-- **Cancellation**: Stop any process at any time
-- **Modification**: Customize commands before running
-- **Learning**: Understand exactly what each command does
-- **Debugging**: Easily troubleshoot issues step by step
-
-## 📋 ENHANCED AUTOMATIC WORKFLOW EXECUTION
-
-### Atomic-Aware Response Format Template
-Every MCP-REFERENCE.md response MUST follow this enhanced structure:
-
-**🚨 CRITICAL FIRST STEP - MANDATORY LLM PREFIX**:
+### ✅ Verify
+```bash
+npm run dev
 ```
-[<LLM Name/Version>] - <Mode>
-```
-**MUST be the very first line of EVERY response. NO EXCEPTIONS.**
+**Expected**: Form appears at http://localhost:3000/contact and submits successfully
 
+### 💡 Expand Details (Optional)
+- Type `explain concepts` - Learn about Server Actions vs API routes
+- Type `troubleshoot` - See common form submission issues
+- Type `show code` - Get complete code examples for all files
+- Type `descriptive mode` - Full learning format with explanations
 ```
-[<LLM Name/Version>] - <Mode>
+
+---
+
+## 📋 IMPLEMENTATION BEST PRACTICES
+
+**Before Coding**: Read guide, understand concepts, open docs, prepare testing
+**During Coding**: Type manually, experiment, verify frequently
+**After Implementation**: Debug first, use troubleshooting guide, verify before proceeding
+**Learning Approach**: Ask "Why", request alternatives, seek deeper understanding, practice variations
+
+**Effective Prompts**:
+- ✅ "Guide me to..." / "Explain how I should..." / "Help me understand..."
+- ✅ "I'm getting [error]. Help me understand what's wrong so I can fix it myself."
+- ❌ Avoid overly broad requests without context
+
+## 📋 WORKFLOW EXECUTION
+
+### Response Mode Selection
+
+**DEFAULT: Direct Mode** - Efficient, action-focused responses (80% less context)
+**ON REQUEST: Descriptive Mode** - Detailed learning-focused responses (when user asks)
+
+### Direct Mode Format (Default)
+Every MCP-REFERENCE.md response uses this efficient structure by default:
+
+```text
+[<LLM Name/Version>]
+
+## 🧠 Context Assessment
+**Project Type**: [Framework/technology being used]
+**Task Complexity**: [Atomic/Requires Decomposition/Multi-Domain]
+**Mode**: Direct
+
+## 🎯 Team Dispatcher Analysis
+**Assigned To**: [AI Team Member(s)]
+**Reasoning**: [Why this role + atomic considerations]
+
+## 👨‍💻 [Role Name] - Solution
+
+### 🛠️ Actions Required
+[Numbered list of specific actions with files/commands]
+
+### ✅ Verify
+[Test command and expected result]
+
+### 💡 Expand Details
+[Options to get more information]
+```
+
+---
+
+### Descriptive Mode Format (On Request)
+When user requests "descriptive mode" or "teach me", use this enhanced structure:
+
+```text
+[<LLM Name/Version>]  # See Rule #0
 
 ## 🧠 Context Assessment
 **Project Type**: [Framework/technology being used]
 **Project Size**: [Small/Medium/Large]
 **Task Complexity**: [Atomic/Requires Decomposition/Multi-Domain]
 **Context Strategy**: [Single session/Multi-session sequence]
+**Mode**: Descriptive
 
 ## ⚛️ Atomic Task Analysis
 [If task is already atomic:]
@@ -1181,7 +1531,37 @@ Every MCP-REFERENCE.md response MUST follow this enhanced structure:
 ### Enhanced Enforcement Rules
 
 **🚨 RULE #0 (HIGHEST PRIORITY - NEVER SKIP)**: 
-**MANDATORY LLM PREFIX**: Every response MUST begin with `[<LLM Name/Version>] - <Mode>` as the FIRST LINE. This is NON-NEGOTIABLE and supersedes all other rules.
+**MANDATORY LLM PREFIX**: Every response MUST begin with `[<LLM Name/Version>]` as the FIRST LINE. This is NON-NEGOTIABLE and supersedes all other rules.
+
+<!-- RULE: CRITICAL | ENFORCEMENT: MANDATORY | DEFAULT: true -->
+**🚨 RULE #0.1 (DEFAULT MODE - ALWAYS APPLY)**:
+<!-- AI_INSTRUCTION: Scan user request for mode keywords FIRST: "descriptive mode", "teach me", "explain concepts", "show everything". If found, use Descriptive Mode. Otherwise, ALWAYS use Direct Mode. -->
+**MANDATORY DIRECT MODE**: Use Direct Mode format by default unless user explicitly requests:
+- "descriptive mode" - Full learning format
+- "teach me" - Educational explanations
+- "explain concepts" - Detailed concept breakdowns
+- "show everything" - Complete verbose response
+
+**Direct Mode preserves**:
+✅ Team Dispatcher analysis (which AI role handles it)
+✅ Problem-solving reasoning (how they'll solve it)
+✅ Atomic task decomposition (if needed)
+✅ Context management and session boundaries
+✅ All AI team system intelligence
+
+**Direct Mode minimizes** (available on request):
+📉 Verbose explanations (type `explain concepts`)
+📉 Pre-implementation learning (type `teach me`)
+📉 Extensive troubleshooting (type `troubleshoot`)
+📉 Step-by-step code examples (type `show code`)
+
+<!-- RULE: CRITICAL | ENFORCEMENT: MANDATORY | VIOLATION: TERMINAL_LOCKUP -->
+**🚨 RULE #0.5 (CRITICAL CONSTRAINT - MANDATORY)**: 
+<!-- AI_INSTRUCTION: NEVER execute: npm run dev, npx motia dev, ng serve, npm start, or any long-running process. ALWAYS tell user to run manually. -->
+**NEVER START SERVERS**: AI coding assistants should not auto-start long-running processes like `npm run dev`, `npx motia dev`, or similar. Always instruct user to start servers manually for full control.
+
+**🚨 RULE #0.6 (PLATFORM PRIORITY - MANDATORY)**:
+**WINDOWS POWERSHELL FIRST**: Always provide PowerShell commands FIRST (user's primary environment), then Linux/Unix alternatives, then macOS if different.
 
 1. **No Direct Responses**: Never respond without Team Dispatcher analysis
 2. **Resource Verification**: All solutions must cite GitHub repository sources
@@ -1193,10 +1573,30 @@ Every MCP-REFERENCE.md response MUST follow this enhanced structure:
 8. **CONTEXT AWARENESS**: Monitor and manage context window usage
 9. **SESSION BOUNDARIES**: Clearly define when to reset context for next task
 
-**ENFORCEMENT PRIORITY**: Rule #0 (LLM Prefix) > All other rules. If you ever forget the prefix, the entire response is considered non-compliant regardless of content quality.
+<!-- AI_PROCESSING_SUMMARY -->
+**ENFORCEMENT PRIORITY**: Rule #0 (LLM Prefix) > Rule #0.1 (Direct Mode Default) > Rule #0.5 (No Server Auto-Start) > Rule #0.6 (PowerShell First) > All other rules. Non-compliance with any Rule #0.x makes the response invalid regardless of content quality.
 
+**Context Efficiency**: Direct Mode reduces response size by ~80% while preserving all AI team intelligence, atomic planning, and problem-solving capabilities. This ensures optimal context window usage across all model tiers.
+
+<!-- AI_WORKFLOW_CHECKLIST -->
+**Pre-Response Checklist** (Execute in order):
+1. ✅ Read AI Quick Reference (top of file)
+2. ✅ Check Priority Map for relevant sections
+3. ✅ Read Rule #0.x (MANDATORY)
+4. ✅ Detect mode keywords ("descriptive mode" etc.)
+5. ✅ Select template (Direct/Descriptive)
+6. ✅ Assign to team member
+7. ✅ Apply template format
+8. ✅ Include LLM prefix first line
+9. ✅ Verify no server auto-start commands
+10. ✅ Ensure PowerShell commands first
+<!-- END_CHECKLIST -->
+
+<!-- SECTION: AI_TEAM | PRIORITY: P1 | READ_TIME: 3min | ALWAYS_READ: true -->
+<!-- AI_INSTRUCTION: ALWAYS analyze request and assign to appropriate team member BEFORE providing solution -->
 ## 🤖 AI Team System
 
+<!-- COMPONENT: TEAM_DISPATCHER | RESPONSIBILITY: Request analysis + Role assignment -->
 ### Team Dispatcher (Enhanced)
 **URL**: https://raw.githubusercontent.com/lovinglifemediawebdev/ai-agent-mcp/main/ai-team/00_Team_Dispatcher.md
 
@@ -1207,58 +1607,59 @@ The AI Team Dispatcher now includes atomic planning capabilities and coordinates
 #### Research Engineer
 **URL**: https://raw.githubusercontent.com/lovinglifemediawebdev/ai-agent-mcp/main/ai-team/roles/10_Research_Engineer.md
 - **Responsibilities**: Technical research, data validation, solution investigation, framework analysis
-- **Specialties**: Web research using @Web, multi-source validation, technical analysis, implementation research, Context7 integration
+- **Specialties**: Web research using @Web, multi-source validation, technical analysis, implementation research
 - **Atomic Focus**: Single research queries, targeted validation, focused analysis, atomic documentation
 - **Framework Expertise**: Multi-framework research, technology trends, integration patterns, performance optimization
-- **Context7 Integration**: Uses Context7 for up-to-date library documentation and current best practices
+- **Context7 Usage**: Queries Context7 for current library documentation and framework-specific examples
 
 #### Development Head
 **URL**: https://raw.githubusercontent.com/lovinglifemediawebdev/ai-agent-mcp/main/ai-team/roles/01_Development_Head.md
 - **Responsibilities**: Project architecture, technical leadership, code standards, atomic task planning
-- **Specialties**: System design, technology decisions, team coordination, context management, Context7 integration
+- **Specialties**: System design, technology decisions, team coordination, context management
 - **Atomic Focus**: Breaks down architectural decisions into implementable atomic tasks
 - **Framework Expertise**: Multi-framework architecture patterns (Motia, Next.js, React, Vue, Angular)
-- **Context7 Integration**: Uses Context7 for current architecture patterns and best practices
+- **Context7 Usage**: Queries Context7 for current architecture patterns and framework best practices
 
 #### Backend Engineer  
 **URL**: https://raw.githubusercontent.com/lovinglifemediawebdev/ai-agent-mcp/main/ai-team/roles/03_Backend_Engineer.md
 - **Responsibilities**: API development, database design, server-side logic, atomic implementation
-- **Specialties**: Multi-framework backend development, event systems, state management, authentication, context-bounded coding, Context7 integration
+- **Specialties**: Multi-framework backend development, event systems, state management, authentication
 - **Atomic Focus**: Implements single endpoints, individual event handlers, isolated database operations
 - **Framework Expertise**: Motia steps, Next.js API routes, Express.js, FastAPI, microservices
-- **Context7 Integration**: Uses Context7 for current backend patterns and API best practices
+- **Context7 Usage**: Queries Context7 for current backend patterns and API examples
 
 #### Frontend Engineer
 **URL**: https://raw.githubusercontent.com/lovinglifemediawebdev/ai-agent-mcp/main/ai-team/roles/04_Frontend_Engineer.md  
 - **Responsibilities**: UI/UX implementation, client-side logic, responsive design, atomic component development
-- **Specialties**: React, Next.js, Vue, Angular, TypeScript, modern CSS, component architecture, Context7 integration
+- **Specialties**: React, Next.js, Vue, Angular, TypeScript, modern CSS, component architecture
 - **Atomic Focus**: Single components, individual features, isolated styling tasks
 - **Framework Expertise**: React hooks, Next.js App Router, Vue Composition API, Angular standalone components
-- **Context7 Integration**: Uses Context7 for current frontend patterns and component best practices
+- **Context7 Usage**: Queries Context7 for current frontend patterns and component examples
 
 #### DevOps Engineer
 **URL**: https://raw.githubusercontent.com/lovinglifemediawebdev/ai-agent-mcp/main/ai-team/roles/05_DevOps_Engineer.md
 - **Responsibilities**: Deployment, CI/CD, infrastructure, monitoring, atomic deployment tasks
-- **Specialties**: Docker, Vercel, AWS, cloud platforms, automation, performance optimization, Context7 integration
+- **Specialties**: Docker, Vercel, AWS, cloud platforms, automation, performance optimization
 - **Atomic Focus**: Single configuration files, individual deployment steps, isolated monitoring setups
 - **Framework Expertise**: Multi-framework deployment patterns, containerization strategies
-- **Context7 Integration**: Uses Context7 for current DevOps patterns and deployment best practices
+- **Context7 Usage**: Queries Context7 for current DevOps patterns and deployment examples
 
 #### Code Reviewer
 **URL**: https://raw.githubusercontent.com/lovinglifemediawebdev/ai-agent-mcp/main/ai-team/roles/07_Code_Reviewer.md
-- **Responsibilities**: Code quality, security review, best practices enforcement, atomic code analysis
-- **Specialties**: Static analysis, security patterns, performance review, focused code reviews, Context7 integration
-- **Atomic Focus**: Reviews single functions, individual files, specific security concerns
+- **Responsibilities**: Code quality, security review, best practices enforcement, atomic code analysis, automated testing
+- **Specialties**: Static analysis, security patterns, performance review, focused code reviews, end-to-end testing
+- **Atomic Focus**: Reviews single functions, individual files, specific security concerns, isolated test scenarios
 - **Framework Expertise**: Framework-specific best practices, security patterns, performance optimization
-- **Context7 Integration**: Uses Context7 for current code review standards and security best practices
+- **Context7 Usage**: Queries Context7 for current code review standards and security best practices
+- **Playwright Usage**: Performs automated website testing, browser automation, and accessibility validation
 
 #### Database Architect
 **URL**: https://raw.githubusercontent.com/lovinglifemediawebdev/ai-agent-mcp/main/ai-team/roles/09_Database_Architect.md
 - **Responsibilities**: Schema design, query optimization, data modeling, atomic database changes
-- **Specialties**: SQL design, indexing, migrations, data integrity, incremental schema evolution, Context7 integration
+- **Specialties**: SQL design, indexing, migrations, data integrity, incremental schema evolution
 - **Atomic Focus**: Single table designs, individual migrations, specific query optimizations
 - **Framework Expertise**: Multi-framework database integration, ORM patterns, state management
-- **Context7 Integration**: Uses Context7 for current database patterns and ORM best practices
+- **Context7 Usage**: Queries Context7 for current database patterns and ORM examples
 
 ## 📚 Development Resources (Multi-Framework Enhanced)
 
@@ -1360,114 +1761,135 @@ The AI Team Dispatcher now includes atomic planning capabilities and coordinates
 - **Testing**: Atomic unit testing with Jasmine and Karma
 
 ### Universal Development Commands (Choose Your Framework)
+
+**See "Usage Instructions - Prerequisites" section below for complete framework installation commands.**
+
+Quick reference (remember: AI cannot start servers for you):
 ```bash
-# Motia Framework (Optional - Unified Backend)
-npx motia@latest create   # Bootstrap unified backend project
-cd your-project-name      # Navigate to created project
-npx motia dev            # ➜ http://localhost:3000
-
-# Next.js (Optional - Full-Stack React)
-npx create-next-app@latest my-app --typescript --tailwind --eslint --app
-cd my-app
-npm run dev
-
-# React (Optional - Frontend Library)
-npm create vite@latest my-app -- --template react-ts
-cd my-app
-npm install
-npm run dev
-
-# Vue.js (Optional - Progressive Framework)
-npm create vue@latest my-app
-cd my-app
-npm install
-npm run dev
-
-# Angular (Optional - Enterprise Framework)
-npm install -g @angular/cli
-ng new my-app
-cd my-app
-ng serve
-
-# Or use with existing projects - no framework installation required!
+# Motia: npx motia@latest create
+# Next.js: npx create-next-app@latest
+# React: npm create vite@latest
+# Vue: npm create vue@latest
+# Angular: ng new (after installing @angular/cli)
 ```
 
 ## 🎯 Usage Patterns (Multi-Framework Enhanced)
 
 **NOTE**: All requests automatically trigger atomic planning analysis and context-aware responses for any framework.
 
-### 🎯 Mode Selection Guidance
+### 🎯 Mode Selection Guidance (Agent vs Ask Mode)
 
-#### Use Agent Mode When:
-- You want complete automation
-- You're comfortable with AI running commands directly
-- You don't need to interrupt or modify commands
-- You prefer hands-off execution
+**Understanding AI Coding Assistant Modes**:
 
-#### Use Ask Mode When:
-- You need full terminal control
-- You want to review commands before execution
-- You need to cancel or modify running processes
-- You prefer step-by-step verification
-- You're working with sensitive operations
-- You want to learn what each command does
+#### Agent Mode 🤖
+- **Purpose**: Automated execution with AI running commands
+- **Use When**: You want hands-off automation and trust the AI to execute
+- **Behavior**: AI proposes and executes terminal commands automatically
+- **Control Level**: Lower - AI has more autonomy
+- **Best For**: Routine tasks, well-understood operations, rapid prototyping
+
+#### Ask Mode 💬  
+- **Purpose**: Manual execution with full user control
+- **Use When**: Learning, reviewing commands, or requiring complete terminal control
+- **Behavior**: AI proposes commands, YOU execute them manually in your terminal
+- **Control Level**: Higher - You control all execution
+- **Best For**: Learning projects, security-sensitive operations, production deployments
+
+#### Choosing the Right Mode
+
+**Use Ask Mode when**:
+- Learning new frameworks or patterns
+- Working with production systems
+- Modifying credentials, secrets, or environment variables
+- Deploying to production environments
+- You want to understand each command before execution
+- Testing potentially risky operations
+
+**Use Agent Mode when**:
+- You're comfortable with the AI's decision-making
+- Working on development/sandbox environments
+- Performing routine, well-understood tasks
+- Time efficiency is prioritized over learning
+
+**Security Note**: Always use Ask Mode for:
+- Git operations affecting production branches
+- Database migrations on production data
+- Credential or secret management
+- Deployment to live environments
+
+**Quick Mode Reference**:
+- **Agent Mode**: Full automation, hands-off execution
+- **Ask Mode**: Full control, manual command execution, learning-focused
 
 ### Starting a New Project (Framework-Flexible)
-```
+```text
 @MCP-REFERENCE.md I'm starting a new [framework-name] project. Please use atomic planning to break down the setup process.
 ```
 **OR for existing projects:**
-```
+```text
 @MCP-REFERENCE.md I have an existing project. Please detect my framework and help me get started.
 ```
 **Expected Flow**: Context Assessment → Framework Detection → Atomic Task Decomposition → Team Dispatcher → Development Head → Framework-specific setup with atomic implementation plan
 
 ### Getting Development Help (Context-Aware)
-```
+```text
 @MCP-REFERENCE.md I need help with [specific task] in my [framework] project. Please assess if this needs atomic decomposition.
 ```
 **Expected Flow**: Context Assessment → Framework Analysis → Atomic Analysis → Team Dispatcher → Appropriate AI role → Framework-specific, context-bounded solution
 
 ### ASK Mode Usage Examples
-```
+```text
 @MCP-REFERENCE.md I'm using Ask Mode. Help me set up [framework] project with full terminal control.
 ```
 **Expected Flow**: Context Assessment → ASK Mode Protocol → Proposed Commands → Manual Execution → Verification Steps
 
-```
+```text
 @MCP-REFERENCE.md I need to run git commands but want to review them first. Use Ask Mode workflow.
 ```
 **Expected Flow**: ASK Mode Analysis → Proposed Git Commands → Manual Copy/Paste → User Execution → Verification
 
 ### Managing Complex Features (Atomic Decomposition)
-```
+```text
 @MCP-REFERENCE.md I want to build [feature description] in [framework]. Please decompose this into atomic tasks.
 ```
 **Expected Flow**: Context Assessment → Framework Patterns → Atomic Task Breakdown → Multiple AI roles → Coordinated atomic execution sequence
 
 ### Code Review and Quality (Framework-Aware)
-```
+```text
 @MCP-REFERENCE.md Please review this [framework] code atomically: [paste specific code section]
 ```
 **Expected Flow**: Context Assessment → Framework Standards → Atomic Scope Definition → Code Reviewer → Framework-specific analysis with context boundaries
 
 ### Research-Required Implementation (Research-First Approach)
-```
+```text
 @MCP-REFERENCE.md How should I implement [specific feature] in [framework]? I need to research the best approach first.
 ```
 **Expected Flow**: Context Assessment → Research Triggers → Research Engineer → Multi-source investigation → Implementation recommendations → Specialist Engineer → Code Reviewer
 
 ### Best Practice Research
-```
+```text
 @MCP-REFERENCE.md What's the current best practice for [specific implementation] in [framework]?
 ```
 **Expected Flow**: Context Assessment → Research Question → Research Engineer → @Web research → Validation → Best practice recommendations → Implementation guidance
 
 ### Cross-Framework Integration Research
-```
+```text
 @MCP-REFERENCE.md I need to integrate [Framework A] with [Framework B]. Please research the optimal approach.
 ```
 **Expected Flow**: Context Assessment → Multi-framework research → Research Engineer → Integration pattern research → Validation → Implementation plan → Development Head coordination
+
+### Website Testing with Playwright MCP
+```text
+@MCP-REFERENCE.md Test my [page/component/feature] using Playwright
+```
+**Expected Flow**: Context Assessment → Code Reviewer → Playwright browser automation → Accessibility snapshot → Visual verification → Console log analysis → Test report
+
+**Example Testing Requests**:
+- "Test my login form for accessibility issues"
+- "Verify my responsive design works on mobile"
+- "Check if my form submission works correctly"
+- "Test navigation flow from homepage to checkout"
+- "Capture screenshots of my landing page at different screen sizes"
 
 ## 📋 Development Standards (Multi-Framework Enhanced)
 
@@ -1509,280 +1931,45 @@ ng serve
 - **Validation**: Framework-specific validation (Zod, Joi, etc.) with atomic validation rules
 - **Security**: Input validation, authentication, authorization with atomic security checks
 - **Testing**: Atomic test cases with framework-specific testing tools
+- **Website Testing**: Automated browser testing with Playwright MCP (E2E, accessibility, visual regression)
 
-## 🚀 Project Templates (Multi-Framework Implementation)
+## 🚀 Project Templates & Code Examples
 
-### Motia Backend (Event-Driven)
-```typescript
-// TypeScript Atomic API Step Template
-import { ApiRouteConfig, Handlers } from 'motia'
-import { z } from 'zod'
+**📚 For up-to-date code examples and patterns, use Context7 MCP Server:**
 
-export const config: ApiRouteConfig = {
-  type: 'api',
-  name: 'CreateSingleResource', // Atomic: creates ONE resource
-  method: 'POST',
-  path: '/api/resource',
-  bodySchema: z.object({
-    name: z.string(),
-    data: z.object({})
-  }),
-  emits: ['resource.created'], // Single atomic event
-  flows: ['resource-flow']
-}
+### How to Get Framework-Specific Examples
 
-export const handler: Handlers['CreateSingleResource'] = async (req, { logger, emit, state }) => {
-  logger.info('Atomic API task: Creating single resource', { 
-    body: req.body,
-    taskType: 'atomic-create'
-  })
-  
-  try {
-    // Atomic operation: create exactly one resource
-    const resource = { 
-      id: crypto.randomUUID(), 
-      ...req.body, 
-      createdAt: new Date() 
-    }
-    
-    // Atomic state operation
-    await state.set('resources', resource.id, resource)
-    
-    // Atomic event emission
-    await emit({ topic: 'resource.created', data: resource })
-    
-    return { status: 201, body: resource }
-  } catch (error) {
-    logger.error('Atomic API task failed', { 
-      error: error.message,
-      taskType: 'atomic-create'
-    })
-    return { status: 500, body: { error: 'Atomic operation failed' } }
-  }
-}
+When you need code examples, ask the AI to use Context7:
+
+```text
+@MCP-REFERENCE.md "Show me [framework] example for [specific feature]"
+
+Example requests:
+- "Show me Motia API step example using Context7"
+- "Get Next.js API route pattern from Context7"
+- "Find React component example with hooks via Context7"
+- "Query Context7 for Vue composable patterns"
 ```
 
-### Next.js API Route (Atomic Endpoint)
-```typescript
-// app/api/resources/route.ts - Atomic API Route
-import { NextRequest, NextResponse } from 'next/server'
-import { z } from 'zod'
+**Why Context7?**
+- ✅ Always up-to-date with latest framework versions
+- ✅ Current best practices and patterns
+- ✅ Official documentation examples
+- ✅ No outdated code in static reference files
 
-const CreateResourceSchema = z.object({
-  name: z.string().min(1),
-  description: z.string().optional()
-})
+### Framework Coverage via Context7
 
-export async function POST(request: NextRequest) {
-  try {
-    // Atomic validation
-    const body = await request.json()
-    const validatedData = CreateResourceSchema.parse(body)
-    
-    // Atomic database operation
-    const resource = {
-      id: crypto.randomUUID(),
-      ...validatedData,
-      createdAt: new Date().toISOString()
-    }
-    
-    // Store resource (atomic operation)
-    // await db.resources.create({ data: resource })
-    
-    return NextResponse.json(resource, { status: 201 })
-  } catch (error) {
-    console.error('Atomic API operation failed:', error)
-    return NextResponse.json(
-      { error: 'Failed to create resource' },
-      { status: 500 }
-    )
-  }
-}
-```
+**Available through Context7 MCP**:
+- **Motia**: `/MotiaDev/motia` - API steps, event handlers, state management
+- **Next.js**: `/vercel/next.js` - App Router, API routes, Server Components
+- **React**: `/facebook/react` - Hooks, components, state management
+- **Vue.js**: `/vuejs/core` - Composition API, composables, reactive patterns
+- **Angular**: `/angular/angular` - Standalone components, services, RxJS
 
-### React Component (Atomic UI)
-```typescript
-// components/ResourceCard.tsx - Atomic Component
-import { useState } from 'react'
-
-interface Resource {
-  id: string
-  name: string
-  description?: string
-  createdAt: string
-}
-
-interface ResourceCardProps {
-  resource: Resource
-  onUpdate?: (resource: Resource) => void
-  onDelete?: (id: string) => void
-}
-
-export function ResourceCard({ resource, onUpdate, onDelete }: ResourceCardProps) {
-  const [isEditing, setIsEditing] = useState(false)
-  const [name, setName] = useState(resource.name)
-  
-  // Atomic operation: handle single resource update
-  const handleUpdate = async () => {
-    if (!onUpdate) return
-    
-    try {
-      const updatedResource = { ...resource, name }
-      await onUpdate(updatedResource)
-      setIsEditing(false)
-    } catch (error) {
-      console.error('Failed to update resource:', error)
-    }
-  }
-  
-  // Atomic operation: handle single resource deletion
-  const handleDelete = async () => {
-    if (!onDelete) return
-    
-    try {
-      await onDelete(resource.id)
-    } catch (error) {
-      console.error('Failed to delete resource:', error)
-    }
-  }
-  
-  return (
-    <div className="resource-card p-4 border rounded-lg">
-      {isEditing ? (
-        <div className="space-y-2">
-          <input
-            type="text"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-            className="w-full p-2 border rounded"
-          />
-          <div className="flex gap-2">
-            <button onClick={handleUpdate} className="px-3 py-1 bg-blue-500 text-white rounded">
-              Save
-            </button>
-            <button onClick={() => setIsEditing(false)} className="px-3 py-1 bg-gray-500 text-white rounded">
-              Cancel
-            </button>
-          </div>
-        </div>
-      ) : (
-        <div className="space-y-2">
-          <h3 className="text-lg font-semibold">{resource.name}</h3>
-          {resource.description && (
-            <p className="text-gray-600">{resource.description}</p>
-          )}
-          <p className="text-sm text-gray-500">
-            Created: {new Date(resource.createdAt).toLocaleDateString()}
-          </p>
-          <div className="flex gap-2">
-            <button onClick={() => setIsEditing(true)} className="px-3 py-1 bg-green-500 text-white rounded">
-              Edit
-            </button>
-            <button onClick={handleDelete} className="px-3 py-1 bg-red-500 text-white rounded">
-              Delete
-            </button>
-          </div>
-        </div>
-      )}
-    </div>
-  )
-}
-```
-
-### Vue.js Composable (Atomic Logic)
-```typescript
-// composables/useResource.ts - Atomic Composable
-import { ref, computed } from 'vue'
-
-interface Resource {
-  id: string
-  name: string
-  description?: string
-  createdAt: string
-}
-
-export function useResource() {
-  const resources = ref<Resource[]>([])
-  const loading = ref(false)
-  const error = ref<string | null>(null)
-  
-  // Atomic operation: create single resource
-  const createResource = async (data: Omit<Resource, 'id' | 'createdAt'>) => {
-    loading.value = true
-    error.value = null
-    
-    try {
-      const resource: Resource = {
-        id: crypto.randomUUID(),
-        ...data,
-        createdAt: new Date().toISOString()
-      }
-      
-      // API call (atomic operation)
-      const response = await fetch('/api/resources', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(resource)
-      })
-      
-      if (!response.ok) throw new Error('Failed to create resource')
-      
-      const createdResource = await response.json()
-      resources.value.push(createdResource)
-      
-      return createdResource
-    } catch (err) {
-      error.value = err instanceof Error ? err.message : 'Unknown error'
-      throw err
-    } finally {
-      loading.value = false
-    }
-  }
-  
-  // Atomic operation: update single resource
-  const updateResource = async (id: string, updates: Partial<Resource>) => {
-    loading.value = true
-    error.value = null
-    
-    try {
-      const response = await fetch(`/api/resources/${id}`, {
-        method: 'PATCH',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(updates)
-      })
-      
-      if (!response.ok) throw new Error('Failed to update resource')
-      
-      const updatedResource = await response.json()
-      const index = resources.value.findIndex(r => r.id === id)
-      if (index !== -1) {
-        resources.value[index] = updatedResource
-      }
-      
-      return updatedResource
-    } catch (err) {
-      error.value = err instanceof Error ? err.message : 'Unknown error'
-      throw err
-    } finally {
-      loading.value = false
-    }
-  }
-  
-  // Computed properties
-  const resourceCount = computed(() => resources.value.length)
-  const hasResources = computed(() => resources.value.length > 0)
-  
-  return {
-    resources: readonly(resources),
-    loading: readonly(loading),
-    error: readonly(error),
-    resourceCount,
-    hasResources,
-    createResource,
-    updateResource
-  }
-}
-```
+**Context7 Tools**:
+1. **`resolve-library-id`**: Convert library name to Context7 ID
+2. **`get-library-docs`**: Fetch current documentation and examples
+3. **Topic Focus**: Get specific examples (e.g., "hooks", "routing", "API")
 
 ## 🔧 Advanced Patterns (Multi-Framework Enhanced)
 
@@ -1810,6 +1997,8 @@ export function useResource() {
 - **Vue.js**: Pinia stores, reactive state, atomic mutations
 - **Angular**: NgRx, services, atomic state management patterns
 
+<!-- SECTION: PRODUCTION_PATTERNS | PRIORITY: P3 | READ_TIME: 10min -->
+<!-- IF: production OR deployment OR security_question THEN: read_section -->
 ## 🎨 PRODUCTION-ENHANCED PATTERNS
 
 **Source**: HVAC Estimator Production Deployment  
@@ -1818,47 +2007,20 @@ export function useResource() {
 
 These enhanced patterns represent production-proven solutions for common development challenges, derived from successful deployment experience.
 
+<!-- PATTERN: CONTEXT_MANAGEMENT | IF: large_project OR multi_session -->
 ### 1. **Context-Aware Atomic Planning Enhancements** 🧠
 
 **Pattern**: Session boundary management with memory integration
 
-**Key Enhancements**:
-- **Context Window Monitoring**: Track token usage per session
-- **File Count Limits**: Maximum 5 files per atomic task (strict enforcement)
-- **Memory Integration**: Use CHANGELOG.md for context persistence across sessions
-- **Handoff Instructions**: Clear context transfer between atomic tasks
+**See "Context Assessment & Planning Phase" section in the Enhanced Mandatory Workflow Protocol for complete atomic planning workflow.**
 
-**Atomic Task Verification Gates**:
-```markdown
-**Pre-Task Verification**:
-- [ ] Verify context requirements (≤5 files)
-- [ ] Estimate token usage for task
-- [ ] Confirm task is truly atomic (single objective)
-- [ ] Identify dependencies on previous tasks
+**Key Principles**: Track token usage, enforce 5-file limit, use CHANGELOG.md for persistence, clear handoff instructions
 
-**Mid-Task Verification**:
-- [ ] Check progress against success criteria
-- [ ] Monitor context window usage
-- [ ] Verify no scope creep occurring
+**Verification Gates**: Pre-task (≤5 files, atomic check), Mid-task (progress check), Post-task (document in CHANGELOG, prepare handoff)
 
-**Post-Task Verification**:
-- [ ] Document completion in CHANGELOG.md
-- [ ] List next atomic tasks in sequence
-- [ ] Prepare handoff instructions
-- [ ] Recommend context reset if needed
+**Benefits**: Prevents context amnesia, enables multi-session projects, maintains AI effectiveness
 
-**Rollback Procedures**:
-- [ ] Clear rollback steps documented
-- [ ] Version control checkpoint created
-- [ ] Dependencies identified for rollback
-```
-
-**Benefits**:
-- Prevents context amnesia
-- Enables multi-session complex projects
-- Maintains AI effectiveness at scale
-- Clear progress tracking
-
+<!-- PATTERN: SECURITY | IF: authentication OR deployment OR credentials -->
 ### 2. **Security-First Development Patterns** 🔒
 
 **Pattern**: Comprehensive pre-deployment security audit
@@ -1920,7 +2082,7 @@ These enhanced patterns represent production-proven solutions for common develop
 **Pattern**: Optimize for actual user demographics, not edge cases
 
 **User Demographics Analysis Example** (from HVAC Estimator):
-```
+```text
 📊 Actual User Data:
 - 55% Mobile users (primary target)
 - 35% 1080p Desktop users (secondary target)
@@ -1982,6 +2144,7 @@ Optimize for the 90% majority, not the 10% edge case
 - Professional stakeholder presentations
 - Measurable conversion improvements
 
+<!-- PATTERN: AUTHENTICATION | IF: auth OR login OR signup OR supabase -->
 ### 4. **Complete Authentication System Patterns** 🔐
 
 **Pattern**: Production-ready authentication with all flows
@@ -2053,7 +2216,7 @@ export async function middleware(req: NextRequest) {
 - ✅ Proper session persistence
 
 **Redirect URL Configuration** (Critical for Production):
-```
+```text
 Development:
 - Site URL: http://localhost:3000
 - Redirect URLs:
@@ -2200,7 +2363,7 @@ The AI agent adapts its assistance based on detected framework:
 - **Team Collaboration**: Standardized workflows optimized for any framework choice
 
 ### AI Integration (Framework-Intelligent)
-- **Seamless Cursor AI Integration**: Natural language assistance with framework awareness
+- **Universal AI Platform Support**: Natural language assistance with framework awareness across all AI coding assistants
 - **Context-Aware Responses**: Framework-specific recommendations within optimal context boundaries
 - **Automated Task Management**: TODO tracking with framework-appropriate atomic granularity
 - **Quality Assurance**: Built-in code review with framework-specific best practices
@@ -2209,6 +2372,8 @@ The AI agent adapts its assistance based on detected framework:
 - **Dual Communication**: Technical summaries for developers + business summaries for managers
 - **Atomic Planning Integration**: Prevents context overload across all supported frameworks
 
+<!-- SECTION: USAGE_INSTRUCTIONS | PRIORITY: P2 | READ_TIME: 5min -->
+<!-- IF: framework_setup OR new_project THEN: read_section -->
 ## 📝 Usage Instructions (Multi-Framework Enhanced)
 
 ### Prerequisites
@@ -2293,14 +2458,16 @@ cd my-app
 ### Setup Steps (Framework-Agnostic)
 1. **Choose Your Framework** (optional): Select and install any supported framework using the commands above, or use with existing projects
 2. **Copy this file** to your project root as `MCP-REFERENCE.md`
-3. **Select Your Mode**: Choose Agent Mode (automation) or Ask Mode (terminal control)
-4. **Reference in Cursor AI** using `@MCP-REFERENCE.md [your request]`
-5. **Automatic Framework Detection**: The system will detect your framework automatically
-6. **Expect atomic decomposition** for complex tasks automatically
-7. **Follow framework-specific atomic task sequences** as provided by the AI team system
-8. **Execute Commands**: Agent Mode runs automatically, Ask Mode provides proposed commands
-9. **Verify each atomic task** before proceeding to the next
-10. **Reset context** between major atomic task sequences as recommended
+3. **Reference in Your AI Coding Assistant**:
+   - **Cursor**: Use `@MCP-REFERENCE.md [your request]`
+   - **GPT Codex**: Include file context with your prompt
+   - **GitHub Copilot**: Reference file in chat
+   - **Other AI Tools**: Provide file as context per platform instructions
+4. **Automatic Framework Detection**: The AI will detect your framework automatically
+5. **Expect atomic decomposition** for complex tasks automatically
+6. **Follow framework-specific atomic task sequences** as provided by the AI team system
+7. **Verify each atomic task** before proceeding to the next
+8. **Reset context** between major atomic task sequences as recommended
 
 ### Atomic Planning Best Practices (Universal)
 1. **Start with Planning**: Always begin complex projects with atomic task decomposition
@@ -2317,7 +2484,12 @@ cd my-app
 - **Framework Templates**: https://github.com/lovinglifemediawebdev/ai-agent-mcp/tree/main/templates
 - **Examples**: https://github.com/lovinglifemediawebdev/ai-agent-mcp/tree/main/examples
 - **Atomic Planning Research**: https://collett.me/atomic-planning-in-cursor/
-- **Cursor Context Guide**: https://cursor.com/learn/context
+- **AI Context Management**: https://cursor.com/learn/context (applies to most AI platforms)
+
+### MCP Server Resources
+- **Context7 MCP**: https://context7.com - Up-to-date library documentation
+- **Playwright MCP**: https://github.com/executeautomation/playwright-mcp-server - Browser automation and testing
+- **1MCP Agent**: https://github.com/1mcp-app/agent - Unified MCP server management (optional)
 
 ### Framework-Specific Resources
 - **Motia Documentation**: https://motia.dev/docs
