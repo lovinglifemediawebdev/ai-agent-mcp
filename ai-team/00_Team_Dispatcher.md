@@ -49,7 +49,8 @@
 ### Step 1: Load Multi-Framework Context
 **REQUIRED**: Initialize with enhanced repository reference
 ```
-Reference: MCP-REFERENCE.md (V2.0 Multi-Framework)
+Reference: MCP-REFERENCE-mac.md (V3.0 macOS Terminal Edition)  
+Fallback: MCP-REFERENCE.md (Windows PowerShell Edition)
 Framework Detected: [Auto-detected from project structure]
 Status: [✅ Loaded | ❌ Not Loaded]
 ```
@@ -199,7 +200,7 @@ Route: ai-team/roles/01_Development_Head.md → Multi-framework coordination →
 - Context reset between phases when recommended by atomic planning
 
 ### Multi-Framework Repository Integration
-- All code standards from `MCP-REFERENCE.md` V2.0 MUST be followed
+- All code standards from `MCP-REFERENCE-mac.md` V3.0 (macOS) or `MCP-REFERENCE.md` V3.0 (Windows) MUST be followed
 - Team members MUST reference framework-specific conventions
 - Direct GitHub URLs MUST be used for up-to-date multi-framework information
 - Framework detection and adaptation MUST be automatic

@@ -22,8 +22,17 @@ Transform Cursor AI into a **10-person specialized development team** with battl
 Get up and running in 60 seconds:
 
 ```bash
-# 1. Copy the MCP reference file to your project
+# 1. Copy the MCP reference file to your project (choose your OS)
+
+# macOS Terminal (recommended)
+curl -o MCP-REFERENCE.md https://raw.githubusercontent.com/lovinglifemediawebdev/ai-agent-mcp/main/MCP-REFERENCE-mac.md
+
+# Windows PowerShell
 curl -o MCP-REFERENCE.md https://raw.githubusercontent.com/lovinglifemediawebdev/ai-agent-mcp/main/MCP-REFERENCE.md
+
+# Works in Codex CLI & Cursor CLI (macOS) – auto-detects platform & supports overrides
+bash scripts/setup-mcp-reference.sh
+#   Optional: bash scripts/setup-mcp-reference.sh --platform windows --output custom-name.md
 
 # 2. Use it in Cursor AI - that's it! 🎉
 @MCP-REFERENCE.md Help me build a user authentication system
@@ -196,7 +205,8 @@ Real patterns from production deployments:
 
 - **README.md** - Project overview and quick start (you are here!)
 - **CHANGELOG.md** - Version history and detailed updates
-- **MCP-REFERENCE.md** - Complete AI agent system (copy this to your projects!)
+- **MCP-REFERENCE-mac.md** - macOS Terminal edition (download + save as `MCP-REFERENCE.md` on macOS)
+- **MCP-REFERENCE.md** - Windows PowerShell edition
 
 </details>
 
@@ -387,6 +397,10 @@ MIT License - see [LICENSE](LICENSE) file for details.
 ### 🎉 Ready to Transform Your Development?
 
 ```bash
+# macOS Terminal (recommended)
+curl -o MCP-REFERENCE.md https://raw.githubusercontent.com/lovinglifemediawebdev/ai-agent-mcp/main/MCP-REFERENCE-mac.md
+
+# Windows PowerShell
 curl -o MCP-REFERENCE.md https://raw.githubusercontent.com/lovinglifemediawebdev/ai-agent-mcp/main/MCP-REFERENCE.md
 ```
 

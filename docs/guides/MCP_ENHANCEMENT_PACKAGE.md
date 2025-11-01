@@ -11,6 +11,8 @@
 
 This document contains **proven patterns, workflows, and improvements** discovered during the HVAC Estimator project that can enhance the MCP-REFERENCE.md repository. These are **battle-tested solutions** that solved real production challenges.
 
+> **macOS workflow:** Apply enhancements to the `MCP-REFERENCE-mac.md` (macOS Terminal Edition) when working on macOS; keep the original `MCP-REFERENCE.md` for Windows users.
+
 ---
 
 ## 📁 New Files to Add to MCP Repository

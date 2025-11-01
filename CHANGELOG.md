@@ -37,6 +37,7 @@
   - AI optimization system features
   - Context reduction metrics
   - Search-friendly enhancements
+- **NEW**: Added `MCP-REFERENCE-mac.md` (macOS Terminal Edition) and updated documentation to default to macOS workflows
 
 **V3.0 DOCUMENTATION ENHANCEMENT + STRICT LLM PREFIX ENFORCEMENT (October 11, 2025):**
 - **MAJOR**: Complete README.md beautification with modern GitHub formatting
@@ -76,7 +77,8 @@
 - **Root Files** (Essential only):
   - README.md - Project overview and quick start
   - CHANGELOG.md - Version history and updates
-  - MCP-REFERENCE.md - Complete AI agent system reference
+  - MCP-REFERENCE-mac.md - macOS Terminal Edition (save as MCP-REFERENCE.md on macOS projects)
+  - MCP-REFERENCE.md - Windows PowerShell Edition
   
 - **Documentation** (docs/guides/):
   - AI_CHANGELOG_INSTRUCTIONS.md

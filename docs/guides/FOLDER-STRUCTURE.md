@@ -52,7 +52,14 @@ AI-Agent-MCP/
 │   ├── PHASE-08-Retrospective.md      # Project retrospective
 │   └── README.md                       # Phases overview
 │
-├── 📄 MCP-REFERENCE.md                 # V2.0 MCP Entry Point (Multi-Framework + Atomic Planning)
+├── 📁 scripts/                        # Automation helpers
+│   ├── setup-mcp-reference.sh         # Downloads the correct MCP reference for current OS
+│   ├── setup-new-project.ps1          # Windows-oriented project bootstrapper
+│   ├── fix-terminal.ps1               # Terminal stability helper
+│   └── init-terminal.ps1              # Terminal initialization
+│
+├── 📄 MCP-REFERENCE-mac.md             # V3.0 macOS Terminal Edition (copy/rename to MCP-REFERENCE.md on macOS)
+├── 📄 MCP-REFERENCE.md                 # V3.0 Windows PowerShell Edition
 ├── 📄 AI-AGENT-REFERENCE.md            # Portable Reference
 ├── 📄 QUICK-REFERENCE.md               # Quick Access Guide
 ├── 📄 Full-Stack-Web-Dev-Playbook.md   # Comprehensive Development Guide
@@ -66,13 +73,13 @@ AI-Agent-MCP/
 ## 🎯 MCP Usage
 
 ### For New Projects:
-1. Copy `MCP-REFERENCE.md` (V2.0) to your project root
+1. Copy the correct MCP reference to your project root (macOS: `MCP-REFERENCE-mac.md`, Windows: `MCP-REFERENCE.md`) and save it as `MCP-REFERENCE.md`
 2. Reference in Cursor AI: `@MCP-REFERENCE.md [your request]`
 3. Automatic framework detection and atomic planning
 4. Always up-to-date, no local clutter
 
 ### Key Entry Points:
-- **Main Entry**: `MCP-REFERENCE.md` (V2.0 Multi-Framework + Atomic Planning)
+- **Main Entry**: `MCP-REFERENCE.md` (V3.0 Multi-Framework + Atomic Planning)
 - **Quick Start**: `QUICK-REFERENCE.md`
 - **AI Team**: `ai-team/00_Team_Dispatcher.md` (Enhanced with Atomic Awareness)
 - **Workflow**: `phases/README.md`

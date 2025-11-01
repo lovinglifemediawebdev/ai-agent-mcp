@@ -1,5 +1,7 @@
 # MCP-REFERENCE.md Usage Examples
 
+> **macOS note:** Download the `MCP-REFERENCE-mac.md` (macOS Terminal Edition) from this repository and save it as `MCP-REFERENCE.md` inside your project so all `@MCP-REFERENCE.md` commands continue to work.
+
 This guide shows practical examples of how to use the MCP-REFERENCE.md file with Cursor AI for Motia development.
 
 ## 🚀 Getting Started
