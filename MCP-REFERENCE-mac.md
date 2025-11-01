@@ -549,7 +549,7 @@ async function handleServerRequest() {
 2. Update CHANGELOG.md with latest changes and timestamp
 3. Update README.md if structural changes made (add/update timestamp)
 4. Commit documentation updates
-5. THEN perform git push
+5. THEN hand off to user for manual `git push`
 ```
 
 **CHANGELOG.md Update Format**:
@@ -581,15 +581,15 @@ async function handleServerRequest() {
 - Maintains up-to-date project documentation
 - Provides clear version history
 - Reduces manual documentation overhead
-- Ensures timestamp accuracy
+- Ensures timestamp accuracy while leaving the final push to the user
 
-### 4. **Pre-Push Git Confirmation** ⚠️
+### 4. **Pre-Push Git Hand-Off** ⚠️
 
-**Pattern**: Explicit user confirmation before git push
+**Pattern**: Explicit user-controlled push after AI staging & commits
 
 **🚨 CRITICAL PRE-PUSH CHECKLIST (MANDATORY)**:
 ```text
-BEFORE executing `git push`, the agent MUST COMPLETE IN ORDER:
+BEFORE handing off for `git push`, the agent MUST COMPLETE IN ORDER:
 
 ✅ STEP 1: Update Timestamps (Enhancement #3)
    - Run: Get-Date -Format "MMMM dd, yyyy 'at' h:mm tt"
@@ -602,11 +602,12 @@ BEFORE executing `git push`, the agent MUST COMPLETE IN ORDER:
    - Show commit count
 
 ✅ STEP 3: Ask Explicit Confirmation
-   - Wait for user approval
+   - Wait for user approval to proceed to hand-off
    - Provide options (Yes/No/Show Diff)
 
-✅ STEP 4: Execute Push (only after confirmation)
-   - git push origin [branch]
+✅ STEP 4: Prepare Manual Push Instructions
+   - Remind user: `git push origin <branch>`
+   - Confirm no push commands were executed
 ```
 
 **Confirmation Prompt Template**:
@@ -621,19 +622,19 @@ Changes:
 - [List of modified files]
 
 ⚠️ CONFIRMATION REQUIRED:
-Should I proceed with pushing these changes to Git, or do you have any 
+Should I finalize the commits and hand off so you can push, or do you have any 
 further modifications or issues to address?
 
 Options:
-1. ✅ Yes, push changes
+1. ✅ Yes, ready for hand-off (I'll run git push)
 2. ❌ No, wait (I need to make more changes)
 3. 📋 Show me the diff first
 ```
 
 **Benefits**:
 - Provides final review opportunity
-- Prevents unintended pushes
-- Ensures user control over version control
+- Prevents unintended pushes by the AI
+- Ensures user control over remote updates
 - Reduces accidental deployments
 
 ### 5. **Explicit Model Identification** 🤖
@@ -1045,6 +1046,45 @@ Get-ChildItem -Recurse | Measure-Object
 | Open file/folder | `open .` | `ii .` |
 | Clipboard copy | `pbcopy < file.txt` | `Get-Content file.txt | Set-Clipboard` |
 | Browser launch | `open https://example.com` | `Start-Process https://example.com` |
+
+<!-- RULE: CRITICAL | ENFORCEMENT: MANDATORY -->
+### 🚨 RULE #0.7 - MANUAL GIT PUSH ONLY (MANDATORY)
+
+<!-- AI_INSTRUCTION: Never execute git push commands. Stage and commit are allowed, but final push is always the user's responsibility. -->
+**STOP BEFORE `git push`**: The AI must never run `git push`, `git push origin`, or any command that pushes to a remote.
+
+**Required Behavior**:
+```text
+✅ Stage changes (`git add ...`)
+✅ Create commits (`git commit ...`)
+✅ Provide final status summary (`git status --short --branch`)
+✅ Remind user to execute `git push origin <branch>` manually
+❌ Do NOT run any git push command
+```
+
+**macOS Tip**: After you see the final `git status` output in Terminal.app, run `git push origin <branch>` yourself to keep full control of remote updates. Linux and Windows users can run the same command in their shells.
+
+<!-- RULE: CRITICAL | ENFORCEMENT: MANDATORY -->
+### 🚨 RULE #0.8 - CODEX `--yolo` CONTROL HANDSHAKE (MANDATORY)
+
+<!-- AI_INSTRUCTION: Detect Codex CLI --yolo mode (approval_policy "never" or env var CODEX_MODE=yolo). Require user confirmation batches before executing write commands. -->
+**Maintain user control in automation-heavy sessions**: When running in Codex CLI `--yolo` mode, the assistant must explicitly confirm planned write or network actions before executing them.
+
+**Detection Cues**:
+- `approval_policy: never`
+- `sandbox_mode: danger-full-access`
+- Environment variables such as `CODEX_MODE=yolo` or `CODEX_CLI_ARGS` containing `--yolo`
+
+**Control Handshake**:
+```text
+1. Announce detection of `--yolo` mode in the first response.
+2. Present a concise "Automation Preview" listing upcoming commands (macOS syntax first).
+3. Wait for the user to approve (`Proceed`, `Adjust step 2`, etc.) before executing write/network commands.
+4. Allow the user to opt into "free-run" mode explicitly; otherwise keep per-batch confirmations.
+5. After each batch, summarize results and preview the next batch before continuing.
+```
+
+**macOS Tip**: Use Terminal.app to review the previewed `bash -lc` commands. Reply with adjustments before the agent executes them so you retain full control while still benefiting from automation.
 
 
 ### 1. Context Assessment & Planning Phase
@@ -1639,12 +1679,13 @@ When user requests "descriptive mode" or "teach me", use this enhanced structure
 2. ✅ Check Priority Map for relevant sections
 3. ✅ Read Rule #0.x (MANDATORY)
 4. ✅ Detect mode keywords ("descriptive mode" etc.)
-5. ✅ Select template (Direct/Descriptive)
-6. ✅ Assign to team member
-7. ✅ Apply template format
-8. ✅ Include LLM prefix first line
-9. ✅ Verify no server auto-start commands
-10. ✅ Ensure macOS Terminal commands first
+5. ✅ Check for Codex `--yolo` mode and plan control handshake if active
+6. ✅ Select template (Direct/Descriptive)
+7. ✅ Assign to team member
+8. ✅ Apply template format
+9. ✅ Include LLM prefix first line
+10. ✅ Verify no server auto-start commands
+11. ✅ Ensure macOS Terminal commands first
 <!-- END_CHECKLIST -->
 
 <!-- SECTION: AI_TEAM | PRIORITY: P1 | READ_TIME: 3min | ALWAYS_READ: true -->
