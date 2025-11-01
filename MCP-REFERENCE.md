@@ -6,6 +6,7 @@
 - #0.1: Direct Mode DEFAULT (unless "descriptive mode" requested)
 - #0.5: NEVER auto-start servers (`npm run dev` etc.)
 - #0.6: PowerShell commands FIRST, then Linux/macOS
+- #0.7: NEVER execute `git push` (user must push manually)
 
 **🎯 DEFAULT BEHAVIOR**:
 - Mode: Direct (action-focused, 80% less context)
@@ -102,8 +103,10 @@
 ### Workflow & Team System
 6. [🤖 Enhanced Mandatory Workflow Protocol](#-enhanced-mandatory-workflow-protocol)
    - Rule #0 - LLM Prefix (FIRST PRIORITY)
+   - Rule #0.1 - Direct Mode Default (MANDATORY)
    - Rule #0.5 - Critical Server Constraint (MANDATORY)
    - Rule #0.6 - Terminal Command Priority (MANDATORY)
+   - Rule #0.7 - Manual Git Push Only (MANDATORY)
    - Context Assessment & Planning Phase
    - Atomic Task Decomposition
    - Team Dispatcher with Atomic Awareness
@@ -156,7 +159,7 @@
 ## 📜 Version History
 
 ### v3.0.0 (Current - October 2024)
-**Major Release**: Context7 + Playwright MCP Integration + Production Patterns + Direct Mode Default + AI Optimization
+**Major Release**: Context7 + Playwright MCP Integration + Production Patterns + Direct Mode Default + AI Optimization + Git Safety
 
 **Added**:
 - ✨ **Direct Mode (DEFAULT)**: 80% context reduction while preserving AI intelligence
@@ -164,6 +167,7 @@
 - ✨ **AI Quick Reference**: Front-loaded critical rules for instant AI comprehension
 - ✨ **Optimization Map**: Priority-based section reading (P0-P4 with conditional rules)
 - ✨ **Search Keywords**: Instant section location via search markers
+- ✨ **Rule #0.7 - Manual Git Push Only**: AI cannot execute git push commands (user control)
 - ✨ **Descriptive Mode**: Available on request for learning-focused responses
 - ✨ Context7 MCP integration for up-to-date library documentation
 - ✨ Playwright MCP integration for automated website testing
@@ -177,9 +181,11 @@
 
 **Enhanced**:
 - 🔧 **Rule #0.1**: Direct Mode mandatory by default (context optimization)
+- 🔧 **Rule #0.7**: Manual git push only (imported from Mac version for safety)
+- 🔧 **Enhancement #4**: Renamed to "Pre-Push Git Hand-Off" (emphasizes user control)
 - 🔧 **AI Processing Instructions**: 45+ HTML comments guide AI behavior
 - 🔧 **Section Metadata**: Priority levels, read times, conditional triggers
-- 🔧 **Pre-Response Checklist**: 10-step workflow for AI to follow
+- 🔧 **Pre-Response Checklist**: 11-step workflow for AI to follow (includes git push check)
 - 🔧 Consolidated context management guidance (Enhancement #6)
 - 🔧 Removed duplicate Enhancement #6 (LLM prefix - now only in Rule #0)
 - 🔧 Fixed all line references (approximate ranges, search-based lookup)
@@ -542,12 +548,12 @@ async function handleServerRequest() {
 
 **Implementation**:
 ```typescript
-// BEFORE any git push, the agent MUST:
+// BEFORE user pushes to git, the agent MUST:
 1. Get accurate timestamp using: Get-Date -Format "MMMM dd, yyyy 'at' h:mm tt"
 2. Update CHANGELOG.md with latest changes and timestamp
 3. Update README.md if structural changes made (add/update timestamp)
 4. Commit documentation updates
-5. THEN perform git push
+5. THEN hand off to user for manual `git push`
 ```
 
 **CHANGELOG.md Update Format**:
@@ -579,15 +585,15 @@ async function handleServerRequest() {
 - Maintains up-to-date project documentation
 - Provides clear version history
 - Reduces manual documentation overhead
-- Ensures timestamp accuracy
+- Ensures timestamp accuracy while leaving the final push to the user
 
-### 4. **Pre-Push Git Confirmation** ⚠️
+### 4. **Pre-Push Git Hand-Off** ⚠️
 
-**Pattern**: Explicit user confirmation before git push
+**Pattern**: User-controlled push after AI staging & commits (See Rule #0.7)
 
 **🚨 CRITICAL PRE-PUSH CHECKLIST (MANDATORY)**:
 ```text
-BEFORE executing `git push`, the agent MUST COMPLETE IN ORDER:
+BEFORE handing off for `git push`, the agent MUST COMPLETE IN ORDER:
 
 ✅ STEP 1: Update Timestamps (Enhancement #3)
    - Run: Get-Date -Format "MMMM dd, yyyy 'at' h:mm tt"
@@ -599,17 +605,20 @@ BEFORE executing `git push`, the agent MUST COMPLETE IN ORDER:
    - List files changed
    - Show commit count
 
-✅ STEP 3: Ask Explicit Confirmation
-   - Wait for user approval
-   - Provide options (Yes/No/Show Diff)
+✅ STEP 3: Stage and Commit Changes
+   - Execute: git add [files]
+   - Execute: git commit -m "[message]"
+   - Confirm commits created successfully
 
-✅ STEP 4: Execute Push (only after confirmation)
-   - git push origin [branch]
+✅ STEP 4: Prepare Manual Push Instructions (Rule #0.7)
+   - Remind user: `git push origin <branch>`
+   - Confirm no push commands were executed
+   - Provide git status for verification
 ```
 
-**Confirmation Prompt Template**:
+**Hand-Off Prompt Template**:
 ```text
-📊 Git Push Summary:
+📊 Git Hand-Off Summary:
 Branch: [branch-name]
 Remote: [remote-name]
 Commits: [number] new commit(s)
@@ -618,21 +627,27 @@ Files Changed: [number] file(s)
 Changes:
 - [List of modified files]
 
-⚠️ CONFIRMATION REQUIRED:
-Should I proceed with pushing these changes to Git, or do you have any 
-further modifications or issues to address?
+✅ Changes staged and committed successfully!
+
+🎯 MANUAL PUSH REQUIRED (Rule #0.7):
+To push these changes to the remote repository, run:
+
+  git push origin [branch-name]
+
+⚠️ Note: The AI cannot execute git push commands. You maintain full control.
 
 Options:
-1. ✅ Yes, push changes
-2. ❌ No, wait (I need to make more changes)
-3. 📋 Show me the diff first
+1. ✅ Ready to push (I'll run the command manually)
+2. ❌ Wait (I need to make more changes first)
+3. 📋 Show me the diff (git diff HEAD~1)
 ```
 
 **Benefits**:
 - Provides final review opportunity
-- Prevents unintended pushes
-- Ensures user control over version control
+- Prevents unintended pushes by AI
+- Ensures user control over remote repository updates
 - Reduces accidental deployments
+- Aligns with security best practices (Rule #0.7)
 
 ### 5. **Explicit Model Identification** 🤖
 
@@ -1033,6 +1048,31 @@ find . -type f | wc -l
 ```
 
 **This rule ensures commands work on user's primary Windows development environment.**
+
+---
+
+<!-- RULE: CRITICAL | ENFORCEMENT: MANDATORY -->
+### 🚨 RULE #0.7 - MANUAL GIT PUSH ONLY (MANDATORY)
+
+<!-- AI_INSTRUCTION: Never execute git push commands. Stage and commit are allowed, but final push is always the user's responsibility. -->
+**STOP BEFORE `git push`**: The AI must never run `git push`, `git push origin`, or any command that pushes to a remote.
+
+**Required Behavior**:
+```text
+✅ Stage changes (`git add ...`)
+✅ Create commits (`git commit ...`)
+✅ Provide final status summary (`git status --short --branch`)
+✅ Remind user to execute `git push origin <branch>` manually
+❌ Do NOT run any git push command
+```
+
+**PowerShell Tip**: After you see the final `git status` output, run `git push origin <branch>` yourself in PowerShell to keep full control of remote updates. This works identically on Linux and macOS terminals.
+
+**Benefits**:
+- User maintains full control over remote repository updates
+- Final review opportunity before code reaches production
+- Prevents accidental pushes to wrong branches
+- Aligns with security best practices
 
 ---
 
@@ -1574,7 +1614,7 @@ When user requests "descriptive mode" or "teach me", use this enhanced structure
 9. **SESSION BOUNDARIES**: Clearly define when to reset context for next task
 
 <!-- AI_PROCESSING_SUMMARY -->
-**ENFORCEMENT PRIORITY**: Rule #0 (LLM Prefix) > Rule #0.1 (Direct Mode Default) > Rule #0.5 (No Server Auto-Start) > Rule #0.6 (PowerShell First) > All other rules. Non-compliance with any Rule #0.x makes the response invalid regardless of content quality.
+**ENFORCEMENT PRIORITY**: Rule #0 (LLM Prefix) > Rule #0.1 (Direct Mode Default) > Rule #0.5 (No Server Auto-Start) > Rule #0.6 (PowerShell First) > Rule #0.7 (Manual Git Push Only) > All other rules. Non-compliance with any Rule #0.x makes the response invalid regardless of content quality.
 
 **Context Efficiency**: Direct Mode reduces response size by ~80% while preserving all AI team intelligence, atomic planning, and problem-solving capabilities. This ensures optimal context window usage across all model tiers.
 
@@ -1582,7 +1622,7 @@ When user requests "descriptive mode" or "teach me", use this enhanced structure
 **Pre-Response Checklist** (Execute in order):
 1. ✅ Read AI Quick Reference (top of file)
 2. ✅ Check Priority Map for relevant sections
-3. ✅ Read Rule #0.x (MANDATORY)
+3. ✅ Read Rule #0.x (MANDATORY - includes git push prohibition)
 4. ✅ Detect mode keywords ("descriptive mode" etc.)
 5. ✅ Select template (Direct/Descriptive)
 6. ✅ Assign to team member
@@ -1590,6 +1630,7 @@ When user requests "descriptive mode" or "teach me", use this enhanced structure
 8. ✅ Include LLM prefix first line
 9. ✅ Verify no server auto-start commands
 10. ✅ Ensure PowerShell commands first
+11. ✅ Verify no git push commands in response
 <!-- END_CHECKLIST -->
 
 <!-- SECTION: AI_TEAM | PRIORITY: P1 | READ_TIME: 3min | ALWAYS_READ: true -->
