@@ -3,7 +3,7 @@
 # 🤖 AI Agent MCP System
 ### *Your Complete AI Development Team in a Single File*
 
-**Version 3.0** | **Last Updated**: November 01, 2025 at 07:01 PM
+**Version 3.1** | **Last Updated**: November 01, 2025 at 07:01 PM
 
 [![Multi-Framework](https://img.shields.io/badge/Frameworks-5+-blue.svg)](https://github.com/lovinglifemediawebdev/ai-agent-mcp)
 [![Production Ready](https://img.shields.io/badge/Status-Production%20Ready-success.svg)](https://github.com/lovinglifemediawebdev/ai-agent-mcp)
