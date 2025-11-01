@@ -17,6 +17,25 @@ Transform Cursor AI into a **10-person specialized development team** with battl
 
 ---
 
+## 🆕 Recent Changes
+
+### November 01, 2025 · V3.1 Workflow Safeguards
+- Added Rule #0.7 requiring manual `git push` so staging/commits stay automated while the user controls deployment
+- Added Rule #0.8 Codex `--yolo` handshake with automation previews and per-batch confirmation before write commands
+- Published workflow guide (`docs/workflows/MANUAL_PUSH_AND_YOLO_CONTROL.md`) covering the macOS-first process and user approval steps
+
+### October 24, 2025 · V3.0 Direct Mode & Optimization
+- Introduced Direct Mode as the default response template with AI optimization markers and search keywords
+- Documented the macOS edition (`MCP-REFERENCE-mac.md`) as the primary reference for Terminal workflows
+- Reduced redundant guidance and provided token-aware response strategies across model tiers
+
+### October 11, 2025 · V3.0 Documentation Enhancements
+- Revamped README layout with professional hero section, tables, and collapsible guides
+- Enforced mandatory LLM prefix (Rule #0) across templates to keep responses compliant
+- Expanded optional methodologies (BMAD™, Spec-Driven) and reorganized docs into the `docs/` directory
+
+---
+
 ## 🚀 Quick Start
 
 Get up and running in 60 seconds:
