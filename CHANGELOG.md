@@ -6,7 +6,13 @@
 
 *This section should be updated after each modification to track project evolution*
 
-### Last Updated: October 24, 2025 at 3:28 PM
+### Last Updated: November 01, 2025 at 07:01 PM
+
+**V3.1 WORKFLOW SAFEGUARDS + YOLO CONTROL (November 01, 2025):**
+- **CRITICAL**: Added **RULE #0.7** enforcing manual `git push`—AI stages and commits but never pushes
+- **CRITICAL**: Added **RULE #0.8** for Codex `--yolo` sessions with automation preview + confirmation handshake
+- **ENHANCED**: Updated pre-response checklist to detect `--yolo` mode before executing commands
+- **DOCS**: Synced README/CHANGELOG timestamps and documented new workflow governance
 
 **V3.0 DIRECT MODE + AI OPTIMIZATION SYSTEM (MAJOR RELEASE):**
 - **MAJOR**: Direct Mode as DEFAULT response format (80% context reduction)

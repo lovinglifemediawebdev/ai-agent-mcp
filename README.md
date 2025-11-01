@@ -3,7 +3,7 @@
 # 🤖 AI Agent MCP System
 ### *Your Complete AI Development Team in a Single File*
 
-**Version 3.0** | **Last Updated**: October 11, 2025 at 12:51 AM
+**Version 3.0** | **Last Updated**: November 01, 2025 at 07:01 PM
 
 [![Multi-Framework](https://img.shields.io/badge/Frameworks-5+-blue.svg)](https://github.com/lovinglifemediawebdev/ai-agent-mcp)
 [![Production Ready](https://img.shields.io/badge/Status-Production%20Ready-success.svg)](https://github.com/lovinglifemediawebdev/ai-agent-mcp)
@@ -110,6 +110,7 @@ Battle-tested guides from real-world deployments in the `docs/` folder:
 |----------|-------|--------------|
 | 🚀 **Deployment** | [Vercel Workflow Guide](./docs/deployment/VERCEL_WORKFLOW_GUIDE.md) | Complete environment management • Dev/Preview/Production workflow • Environment variables • Supabase redirect URLs |
 | 🔐 **Authentication** | [Supabase Auth Setup](./docs/authentication/SUPABASE_AUTHENTICATION_SETUP.md) | Password reset flows • Magic link auth • RLS authorization • No hardcoded credentials • Troubleshooting guide |
+| 🛡️ **Workflow Safety** | [Manual Push & YOLO Control](./docs/workflows/MANUAL_PUSH_AND_YOLO_CONTROL.md) | Rule #0.7 manual push policy • Codex `--yolo` handshake flow • Automation preview template • User approval checkpoints |
 | 🎨 **Design Systems** | [Unified Button System](./docs/design-systems/UNIFIED_BUTTON_SYSTEM.md) | Single source of truth styling • CSS custom properties • Mobile-first + accessible • Works with any UI library |
 | 📋 **Forms** | [Conditional Form Logic](./docs/forms/CONDITIONAL_FORM_LOGIC.md) | Multi-path forms • Warning screens • State management patterns • TypeScript best practices |
 
