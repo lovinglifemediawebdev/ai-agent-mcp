@@ -3,21 +3,29 @@
 # 🤖 AI Agent MCP System
 ### *Your Complete AI Development Team in a Single File*
 
-**Version 3.1** | **Last Updated**: November 01, 2025 at 07:01 PM
+**Version 4.0** | **Last Updated**: November 02, 2025 at 1:31 PM
 
 [![Multi-Framework](https://img.shields.io/badge/Frameworks-5+-blue.svg)](https://github.com/lovinglifemediawebdev/ai-agent-mcp)
 [![Production Ready](https://img.shields.io/badge/Status-Production%20Ready-success.svg)](https://github.com/lovinglifemediawebdev/ai-agent-mcp)
 [![Atomic Planning](https://img.shields.io/badge/Atomic-Planning%20Enabled-orange.svg)](https://github.com/lovinglifemediawebdev/ai-agent-mcp)
 
-Transform Cursor AI into a **10-person specialized development team** with battle-tested patterns from real-world deployments. Get context-aware coding, atomic task planning, and multi-framework expertise—all from a single reference file.
+Transform Cursor AI into an **8-person specialized development team** with Virtual Council Voting for complex decisions. Get lean tech stack guidance (Next.js 15, Astro 4, Payload CMS), monorepo architecture, and pre-implementation team consensus—all from a single reference file.
 
-[🚀 Quick Start](#-quick-start) • [📚 Documentation](#-complete-documentation) • [🤖 AI Team](#-meet-your-ai-team) • [✨ Features](#-what-makes-v30-special)
+[🚀 Quick Start](#-quick-start) • [📚 Documentation](#-complete-documentation) • [🤖 AI Team](#-meet-your-ai-team) • [✨ Features](#-what-makes-v40-special)
 
 </div>
 
 ---
 
 ## 🆕 Recent Changes
+
+### November 02, 2025 · V4.0 Specialized AI Team + Virtual Council Voting
+- **MAJOR**: Complete AI Team restructure - 8 specialized roles with clear ownership (Project Lead, Lyra, Tara, Rex, Lena, Mira, Orion, Kai)
+- **NEW**: Virtual Council Voting System for pre-implementation team consensus (inspired by PewDiePie's "Council" experiment)
+- **NEW**: Monorepo architecture with folder ownership (`/apps`, `/packages`, `/docs`)
+- **NEW**: Lean tech stack focus - Next.js 15, Astro 4, Payload CMS, Prisma 5, Supabase Auth
+- **ENHANCED**: Decision workflow - Council vote → User approval → Implementation (prevents wasted code)
+- **OPTIMIZED**: Docker lean strategy (~300MB containers: Postgres + Payload, Motia deferred until needed)
 
 ### November 01, 2025 · V3.1 Workflow Safeguards
 - Added Rule #0.7 requiring manual `git push` so staging/commits stay automated while the user controls deployment
@@ -28,11 +36,6 @@ Transform Cursor AI into a **10-person specialized development team** with battl
 - Introduced Direct Mode as the default response template with AI optimization markers and search keywords
 - Documented the macOS edition (`MCP-REFERENCE-mac.md`) as the primary reference for Terminal workflows
 - Reduced redundant guidance and provided token-aware response strategies across model tiers
-
-### October 11, 2025 · V3.0 Documentation Enhancements
-- Revamped README layout with professional hero section, tables, and collapsible guides
-- Enforced mandatory LLM prefix (Rule #0) across templates to keep responses compliant
-- Expanded optional methodologies (BMAD™, Spec-Driven) and reorganized docs into the `docs/` directory
 
 ---
 
@@ -64,58 +67,57 @@ bash scripts/setup-mcp-reference.sh
 - ✅ Provides production-ready, framework-specific code
 - ✅ Includes verification steps and best practices
 
-## ✨ What Makes V3.0 Special?
+## ✨ What Makes V4.0 Special?
 
 <table>
 <tr>
 <td width="50%">
 
-### 🤖 **10 Specialized AI Team Members**
-- Research Engineer
-- Development Head  
-- Backend Engineer
-- Frontend Engineer
-- DevOps Engineer
-- Database Architect
-- Code Reviewer
-- QA Engineer
-- Product Owner
-- UI/UX Designer
+### 🤖 **8 Specialized AI Team Members**
+- **You** - Project Lead
+- **Lyra** - Product Analyst
+- **Tara** - DevOps Engineer
+- **Rex** - Backend Engineer
+- **Lena** - Design Director
+- **Mira** - Worker Engineer
+- **Orion** - QA Analyst
+- **Kai** - Docs Manager
 
 </td>
 <td width="50%">
 
-### ⚛️ **Atomic Planning™**
-Prevents AI context overload through:
-- Single-objective task units
-- ≤5 files per task limit
-- Clear session boundaries
-- Smart context management
-- Multi-session project support
+### 🗳️ **Virtual Council Voting**
+Pre-implementation team consensus:
+- Vote BEFORE writing code
+- Multiple perspectives catch issues
+- User approves final approach
+- Prevents wasted implementation
+- Inspired by PewDiePie's "Council"
 
 </td>
 </tr>
 <tr>
 <td width="50%">
 
-### 🎨 **Multi-Framework Support**
-Works with ANY framework:
-- **Motia** - Unified backend
-- **Next.js** - Full-stack React
-- **React** - Frontend library
-- **Vue.js** - Progressive framework
-- **Angular** - Enterprise apps
+### 🏗️ **Monorepo Architecture**
+Clear ownership per team member:
+- `/apps` - Next.js, Astro, Payload, Motia
+- `/packages` - ui, config, domain, database
+- `/docs` - wireframes, process
+- Turborepo-ready structure
+- ~300MB lean Docker containers
 
 </td>
 <td width="50%">
 
-### 🚀 **Production-Tested**
-Real patterns from successful deployments:
-- 13 Operational Enhancements
-- 5 Enhanced Design Patterns
-- Complete auth flows
-- Security-first approach
-- Responsive design strategies
+### 🎯 **Lean Tech Stack**
+Production-optimized MVP stack:
+- **Next.js 15** - Frontend + API
+- **Astro 4** - Marketing site
+- **Payload CMS** - TypeScript CMS
+- **Prisma 5** - Type-safe ORM
+- **Supabase Auth** - Authentication
+- **Motia** - Optional (defer until needed)
 
 </td>
 </tr>
@@ -201,22 +203,20 @@ Real patterns from production deployments:
 
 ## 🤖 Meet Your AI Team
 
-10 specialized roles ready to help:
+8 specialized roles with clear ownership:
 
-| Role | Expertise | When to Use |
-|------|-----------|-------------|
-| 🔬 **Research Engineer** | Technical research, validation, investigation | "What's the best approach for X?" |
-| 👔 **Development Head** | Architecture, leadership, planning | "How should we structure this?" |
-| ⚙️ **Backend Engineer** | APIs, databases, server logic | "Build me a REST endpoint" |
-| 🎨 **Frontend Engineer** | UI/UX, components, styling | "Create a responsive navbar" |
-| 🚀 **DevOps Engineer** | Deployment, CI/CD, infrastructure | "Help me deploy to Vercel" |
-| 🗄️ **Database Architect** | Schema design, optimization | "Design a database for X" |
-| 🔍 **Code Reviewer** | Quality, security, best practices | "Review this code for issues" |
-| ✅ **QA Engineer** | Testing, validation, quality | "Write tests for this feature" |
-| 📋 **Product Owner** | Requirements, user stories | "Define the acceptance criteria" |
-| 🎭 **UI/UX Designer** | Design systems, accessibility | "Make this accessible" |
+| Role | Function | Folder Ownership | When to Use |
+|------|----------|------------------|-------------|
+| 👤 **You (Project Lead)** | Define scope, approve architecture, freeze design | Final approval on all changes | Architecture decisions, design approval |
+| 📊 **Lyra** (Product Analyst) | Clarifies feature flows, writes acceptance criteria | `/docs/process/WORKFLOW.md` | Feature specs, user flows |
+| 🚀 **Tara** (DevOps Engineer) | Creates Docker configs, manages environments | `/packages/config`, Docker | Infrastructure, deployment |
+| ⚙️ **Rex** (Backend Engineer) | Domain modeling, repositories, Prisma/Supabase | `/apps/app`, `/packages/domain`, `/packages/database` | APIs, database, domain logic |
+| 🎨 **Lena** (Design Director) | Canva/Affinity wireframes, design system | `/apps/www`, `/packages/ui`, `/docs/wireframes` | UI/UX, components, design |
+| 🔧 **Mira** (Worker Engineer) | Motia jobs, webhooks, Payload CMS | `/apps/cms`, `/apps/worker` | Background jobs, CMS, webhooks |
+| ✅ **Orion** (QA Analyst) | Cross-phase consistency, Playwright + Vitest | Test configs, QA docs | Testing, quality assurance |
+| 📝 **Kai** (Docs Manager) | Updates docs/README after milestones | `/docs/process`, README, CHANGELOG | Documentation updates |
 
-**How it works:** Just use `@MCP-REFERENCE.md` with your request. The Team Dispatcher automatically routes to the right specialist(s) based on your needs.
+**How it works:** Use `@MCP-REFERENCE.md` with your request. The Team Dispatcher routes to the right specialist(s) and triggers Virtual Council voting for complex decisions.
 
 ## 📚 Complete Documentation
 

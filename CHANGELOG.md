@@ -6,7 +6,41 @@
 
 *This section should be updated after each modification to track project evolution*
 
-### Last Updated: November 01, 2025 at 07:01 PM
+### Last Updated: November 02, 2025 at 1:31 PM
+
+**V4.0 SPECIALIZED AI TEAM + VIRTUAL COUNCIL VOTING (November 02, 2025):**
+- **MAJOR**: Complete AI Team restructure - 8 specialized roles with clear functions and folder ownership
+  - **You (Project Lead)**: Define scope, approve architecture, freeze design decisions
+  - **Lyra (Product Analyst)**: Clarifies feature flows, writes acceptance criteria
+  - **Tara (DevOps Engineer)**: Creates Docker configs, manages environments
+  - **Rex (Backend Engineer)**: Handles domain modeling, repositories, Prisma/Supabase
+  - **Lena (Design Director)**: Owns Canva/Affinity wireframes, exports structure specs
+  - **Mira (Worker Engineer)**: Manages Motia jobs, webhooks, retries + Payload CMS
+  - **Orion (QA Analyst)**: Ensures cross-phase consistency, runs Playwright + Vitest
+  - **Kai (Docs Manager)**: Updates docs and README after each milestone
+- **NEW**: Virtual Council Voting System for pre-implementation team consensus
+  - Inspired by PewDiePie's "Council" experiment (multiple LLM voting system)
+  - Council votes on approach BEFORE writing code (prevents wasted implementation)
+  - Tiered voting: None (1 role), Validation (2-3 roles), Domain (2-3 experts), Full Council (all 7 roles)
+  - Manual trigger with `[COUNCIL]` tag or automatic for complex decisions
+- **NEW**: Monorepo architecture with Turborepo-ready structure
+  - `/apps` folder: app (Next.js), www (Astro), cms (Payload), worker (Motia - optional)
+  - `/packages` folder: ui (shadcn), config (env/tsconfig), domain (entities), database (Prisma)
+  - `/docs` folder: wireframes (Canva/Affinity), process (WORKFLOW.md, TECH_STACK.md)
+  - Clear ownership per team member for every folder
+- **NEW**: Lean tech stack guidance - Next.js 15, Astro 4, Payload CMS, Prisma 5, Supabase Auth
+  - Motia marked as optional/deferred (add only when async jobs needed)
+  - Docker lean strategy: ~300MB total (Postgres + Payload only)
+  - Defer Vitest, Playwright, Sentry until after MVP
+- **ENHANCED**: Decision workflow - Council vote → User approval → Implementation
+  - Prevents wasted code from incorrect approaches
+  - Multiple perspectives catch architectural issues early
+  - User (Project Lead) maintains full control with approval gates
+- **ENHANCED**: Both MCP-REFERENCE.md and MCP-REFERENCE-mac.md updated to v4.0.0
+  - Windows PowerShell priority for MCP-REFERENCE.md
+  - macOS Terminal priority for MCP-REFERENCE-mac.md
+  - Cursor IDE + Codex CLI support confirmed for macOS
+- **DOCS**: Updated README.md and CHANGELOG.md with v4.0.0 information and new timestamp
 
 **V3.1 WORKFLOW SAFEGUARDS + YOLO CONTROL (November 01, 2025):**
 - **CRITICAL**: Added **RULE #0.7** enforcing manual `git push`—AI stages and commits but never pushes

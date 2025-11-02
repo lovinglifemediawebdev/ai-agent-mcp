@@ -1,4 +1,4 @@
-# MCP-REFERENCE.md - V3.0 Complete System
+# MCP-REFERENCE.md - V4.0 Complete System
 
 <!-- AI QUICK REFERENCE - READ THIS FIRST -->
 **🚨 CRITICAL RULES** (Enforce in order): 
@@ -26,12 +26,12 @@
 
 ---
 
-**Version**: 3.0.0  
+**Version**: 4.0.0  
 **Repository**: [ai-agent-system](https://github.com/lovinglifemediawebdev/ai-agent-mcp)  
-**Framework**: Multi-Framework Support (Motia, Next.js, React, Vue, etc.)  
-**Platform**: Universal AI/LLM Coding Assistant Support (Cursor, GPT Codex, GitHub Copilot, etc.)  
+**Framework**: Lean Tech Stack (Next.js 15, Astro 4, Payload CMS) + Optional Motia  
+**Platform**: Universal AI/LLM Coding Assistant Support (Cursor IDE, Codex CLI, GitHub Copilot, etc.)  
 **Usage**: Reference this file in any AI coding assistant for complete development context  
-**Enhancement**: Optional methodologies (BMAD™, Spec-Driven) + Production patterns + Atomic planning + Multi-framework support + Context7 integration
+**Enhancement**: Specialized AI Team (8 roles) + Virtual Council Voting + Monorepo Architecture + Lean Stack + Context7 integration
 
 ---
 
@@ -113,52 +113,103 @@
    - Context-Aware Execution
 7. [📋 Response Format Template](#-response-format-template)
 8. [🤖 AI Team System](#-ai-team-system)
-   - Research Engineer
-   - Development Head
-   - Backend Engineer
-   - Frontend Engineer
-   - DevOps Engineer
-   - Code Reviewer
-   - Database Architect
+   - You (Project Lead)
+   - Lyra (Product Analyst)
+   - Tara (DevOps Engineer)
+   - Rex (Backend Engineer)
+   - Lena (Design Director)
+   - Mira (Worker Engineer)
+   - Orion (QA Analyst)
+   - Kai (Docs Manager)
+9. [🗳️ Virtual Council Voting System](#️-virtual-council-voting-system)
+   - Pre-Implementation Voting Workflow
+   - Council Voting Tiers
+   - When Council Vote Triggers
+10. [🏗️ Monorepo Architecture](#️-monorepo-architecture)
+    - Folder Structure with Ownership
+    - Lean MVP Stack
+    - Docker Lean Strategy
 
 ### Development Resources
-9. [📚 Development Resources (Multi-Framework Enhanced)](#-development-resources-multi-framework-enhanced)
-10. [🛠️ Multi-Framework Context (Atomic-Aware)](#-multi-framework-context-atomic-aware)
-    - Motia Framework
-    - Next.js
-    - React
-    - Vue.js
-    - Angular
-11. [🎯 Usage Patterns (Multi-Framework Enhanced)](#-usage-patterns-multi-framework-enhanced)
+11. [📚 Development Resources (Multi-Framework Enhanced)](#-development-resources-multi-framework-enhanced)
+12. [🛠️ Multi-Framework Context (Atomic-Aware)](#-multi-framework-context-atomic-aware)
+    - Motia Framework (Optional/Deferred)
+    - Next.js 15
+    - Astro 4
+    - Payload CMS
+13. [🎯 Usage Patterns (Multi-Framework Enhanced)](#-usage-patterns-multi-framework-enhanced)
     - Mode Selection Guidance
     - Project Setup Examples
     - Development Help Examples
     - Testing with Playwright MCP
 
 ### Standards & Patterns
-12. [📋 Development Standards (Multi-Framework Enhanced)](#-development-standards-multi-framework-enhanced)
-13. [🚀 Project Templates & Code Examples](#-project-templates--code-examples)
-14. [🔧 Advanced Patterns (Multi-Framework Enhanced)](#-advanced-patterns-multi-framework-enhanced)
-15. [🎨 Production-Enhanced Patterns](#-production-enhanced-patterns)
+14. [📋 Development Standards (Multi-Framework Enhanced)](#-development-standards-multi-framework-enhanced)
+15. [🚀 Project Templates & Code Examples](#-project-templates--code-examples)
+16. [🔧 Advanced Patterns (Multi-Framework Enhanced)](#-advanced-patterns-multi-framework-enhanced)
+17. [🎨 Production-Enhanced Patterns](#-production-enhanced-patterns)
     - Context-Aware Atomic Planning Enhancements
     - Security-First Development Patterns
     - Data-Driven Responsive Design Strategy
     - Complete Authentication System Patterns
     - Advanced Form Logic Patterns
-16. [📚 Production Documentation Resources](#-production-documentation-resources)
+18. [📚 Production Documentation Resources](#-production-documentation-resources)
 
 ### Setup & Resources
-17. [📊 Project Context (Multi-Framework Aware)](#-project-context-multi-framework-aware)
-18. [🎯 MCP Benefits (Multi-Framework Enhanced)](#-mcp-benefits-multi-framework-enhanced)
-19. [📝 Usage Instructions (Multi-Framework Enhanced)](#-usage-instructions-multi-framework-enhanced)
-20. [🔗 Quick Links (Multi-Framework Enhanced)](#-quick-links-multi-framework-enhanced)
-21. [📜 Version History](#-version-history)
+19. [📊 Project Context (Multi-Framework Aware)](#-project-context-multi-framework-aware)
+20. [🎯 MCP Benefits (Multi-Framework Enhanced)](#-mcp-benefits-multi-framework-enhanced)
+21. [📝 Usage Instructions (Multi-Framework Enhanced)](#-usage-instructions-multi-framework-enhanced)
+22. [🔗 Quick Links (Multi-Framework Enhanced)](#-quick-links-multi-framework-enhanced)
+23. [📜 Version History](#-version-history)
 
 ---
 
 ## 📜 Version History
 
-### v3.0.0 (Current - October 2024)
+### v4.0.0 (Current - November 2025)
+**Major Release**: Specialized AI Team + Virtual Council Voting + Monorepo Architecture + Lean Tech Stack
+
+**Breaking Changes**:
+- ⚠️ Complete AI Team restructure (8 new specialized roles replacing 7 generic roles)
+- ⚠️ New monorepo folder structure with ownership assignments
+- ⚠️ Tech stack focused on Next.js 15 + Astro 4 + Payload CMS (lean MVP approach)
+
+**Added**:
+- ✨ **Virtual Council Voting System**: Pre-implementation team voting on complex decisions (inspired by PewDiePie's "Council" experiment)
+- ✨ **8 Specialized AI Roles**: Project Lead, Lyra (Product Analyst), Tara (DevOps), Rex (Backend), Lena (Design Director), Mira (Worker Engineer), Orion (QA Analyst), Kai (Docs Manager)
+- ✨ **Monorepo Structure**: `/apps`, `/packages`, `/docs` with clear ownership per team member
+- ✨ **Payload CMS Integration**: TypeScript-native headless CMS (replaces Strapi option)
+- ✨ **Lean Tech Stack**: Next.js 15, Astro 4, Prisma 5, Supabase Auth, Tailwind + shadcn/ui
+- ✨ **Folder Responsibilities**: Clear ownership mapping (e.g., `/apps/www` → Lena, `/packages/database` → Rex)
+- ✨ **macOS Developer Setup**: Complete Mac-optimized workflow with Cursor IDE + CLI support
+- ✨ **Docker Lean Strategy**: ~300MB total containers (Postgres + Payload only, Motia deferred)
+
+**Enhanced**:
+- 🔧 **Team Dispatcher**: Now routes to specialized roles with domain expertise (architecture, design, QA, docs)
+- 🔧 **Decision Workflow**: Council vote → User approval → Implementation (prevents wasted code)
+- 🔧 **Tech Stack Guidance**: Lean MVP focus, defer optional tools (Motia, Sentry, advanced testing) until needed
+- 🔧 **Monorepo Patterns**: Turborepo-ready structure with shared packages (`/packages/ui`, `/packages/config`, `/packages/domain`, `/packages/database`)
+- 🔧 **macOS Priority**: Terminal commands prioritize macOS/zsh first, then Linux, then Windows PowerShell
+
+**Changed**:
+- 📚 AI Team from 7 generic roles → 8 specialized roles with specific functions
+- 📚 Multi-framework support → Focused lean stack (Next.js + Astro primary, Motia optional)
+- 📚 Direct implementation → Pre-implementation voting + approval workflow
+- 📚 Generic folder structure → Monorepo with clear ownership assignments
+
+**Removed**:
+- ❌ Research Engineer role (merged into specialized roles)
+- ❌ Generic Frontend/Backend roles (now Rex, Lena, Mira specialization)
+- ❌ Code Reviewer role (replaced by Orion - QA Analyst with Playwright + Vitest)
+- ❌ Database Architect role (merged into Rex - Backend Engineer with Prisma focus)
+
+**Migration Guide**:
+- Old requests automatically map to new specialized roles (e.g., "Frontend" → Lena for design, Rex for implementation)
+- Council voting optional - use `[COUNCIL]` tag to trigger pre-implementation team analysis
+- Folder structure: Reference new monorepo layout for new projects (`/apps`, `/packages`, `/docs`)
+- Existing projects: AI team adapts to your current structure, suggests monorepo migration when appropriate
+
+### v3.0.0 (October 2024)
 **Major Release**: Context7 + Playwright MCP Integration + Production Patterns + Direct Mode Default + AI Optimization + Git Safety
 
 **Added**:
@@ -244,18 +295,20 @@
 ## 🎯 MCP System Overview
 
 This file provides **any AI coding assistant** with complete context for:
-- **Framework Flexibility**: Works with ANY framework - Motia, Next.js, React, Vue, Angular, or existing projects
-- **AI Team System**: 10 specialized AI roles with atomic task management
+- **Lean Tech Stack**: Next.js 15, Astro 4, Payload CMS, Prisma 5, Supabase Auth (Motia optional/deferred)
+- **AI Team System**: 8 specialized AI roles (Project Lead, Lyra, Tara, Rex, Lena, Mira, Orion, Kai) with clear ownership
+- **Virtual Council Voting**: Pre-implementation team voting on complex decisions (inspired by PewDiePie's "Council" experiment)
+- **Monorepo Architecture**: `/apps`, `/packages`, `/docs` structure with folder ownership per team member
 - **Development Standards**: Production-tested patterns and best practices from HVAC Estimator deployment
 - **Cross-Project Portability**: One file, any project, no installation required
 - **Atomic Planning Integration**: Context-aware task decomposition for optimal AI performance
 - **Context7 Integration**: Up-to-date library documentation through Context7 MCP Server
 - **Playwright Integration**: Automated website testing and browser automation through Playwright MCP
-- **Operational Enhancements**: 9 battle-tested operational patterns for production deployment
+- **Operational Enhancements**: 11 battle-tested operational patterns for production deployment
 - **Enhanced Patterns**: Security-first, responsive design, and authentication patterns
 - **Documentation Resources**: Complete guides for Vercel, Supabase, design systems, and forms
 - **Automated Timestamps**: Local PowerShell datetime integration (no MCP server required)
-- **Platform-Agnostic**: Works with Cursor, GPT Codex, GitHub Copilot, and any AI coding assistant
+- **Platform-Agnostic**: Works with Cursor IDE, Codex CLI, GitHub Copilot, and any AI coding assistant
 - **Windows PowerShell Priority**: Commands prioritized for Windows (PowerShell), then Linux, then macOS
 
 <!-- SECTION: ATOMIC_PLANNING | PRIORITY: P1 | READ_TIME: 2min -->
@@ -1643,64 +1696,319 @@ When user requests "descriptive mode" or "teach me", use this enhanced structure
 
 The AI Team Dispatcher now includes atomic planning capabilities and coordinates all development tasks using specialized roles with context awareness and Context7 integration:
 
-### Core Development Roles (Atomic-Aware)
+### Core Development Roles (Specialized & Atomic-Aware)
 
-#### Research Engineer
-**URL**: https://raw.githubusercontent.com/lovinglifemediawebdev/ai-agent-mcp/main/ai-team/roles/10_Research_Engineer.md
-- **Responsibilities**: Technical research, data validation, solution investigation, framework analysis
-- **Specialties**: Web research using @Web, multi-source validation, technical analysis, implementation research
-- **Atomic Focus**: Single research queries, targeted validation, focused analysis, atomic documentation
-- **Framework Expertise**: Multi-framework research, technology trends, integration patterns, performance optimization
-- **Context7 Usage**: Queries Context7 for current library documentation and framework-specific examples
+#### You (Project Lead)
+- **Function**: Define scope, approve architecture, freeze design decisions
+- **Responsibilities**: Final decision authority, architecture approval, design freeze, project scope definition
+- **Specialties**: Strategic planning, technical decision-making, architecture validation
+- **Atomic Focus**: Approves atomic task breakdowns, validates architectural decisions before implementation
+- **Folder Ownership**: Final approval on all structure changes
+- **Context7 Usage**: Validates tech stack choices against current best practices
 
-#### Development Head
-**URL**: https://raw.githubusercontent.com/lovinglifemediawebdev/ai-agent-mcp/main/ai-team/roles/01_Development_Head.md
-- **Responsibilities**: Project architecture, technical leadership, code standards, atomic task planning
-- **Specialties**: System design, technology decisions, team coordination, context management
-- **Atomic Focus**: Breaks down architectural decisions into implementable atomic tasks
-- **Framework Expertise**: Multi-framework architecture patterns (Motia, Next.js, React, Vue, Angular)
-- **Context7 Usage**: Queries Context7 for current architecture patterns and framework best practices
+#### Lyra (Product Analyst)
+- **Function**: Clarifies feature flows, writes acceptance criteria
+- **Responsibilities**: Feature specification, user flow design, acceptance criteria definition, product requirements
+- **Specialties**: User story mapping, acceptance criteria, feature breakdown, product planning
+- **Atomic Focus**: Defines acceptance criteria for each atomic task, validates user flows
+- **Folder Ownership**: `/docs/process/WORKFLOW.md` (product workflows)
+- **Context7 Usage**: Researches current UX patterns and product best practices
 
-#### Backend Engineer  
-**URL**: https://raw.githubusercontent.com/lovinglifemediawebdev/ai-agent-mcp/main/ai-team/roles/03_Backend_Engineer.md
-- **Responsibilities**: API development, database design, server-side logic, atomic implementation
-- **Specialties**: Multi-framework backend development, event systems, state management, authentication
-- **Atomic Focus**: Implements single endpoints, individual event handlers, isolated database operations
-- **Framework Expertise**: Motia steps, Next.js API routes, Express.js, FastAPI, microservices
-- **Context7 Usage**: Queries Context7 for current backend patterns and API examples
-
-#### Frontend Engineer
-**URL**: https://raw.githubusercontent.com/lovinglifemediawebdev/ai-agent-mcp/main/ai-team/roles/04_Frontend_Engineer.md  
-- **Responsibilities**: UI/UX implementation, client-side logic, responsive design, atomic component development
-- **Specialties**: React, Next.js, Vue, Angular, TypeScript, modern CSS, component architecture
-- **Atomic Focus**: Single components, individual features, isolated styling tasks
-- **Framework Expertise**: React hooks, Next.js App Router, Vue Composition API, Angular standalone components
-- **Context7 Usage**: Queries Context7 for current frontend patterns and component examples
-
-#### DevOps Engineer
-**URL**: https://raw.githubusercontent.com/lovinglifemediawebdev/ai-agent-mcp/main/ai-team/roles/05_DevOps_Engineer.md
-- **Responsibilities**: Deployment, CI/CD, infrastructure, monitoring, atomic deployment tasks
-- **Specialties**: Docker, Vercel, AWS, cloud platforms, automation, performance optimization
-- **Atomic Focus**: Single configuration files, individual deployment steps, isolated monitoring setups
-- **Framework Expertise**: Multi-framework deployment patterns, containerization strategies
+#### Tara (DevOps Engineer)
+- **Function**: Creates Docker configs, manages environments
+- **Responsibilities**: Infrastructure setup, Docker configuration, CI/CD pipelines, environment management, deployment automation
+- **Specialties**: Docker, Docker Compose, Vercel, AWS, cloud platforms, environment variables, monitoring
+- **Atomic Focus**: Single Dockerfile creation, individual environment configs, isolated deployment steps
+- **Folder Ownership**: `/packages/config` (tsconfig, eslint, env management), Docker configurations
 - **Context7 Usage**: Queries Context7 for current DevOps patterns and deployment examples
 
-#### Code Reviewer
-**URL**: https://raw.githubusercontent.com/lovinglifemediawebdev/ai-agent-mcp/main/ai-team/roles/07_Code_Reviewer.md
-- **Responsibilities**: Code quality, security review, best practices enforcement, atomic code analysis, automated testing
-- **Specialties**: Static analysis, security patterns, performance review, focused code reviews, end-to-end testing
-- **Atomic Focus**: Reviews single functions, individual files, specific security concerns, isolated test scenarios
-- **Framework Expertise**: Framework-specific best practices, security patterns, performance optimization
-- **Context7 Usage**: Queries Context7 for current code review standards and security best practices
+#### Rex (Backend Engineer)
+- **Function**: Handles domain modeling, repositories, Prisma/Supabase
+- **Responsibilities**: API development, database design, domain modeling, server-side logic, Prisma migrations, Supabase integration
+- **Specialties**: Next.js API routes, Prisma ORM, Supabase Auth, domain-driven design, repository patterns
+- **Atomic Focus**: Single endpoints, individual database migrations, isolated domain operations
+- **Folder Ownership**: `/apps/app` (Next.js frontend + API), `/packages/domain` (entities & repos), `/packages/database` (Prisma schema)
+- **Context7 Usage**: Queries Context7 for current backend patterns, Prisma examples, and API best practices
+
+#### Lena (Design Director)
+- **Function**: Owns Canva/Affinity wireframes, exports structure specs
+- **Responsibilities**: UI/UX design, wireframe creation, design system management, component design, design token management
+- **Specialties**: Tailwind CSS, shadcn/ui, design systems, responsive design, accessibility, Canva/Affinity design tools
+- **Atomic Focus**: Single component designs, individual wireframe exports, isolated styling tasks
+- **Folder Ownership**: `/apps/www` (Astro marketing site), `/packages/ui` (shadcn shared components), `/docs/wireframes` (Canva/Affinity PNGs)
+- **Context7 Usage**: Queries Context7 for current design patterns, component libraries, and UI best practices
+
+#### Mira (Worker Engineer)
+- **Function**: Manages Motia jobs, webhooks, retries + Payload CMS
+- **Responsibilities**: Background job processing, webhook handling, async task management, Payload CMS configuration, Motia worker setup (when needed)
+- **Specialties**: Motia framework, Payload CMS, webhook processing, background jobs, retry logic, async patterns
+- **Atomic Focus**: Single job handlers, individual webhook endpoints, isolated CMS collections
+- **Folder Ownership**: `/apps/cms` (Payload CMS), `/apps/worker` (Motia - optional/deferred)
+- **Context7 Usage**: Queries Context7 for Motia patterns, Payload CMS examples, and async processing best practices
+
+#### Orion (QA Analyst)
+- **Function**: Ensures cross-phase consistency, runs Playwright + Vitest
+- **Responsibilities**: Quality assurance, testing strategy, cross-phase validation, automated testing, accessibility testing
+- **Specialties**: Playwright (E2E testing), Vitest (unit testing), test automation, accessibility validation, quality gates
+- **Atomic Focus**: Single test suites, individual test scenarios, isolated quality checks
+- **Folder Ownership**: Test configurations, quality assurance documentation
+- **Context7 Usage**: Queries Context7 for current testing patterns and QA best practices
 - **Playwright Usage**: Performs automated website testing, browser automation, and accessibility validation
 
-#### Database Architect
-**URL**: https://raw.githubusercontent.com/lovinglifemediawebdev/ai-agent-mcp/main/ai-team/roles/09_Database_Architect.md
-- **Responsibilities**: Schema design, query optimization, data modeling, atomic database changes
-- **Specialties**: SQL design, indexing, migrations, data integrity, incremental schema evolution
-- **Atomic Focus**: Single table designs, individual migrations, specific query optimizations
-- **Framework Expertise**: Multi-framework database integration, ORM patterns, state management
-- **Context7 Usage**: Queries Context7 for current database patterns and ORM examples
+#### Kai (Docs Manager)
+- **Function**: Updates docs and README after each milestone
+- **Responsibilities**: Documentation maintenance, README updates, changelog management, process documentation, knowledge management
+- **Specialties**: Markdown documentation, technical writing, changelog management, process documentation
+- **Atomic Focus**: Single documentation updates, individual README sections, isolated process docs
+- **Folder Ownership**: `/docs/process` (WORKFLOW.md, TECH_STACK.md), README.md, CHANGELOG.md
+- **Context7 Usage**: References Context7 for documentation standards and technical writing best practices
+
+---
+
+<!-- SECTION: COUNCIL_VOTING | PRIORITY: P1 | READ_TIME: 3min | IF: complex_decision OR architecture -->
+## 🗳️ Virtual Council Voting System
+
+**Inspired by**: PewDiePie's "Council" experiment where multiple LLM instances vote on responses ([source](https://wccftech.com/pewdiepie-dives-into-an-ai-side-quest-revealing-his-self-made-chatos/))
+
+### 🎯 Pre-Implementation Voting Workflow
+
+**Key Principle**: AI team votes on approach BEFORE writing any code, preventing wasted implementation effort.
+
+**Workflow**:
+```text
+1. User Request → Team Dispatcher analyzes complexity
+2. Council Vote → Relevant AI roles analyze and vote on approach
+3. Consensus Presentation → AI presents recommended solution with team reasoning
+4. User Approval → You (Project Lead) approve, modify, or reject
+5. Implementation → Code written ONLY after approval
+```
+
+### 🎨 When Council Vote Triggers
+
+**Automatic Council Vote** (AI detects complexity):
+- ✅ Architecture decisions (CMS choice, database, folder structure)
+- ✅ Security reviews (pre-deployment audits)
+- ✅ Tech stack choices (framework selection, tool decisions)
+- ✅ Complex refactoring (major code restructuring)
+- ✅ Integration decisions (third-party service choices)
+
+**Single Role** (No vote needed):
+- ❌ Simple CRUD operations
+- ❌ Documentation updates
+- ❌ Bug fixes (unless architectural)
+- ❌ Styling changes
+
+**Manual Council Request**:
+```text
+@MCP-REFERENCE.md [COUNCIL] Should we use Payload CMS or Strapi?
+```
+
+### 📊 Council Voting Tiers
+
+| Tier | Trigger | Roles Involved | Cost | Use Cases |
+|------|---------|----------------|------|-----------|
+| **None** | Simple tasks | 1 role | 1x | CRUD operations, docs updates |
+| **Validation** | Medium complexity | 1 primary + 1-2 validators | 2-3x | Code reviews, bug fixes |
+| **Domain** | High-stakes | 2-3 domain experts | 2-3x | Architecture decisions, security |
+| **Full Council** | Critical decisions | All 7 roles | 7-8x | Tech stack, deployment strategy |
+
+### 🎯 Example: Council Vote in Action
+
+**User Request**:
+```text
+@MCP-REFERENCE.md Add authentication to my Next.js app
+```
+
+**AI Response (Pre-Implementation)**:
+```text
+[Claude Sonnet 4.5]
+
+## 🗳️ Virtual Council Pre-Implementation Vote
+
+### Team Analysis
+
+**Rex (Backend Engineer)** 🗳️ Supabase Auth + RLS
+"Use Supabase Auth with Row Level Security. Integrates with Prisma, 
+no separate auth server needed. Magic link for better UX."
+
+**Tara (DevOps Engineer)** 🗳️ Supabase Auth
+"Environment variables already configured. No additional Docker 
+container needed. Supports preview environments easily."
+
+**Orion (QA Analyst)** 🗳️ Supabase Auth
+"Clear testing path: integration tests for auth flows, Playwright 
+E2E for login/signup. Supabase has good testing docs."
+
+**Lyra (Product Analyst)** 🗳️ Supabase Auth + Magic Link
+"Magic link improves UX (no password management). Fits product 
+goal of seamless user experience."
+
+**Lena (Design Director)** 🗳️ Supabase Auth
+"Can design login/signup UI with shadcn/ui components. Clean, 
+modern auth flow matches design system."
+
+**Mira (Worker Engineer)** 🗳️ Supabase Auth
+"If we need auth webhooks later, Motia worker can handle them. 
+Supabase webhooks are straightforward."
+
+**Kai (Docs Manager)** ✅ APPROVE
+"Supabase auth docs are comprehensive. Easy to document setup 
+process for team."
+
+### 📊 Council Recommendation
+
+**Unanimous Vote**: Supabase Auth + Magic Link + RLS Policies
+**Approach**: 
+- Supabase Auth for authentication
+- Magic link (passwordless) for UX
+- RLS policies for authorization (no hardcoded credentials)
+- Integration with existing Prisma setup
+
+**Alternative Considered**: NextAuth.js
+**Why Rejected**: Supabase Auth provides RLS, better for our PostgreSQL setup
+
+### ✋ YOUR DECISION REQUIRED
+
+**Option A**: ✅ Proceed with council's recommendation (Supabase Auth)
+**Option B**: 🔄 Use NextAuth.js instead
+**Option C**: ❌ Cancel - not needed yet
+
+Type your choice and I'll implement!
+```
+
+**Benefits**:
+- ✅ Prevents wasted code (vote before implementation)
+- ✅ Multiple perspectives catch issues early
+- ✅ User maintains full control (approve before changes)
+- ✅ Learning opportunity (see WHY solution chosen)
+- ✅ Cost-effective (planning is cheap, implementation is expensive)
+
+---
+
+<!-- SECTION: MONOREPO_ARCHITECTURE | PRIORITY: P1 | READ_TIME: 5min | IF: new_project OR structure_question -->
+## 🏗️ Monorepo Architecture
+
+**Structure**: Turborepo-ready monorepo with clear ownership per AI team member
+
+### 📁 Folder Structure with Ownership
+
+```bash
+project-root/
+├── apps/
+│   ├── app/          # Next.js 15 frontend + API (Rex + Cursor)
+│   ├── www/          # Astro 4 marketing site (Lena)
+│   ├── cms/          # Payload CMS 3.x (Mira)
+│   └── worker/       # Motia jobs & webhooks (Mira) - OPTIONAL/DEFERRED
+│
+├── packages/
+│   ├── ui/           # shadcn/ui shared components (Lena)
+│   ├── config/       # tsconfig, eslint, env (Tara)
+│   ├── domain/       # Core entities & repositories (Rex)
+│   └── database/     # Prisma 5 schema & migrations (Rex)
+│
+└── docs/
+    ├── wireframes/   # Canva/Affinity exported PNGs (Lena)
+    └── process/       # WORKFLOW.md, TECH_STACK.md (Kai)
+```
+
+### 👥 Ownership Assignments
+
+| Folder | Owner | Responsibilities |
+|--------|-------|------------------|
+| `/apps/app` | Rex + Cursor | Next.js frontend + API routes, Prisma integration |
+| `/apps/www` | Lena | Astro marketing site, public pages |
+| `/apps/cms` | Mira | Payload CMS configuration, content models |
+| `/apps/worker` | Mira | Motia worker (when async jobs needed) |
+| `/packages/ui` | Lena | shadcn/ui components, design system |
+| `/packages/config` | Tara | Shared configs, environment management |
+| `/packages/domain` | Rex | Domain entities, repository patterns |
+| `/packages/database` | Rex | Prisma schema, migrations, seed scripts |
+| `/docs/wireframes` | Lena | Design assets, exported wireframes |
+| `/docs/process` | Kai | Process documentation, tech stack docs |
+
+### 🎯 Lean MVP Stack (macOS-Optimized)
+
+**Core Stack** (Start Here):
+```bash
+✅ Node 20 LTS (via fnm or nvm)
+✅ Next.js 15 (apps/app)
+✅ Astro 4 (apps/www)
+✅ Payload CMS 3.x (apps/cms)
+✅ PostgreSQL 16 (Docker only)
+✅ Prisma 5 (packages/database)
+✅ Supabase Auth (authentication)
+✅ Tailwind + shadcn/ui (packages/ui)
+```
+
+**Add When Needed** (Defer Until Required):
+```bash
+⏳ Motia Worker - Add when webhooks/jobs are defined
+⏳ Vitest + Playwright - Add after core flows work
+⏳ Sentry - Post-launch only
+⏳ Advanced testing - Once MVP is stable
+```
+
+### 🐳 Docker Lean Strategy
+
+**MVP Containers** (~300MB total):
+```yaml
+services:
+  db:
+    image: postgres:16-alpine  # ~200MB
+    # Shared by all apps
+  
+  cms:
+    build: ./apps/cms          # ~100MB (Payload CMS)
+    depends_on:
+      - db
+```
+
+**Deferred** (Add only when needed):
+- Motia worker container (add when async jobs required)
+- Additional services (add incrementally)
+
+**Benefits**:
+- ✅ Minimal resource usage (~300MB vs typical 500MB+)
+- ✅ Fast startup times
+- ✅ Easy local development
+- ✅ macOS-friendly (Docker Desktop)
+
+### 📋 Monorepo Best Practices
+
+**Workspace Configuration**:
+```json
+// package.json (root)
+{
+  "name": "my-monorepo",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
+}
+```
+
+**Shared Packages**:
+- `/packages/ui` - Imported by `/apps/app` and `/apps/www`
+- `/packages/config` - Shared TypeScript/eslint configs
+- `/packages/domain` - Shared business logic
+- `/packages/database` - Shared Prisma client
+
+**Development Commands**:
+```bash
+# Windows PowerShell (PRIMARY)
+npm run dev --workspace=app      # Start Next.js app
+npm run dev --workspace=www      # Start Astro site
+npm run dev --workspace=cms      # Start Payload CMS
+
+# Build all apps
+npm run build --workspaces
+
+# Test specific package
+npm test --workspace=packages/ui
+```
+
+---
 
 ## 📚 Development Resources (Multi-Framework Enhanced)
 
