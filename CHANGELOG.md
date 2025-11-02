@@ -6,7 +6,27 @@
 
 *This section should be updated after each modification to track project evolution*
 
-### Last Updated: November 02, 2025 at 1:31 PM
+### Last Updated: November 02, 2025 at 3:18 PM
+
+**V4.0.1 AUTOMATIC COUNCIL TRIGGERING + BEADS CLARIFICATION (November 02, 2025):**
+- **ENHANCED**: Automatic Council Vote Triggering - AI now automatically detects and triggers council votes for:
+  - Architecture decisions (CMS choice, database, folder structure)
+  - Security reviews (pre-deployment audits)
+  - Tech stack choices (framework selection, tool decisions)
+  - Complex refactoring (>5 files affected)
+  - Integration decisions (third-party service choices)
+  - No [COUNCIL] tag needed - AI automatically analyzes complexity when @MCP-REFERENCE.md is tagged
+  - User can skip vote by saying "skip council, just implement"
+  - Manual override still available with explicit [COUNCIL] tag
+- **CLARIFIED**: Beads integration is MANUAL/OPTIONAL and cannot be auto-triggered
+  - Requires manual CLI commands (bd create, bd update, bd ready, etc.)
+  - AI can suggest Beads workflow but cannot auto-execute commands
+  - User must manually run all Beads commands in terminal
+  - Best for multi-session projects requiring persistent task memory
+  - MCP v4.0.0 works perfectly without Beads
+- **UPDATED**: AI Quick Reference section now includes "Auto-Council" in default behavior
+- **UPDATED**: Both MCP-REFERENCE.md and MCP-REFERENCE-mac.md synchronized with v4.0.1 changes
+- **DOCS**: Updated version history to document v4.0.1 enhancements
 
 **V4.0 SPECIALIZED AI TEAM + VIRTUAL COUNCIL VOTING (November 02, 2025):**
 - **MAJOR**: Complete AI Team restructure - 8 specialized roles with clear functions and folder ownership

@@ -11,6 +11,7 @@
 **🎯 DEFAULT BEHAVIOR**:
 - Mode: Direct (action-focused, 80% less context)
 - Dispatch: ALWAYS assign to AI team member
+- Auto-Council: Trigger vote for architecture/security/tech decisions automatically
 - Context Limits: 5 files (40k) | 15 files (200k) | 50 files (1M)
 
 **📍 PRIORITY SECTIONS** (Read these first):
@@ -131,36 +132,45 @@
     - Docker Lean Strategy
 
 ### Development Resources
-11. [📚 Development Resources (Multi-Framework Enhanced)](#-development-resources-multi-framework-enhanced)
-12. [🛠️ Multi-Framework Context (Atomic-Aware)](#-multi-framework-context-atomic-aware)
+11. [🧠 Beads Memory System Integration (Optional)](#-beads-memory-system-integration-optional)
+    - Why Beads Enhances MCP
+    - Quick Start
+    - MCP Workflow Integration
+    - Key Commands
+12. [🎨 Vibe Coding Best Practices](#-vibe-coding-best-practices)
+    - Core Principles
+    - Practical Tips
+    - Workflow Integration
+13. [📚 Development Resources (Multi-Framework Enhanced)](#-development-resources-multi-framework-enhanced)
+14. [🛠️ Multi-Framework Context (Atomic-Aware)](#-multi-framework-context-atomic-aware)
     - Motia Framework (Optional/Deferred)
     - Next.js 15
     - Astro 4
     - Payload CMS
-13. [🎯 Usage Patterns (Multi-Framework Enhanced)](#-usage-patterns-multi-framework-enhanced)
+15. [🎯 Usage Patterns (Multi-Framework Enhanced)](#-usage-patterns-multi-framework-enhanced)
     - Mode Selection Guidance
     - Project Setup Examples
     - Development Help Examples
     - Testing with Playwright MCP
 
 ### Standards & Patterns
-14. [📋 Development Standards (Multi-Framework Enhanced)](#-development-standards-multi-framework-enhanced)
-15. [🚀 Project Templates & Code Examples](#-project-templates--code-examples)
-16. [🔧 Advanced Patterns (Multi-Framework Enhanced)](#-advanced-patterns-multi-framework-enhanced)
-17. [🎨 Production-Enhanced Patterns](#-production-enhanced-patterns)
+16. [📋 Development Standards (Multi-Framework Enhanced)](#-development-standards-multi-framework-enhanced)
+17. [🚀 Project Templates & Code Examples](#-project-templates--code-examples)
+18. [🔧 Advanced Patterns (Multi-Framework Enhanced)](#-advanced-patterns-multi-framework-enhanced)
+19. [🎨 Production-Enhanced Patterns](#-production-enhanced-patterns)
     - Context-Aware Atomic Planning Enhancements
     - Security-First Development Patterns
     - Data-Driven Responsive Design Strategy
     - Complete Authentication System Patterns
     - Advanced Form Logic Patterns
-18. [📚 Production Documentation Resources](#-production-documentation-resources)
+20. [📚 Production Documentation Resources](#-production-documentation-resources)
 
 ### Setup & Resources
-19. [📊 Project Context (Multi-Framework Aware)](#-project-context-multi-framework-aware)
-20. [🎯 MCP Benefits (Multi-Framework Enhanced)](#-mcp-benefits-multi-framework-enhanced)
-21. [📝 Usage Instructions (Multi-Framework Enhanced)](#-usage-instructions-multi-framework-enhanced)
-22. [🔗 Quick Links (Multi-Framework Enhanced)](#-quick-links-multi-framework-enhanced)
-23. [📜 Version History](#-version-history)
+21. [📊 Project Context (Multi-Framework Aware)](#-project-context-multi-framework-aware)
+22. [🎯 MCP Benefits (Multi-Framework Enhanced)](#-mcp-benefits-multi-framework-enhanced)
+23. [📝 Usage Instructions (Multi-Framework Enhanced)](#-usage-instructions-multi-framework-enhanced)
+24. [🔗 Quick Links (Multi-Framework Enhanced)](#-quick-links-multi-framework-enhanced)
+25. [📜 Version History](#-version-history)
 
 ---
 
@@ -168,6 +178,11 @@
 
 ### v4.0.0 (Current - November 2025)
 **Major Release**: Specialized AI Team + Virtual Council Voting + Monorepo Architecture + Lean Tech Stack
+
+**Latest Update (v4.0.1 - December 2025)**:
+- ✨ **Automatic Council Vote Triggering**: AI now automatically detects and triggers council votes for architecture/security/tech decisions without needing [COUNCIL] tag
+- 📚 **Beads Clarification**: Explicitly documented that Beads integration requires manual CLI commands (cannot be auto-triggered)
+- 🔧 **AI Quick Reference Update**: Added auto-council behavior to default behavior section
 
 **Breaking Changes**:
 - ⚠️ Complete AI Team restructure (8 new specialized roles replacing 7 generic roles)
@@ -1156,6 +1171,18 @@ find . -type f | wc -l
 - Suggest improvements user may not have considered
 - Ensure full understanding before implementation
 
+**🤖 Automatic Council Vote Triggering** (AI automatically detects and triggers):
+- **CRITICAL**: When user tags @MCP-REFERENCE.md, AI AUTOMATICALLY analyzes complexity
+- **Auto-Trigger Council Vote** when detecting:
+  - ✅ Architecture decisions (CMS choice, database, folder structure)
+  - ✅ Security reviews (pre-deployment audits)
+  - ✅ Tech stack choices (framework selection, tool decisions)
+  - ✅ Complex refactoring (>5 files affected)
+  - ✅ Integration decisions (third-party service choices)
+- **AI presents council vote response** without needing [COUNCIL] tag
+- **User can skip vote** by saying "skip council, just implement"
+- **Manual override**: User can force vote with `[COUNCIL]` tag for any request
+
 **Optional Methodology Consideration** (for planning-heavy projects):
 - Detect if project would benefit from BMAD-METHOD™ or Spec-Driven Development
 - Ask user: "Would you like to use [methodology] for this project? (Yes/No)"
@@ -1783,6 +1810,53 @@ The AI Team Dispatcher now includes atomic planning capabilities and coordinates
 5. Implementation → Code written ONLY after approval
 ```
 
+### 💡 "Living PED" Concept
+
+**What is a "Living PED"?**
+Traditional Product Requirements Documents (PRDs) are static - written once, rarely updated. The Virtual Council creates a **"Living PED"** - dynamic planning where AI asks itself questions and votes on approaches in real-time.
+
+**How it works**:
+```text
+Traditional PED (Static):           Living PED (Dynamic):
+────────────────────────            ─────────────────────
+Write document → Implement          Question → Vote → Implement
+Document becomes outdated           Self-correcting in real-time
+Developers interpret alone          Multiple AI perspectives
+No feedback loop                    Continuous validation
+```
+
+**Self-Questioning Process**:
+1. **AI asks itself**: "What's the best approach for auth?"
+2. **Council debates**: Rex (backend), Tara (DevOps), Orion (QA) vote
+3. **Consensus emerges**: Team agrees on Supabase Auth + RLS
+4. **User approves**: You validate the approach
+5. **Plan adapts**: If wrong, council re-votes without wasted code
+
+**Benefits over static PRDs**:
+- ✅ **Real-time adaptation** - Plan evolves with new information
+- ✅ **Self-correction** - AI catches own mistakes before coding
+- ✅ **Multiple perspectives** - Not just one AI opinion
+- ✅ **No wasted work** - Vote before implementation
+- ✅ **Context preserved** - Decisions recorded (especially with Beads integration)
+
+**Example of Living PED in action**:
+```text
+You: "Add authentication"
+
+Traditional approach:
+AI: "I'll add NextAuth.js" → Implements → Wrong choice → Rework
+
+Living PED approach:
+Rex: "Use Supabase Auth (integrates with our Prisma setup)"
+Tara: "Supabase needs no extra container (easier deployment)"
+Orion: "Supabase has good testing docs (easier QA)"
+→ Council votes Supabase
+→ You approve
+→ Implementation starts (right choice, no rework)
+```
+
+This is why the Virtual Council Voting System is a **living, self-questioning planning system** - not a static document.
+
 ### 🎨 When Council Vote Triggers
 
 **Automatic Council Vote** (AI detects complexity):
@@ -2007,6 +2081,339 @@ npm run build --workspaces
 # Test specific package
 npm test --workspace=packages/ui
 ```
+
+---
+
+<!-- SECTION: BEADS_INTEGRATION | PRIORITY: P2 | READ_TIME: 4min | IF: memory_management OR session_persistence -->
+## 🧠 Beads Memory System Integration (Optional)
+
+**What is Beads?**
+Beads is a lightweight, dependency-aware issue tracker designed specifically for AI coding agents. It provides persistent memory across sessions, dependency graphs, and automatic "ready work" detection.
+
+**Repository**: https://github.com/steveyegge/beads
+
+**🚨 IMPORTANT**: Beads integration is **MANUAL/OPTIONAL** and cannot be automatically triggered:
+- **Requires CLI commands** (`bd create`, `bd update`, `bd ready`, etc.)
+- **AI can suggest** Beads workflow but cannot auto-execute commands
+- **User must manually run** Beads commands in terminal
+- **Best for**: Multi-session projects requiring persistent task memory
+- **Not required**: MCP v4.0.0 works perfectly without Beads
+
+### 🎯 Why Beads Enhances MCP v4.0.0
+
+| MCP Challenge | Beads Solution |
+|---------------|----------------|
+| Tasks exist only in conversation | Persistent task memory (survives sessions) |
+| No dependency tracking | Automatic dependency graphs |
+| Manual "what's next" decisions | AI detects ready work automatically |
+| Context lost between sessions | JSONL + SQLite dual storage |
+| Old decisions forgotten | Memory decay (AI compresses old tasks) |
+
+### 🚀 Quick Start
+
+**Installation**:
+```powershell
+# Windows (via Go)
+go install github.com/steveyegge/beads/cmd/bd@latest
+
+# macOS
+brew install beads
+
+# Verify
+bd --version
+```
+
+**Initialize in Project**:
+```bash
+# In your project root
+bd init
+# Creates .beads/ folder with SQLite + JSONL
+```
+
+### 📋 Integration with MCP Workflow
+
+**MCP Workflow → Beads Commands**:
+
+```bash
+# 1. User Request → Create epic
+bd create "Add authentication system" -t epic -p 0 --id bd-auth
+
+# 2. Council Vote → Create tasks with vote metadata
+bd create "Setup Supabase client" -t task -p 1 --id bd-auth-1
+bd update bd-auth-1 --label council-approved,backend
+
+# 3. Lyra: Acceptance Criteria → Update description
+bd update bd-auth-1 -d "Acceptance: User can init Supabase, RLS enabled"
+
+# 4. Atomic Task Breakdown → Link dependencies
+bd dep add bd-auth-2 bd-auth-1  # Task 2 blocks on Task 1
+
+# 5. Rex: Check ready work
+bd ready --json
+# Returns unblocked tasks: bd-auth-1
+
+# 6. Implementation → Update status
+bd update bd-auth-1 --status in_progress
+
+# 7. Complete → Close task
+bd close bd-auth-1 --reason "Supabase client configured"
+
+# 8. Next task auto-unblocks
+bd ready --json
+# Returns: bd-auth-2 (previously blocked, now ready)
+```
+
+### 🔧 Key Commands
+
+**Create & Update**:
+```bash
+# Create with metadata
+bd create "Task" -p 1 -t feature -l backend,urgent
+
+# Update status
+bd update bd-xxx --status in_progress
+bd update bd-xxx --assignee rex
+
+# Close task
+bd close bd-xxx --reason "Completed"
+```
+
+**Dependencies**:
+```bash
+# Add dependency (task2 blocks on task1)
+bd dep add task2 task1
+
+# Show dependency tree
+bd dep tree task2
+
+# Detect circular dependencies
+bd dep cycles
+```
+
+**Finding Work**:
+```bash
+# Show ready work (no blockers)
+bd ready --json
+
+# Show blocked tasks
+bd blocked
+
+# Filter ready work
+bd ready --priority 1 --assignee rex
+```
+
+**Memory Decay**:
+```bash
+# Compress old closed tasks (AI summarizes)
+bd compact --days 90 --dry-run
+bd compact --days 90  # Actually compress
+```
+
+### 🎨 Folder Ownership Integration
+
+**Map MCP roles to Beads labels**:
+```bash
+# Lyra (Product Analyst)
+bd create "Define user flow" -l product,lyra
+
+# Tara (DevOps)
+bd create "Setup Docker" -l devops,tara
+
+# Rex (Backend)
+bd create "Create API endpoint" -l backend,rex
+
+# Lena (Design Director)
+bd create "Design login UI" -l design,lena
+
+# Filter by owner
+bd list --label rex
+bd ready --label backend
+```
+
+### 📊 JSON API for AI Agents
+
+**All commands support `--json` output**:
+```bash
+bd ready --json
+bd list --status open --json
+bd show bd-xxx --json
+bd create "Task" --json
+```
+
+**Example AI workflow**:
+```python
+import subprocess, json
+
+# Get ready work
+result = subprocess.run(['bd', 'ready', '--json'], capture_output=True)
+tasks = json.loads(result.stdout)
+
+for task in tasks:
+    print(f"Working on: {task['title']}")
+    # AI implements task...
+    subprocess.run(['bd', 'update', task['id'], '--status', 'in_progress'])
+```
+
+### 🔗 Benefits
+
+**With Beads Integration**:
+- ✅ Virtual Council votes persist across sessions
+- ✅ Atomic tasks tracked with dependency graphs
+- ✅ AI knows what's "ready" without asking
+- ✅ Multi-session projects resume seamlessly
+- ✅ Old decisions compressed but not forgotten
+- ✅ Team coordination via shared `.beads/` folder
+
+**Without Beads**:
+- ❌ Tasks exist only in conversation memory
+- ❌ Manual dependency tracking
+- ❌ "What should I work on next?" repeated questions
+- ❌ Context lost between sessions
+
+### 📚 Full Documentation
+
+For complete Beads integration guide, see:
+- **Complete Guide**: `docs/integrations/BEADS_INTEGRATION.md` (detailed examples)
+- **Official Docs**: https://github.com/steveyegge/beads
+- **Quick Start**: Run `bd quickstart` for interactive tutorial
+
+**Note**: Beads is **optional** - MCP v4.0.0 works perfectly without it, but Beads adds persistent memory and dependency tracking for complex multi-session projects.
+
+---
+
+<!-- SECTION: VIBE_CODING | PRIORITY: P3 | READ_TIME: 2min | IF: best_practices OR workflow_tips -->
+## 🎨 Vibe Coding Best Practices
+
+**What is "Vibe Coding"?**
+A natural, conversational approach to AI-assisted development that emphasizes iterative progress, clear communication, and continuous validation. These tips complement the MCP v4.0.0 system.
+
+**Source**: Community best practices from experienced developers using Cursor and AI coding assistants ([Reddit discussion](https://www.reddit.com/r/cursor/comments/1olsorw/vibe_coding_beginner_tips_from_an_experienced_dev/))
+
+### 🎯 Core Principles (Aligned with MCP v4.0.0)
+
+| Vibe Coding Tip | How MCP v4.0.0 Implements It |
+|-----------------|------------------------------|
+| **1. Document vision first** | Virtual Council votes on approach before coding |
+| **2. Break into numbered steps** | Atomic Planning Protocol (≤5 files, single objective) |
+| **3. Be atomically specific** | Lyra writes precise acceptance criteria |
+| **4. Test after every change** | Orion validates with Playwright + Vitest |
+| **5. Don't loop without progress** | Council re-votes if stuck (self-reflection) |
+| **6. Use good tools** | Cursor IDE, Codex CLI (confirmed working) |
+| **7. Learn debugging** | Deep Exploration Protocol before implementation |
+| **8. Use version control** | Git workflow with Rule #0.7 (manual push) |
+
+### 💡 Practical Tips
+
+**Vision Documentation**:
+```text
+❌ BAD: "Build a login form"
+✅ GOOD: "Build login form with:
+  - Email/password fields
+  - Magic link option
+  - RLS-based auth (no hardcoded credentials)
+  - shadcn/ui components
+  - Supabase backend"
+```
+
+**Atomic Specificity**:
+```text
+❌ BAD: "@MCP-REFERENCE.md Improve the UI"
+✅ GOOD: "@MCP-REFERENCE.md Add 10px padding to login form.
+         Make background color #F0F0F0.
+         Center the form vertically."
+```
+
+**Test Continuously**:
+```text
+✅ Change → Test → Verify → Next change
+❌ Multiple changes → Test → (Can't isolate issue)
+```
+
+**Debugging Collaboration**:
+```text
+❌ BAD: "It's broken, fix it"
+✅ GOOD: "@MCP-REFERENCE.md Getting error 'Cannot read property X'.
+         Here's the stack trace: [paste]
+         What's the root cause?"
+```
+
+**Code Review Flow**:
+```text
+1. AI generates code
+2. You read the code (don't just accept)
+3. Ask AI to review its own code
+4. Orion (QA) validates
+5. Implement with understanding
+```
+
+### 🔄 Workflow Integration
+
+**With Virtual Council Voting**:
+```text
+Traditional Vibe Coding:
+You: "Add auth" → AI implements → Review → Fix issues
+
+Enhanced with Council:
+You: "Add auth" → Council votes → You approve → Implement
+(No rework needed, right approach chosen)
+```
+
+**With Beads Memory**:
+```text
+Traditional Vibe Coding:
+Session 1: "Add auth" → Partial implementation
+Session 2: "Wait, what was I building?" → Re-explain
+
+Enhanced with Beads:
+Session 1: bd create "Add auth" → Implement → bd close
+Session 2: bd ready → Shows next task automatically
+(Context preserved across sessions)
+```
+
+### ⚡ Quick Wins
+
+**Branch and Diff** (from Reddit comments):
+```bash
+# 1. Branch the change
+git checkout -b feature/new-thing
+
+# 2. Let AI implement
+@MCP-REFERENCE.md Implement X
+
+# 3. Diff the change
+git diff main
+
+# 4. Review with AI
+@MCP-REFERENCE.md Review this diff: [paste diff]
+```
+
+**Use Rules/Modes**:
+```text
+✅ If you always want to remind AI of something: Use Rule #0.x
+✅ If you need detailed explanation: Request "descriptive mode"
+✅ If you need action-focused: Use default "direct mode"
+```
+
+**Plan Mode** (if your AI supports it):
+```text
+1. Ask AI to plan first
+2. Review the plan
+3. Approve or modify
+4. Then implement
+(This is essentially what Council Voting does automatically)
+```
+
+### 🎯 Complementary to MCP v4.0.0
+
+**Vibe Coding provides**: Mindset and communication patterns  
+**MCP v4.0.0 provides**: Structured workflow and team coordination  
+**Together**: Natural communication + Rigorous execution = Best results
+
+**When to use what**:
+- **Simple tasks**: Just "vibe" with Direct Mode responses
+- **Complex tasks**: Trigger Council Vote for team analysis
+- **Multi-session projects**: Add Beads for persistent memory
+- **Production deployments**: Follow Production-Enhanced Patterns
 
 ---
 
